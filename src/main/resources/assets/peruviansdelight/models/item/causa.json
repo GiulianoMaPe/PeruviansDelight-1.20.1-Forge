@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "perusdelight:item/causa"
+    "layer0": "peruviansdelight:item/causa"
   }
 }
