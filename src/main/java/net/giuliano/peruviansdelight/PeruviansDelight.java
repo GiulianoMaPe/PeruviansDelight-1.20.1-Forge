@@ -1,6 +1,7 @@
 package net.giuliano.peruviansdelight;
 
 import com.mojang.logging.LogUtils;
+import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.item.ModCreativeModTabs;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -29,6 +30,7 @@ public class PeruviansDelight {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

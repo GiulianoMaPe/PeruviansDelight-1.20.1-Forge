@@ -13,7 +13,7 @@ public class ModItems {
     public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
             () -> new Item(new Item.Properties().food(ModFoods.CAUSA)));
     public static final RegistryObject<Item> INCA_KOLA = ITEMS.register("inca_kola",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoods.INCA_KOLA)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
