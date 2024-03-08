@@ -10,12 +10,17 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PeruviansDelight.MOD_ID);
 
-    public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
-            () -> new Item(new Item.Properties().food(ModFoods.CAUSA)));
     public static final RegistryObject<Item> INCA_KOLA = ITEMS.register("inca_kola",
             () -> new Item(new Item.Properties().food(ModFoods.INCA_KOLA)));
+
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
+
+    public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
+            () -> new Item(new Item.Properties().food(ModFoods.CAUSA)));
+
+    public static final RegistryObject<Item> ALMA_EN_PENA = ITEMS.register("alma_en_pena",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

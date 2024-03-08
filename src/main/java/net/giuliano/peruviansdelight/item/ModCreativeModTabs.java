@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CAUSA.get());
                         output.accept(ModItems.INCA_KOLA.get());
                         output.accept(ModItems.AJI_AMARILLO.get());
+                        output.accept(ModItems.ALMA_EN_PENA.get());
 
                         output.accept(ModBlocks.CARA.get());
                     })

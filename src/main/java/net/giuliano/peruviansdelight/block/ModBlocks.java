@@ -2,10 +2,12 @@ package net.giuliano.peruviansdelight.block;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,7 +21,9 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, PeruviansDelight.MOD_ID);
 
     public static final RegistryObject<Block> CARA = registerBlock("cara",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .requiresCorrectToolForDrops(), UniformInt.of(3,7)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
