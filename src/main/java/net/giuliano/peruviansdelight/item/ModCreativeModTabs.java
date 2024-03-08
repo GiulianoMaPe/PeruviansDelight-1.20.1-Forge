@@ -18,12 +18,17 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CAUSA.get()))
                     .title(Component.translatable("creativetab.peruviansdelight_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.CAUSA.get());
                         output.accept(ModItems.INCA_KOLA.get());
+                        output.accept(ModItems.CAUSA.get());
                         output.accept(ModItems.AJI_AMARILLO.get());
-                        output.accept(ModItems.ALMA_EN_PENA.get());
+                        output.accept(ModItems.POTE_AJI_AMARILLO.get());
+                        output.accept(ModItems.CAMOTE.get());
+                        output.accept(ModItems.CAMOTE_COCIDO.get());
+                        output.accept(ModItems.YUCA.get());
+                        output.accept(ModItems.YUCA_FRITA.get());
 
                         output.accept(ModBlocks.CARA.get());
+                        output.accept(ModItems.ALMA_EN_PENA.get());
                     })
                     .build());
 

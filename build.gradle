@@ -139,6 +139,8 @@ dependencies {
     implementation fg.deobf("curse.maven:farmers-delight-398521:5051242")
     implementation fg.deobf("curse.maven:jei-238222:4712868")
     implementation fg.deobf("curse.maven:appleskin-248787:4770828")
+    implementation fg.deobf("curse.maven:sledgehammers-579384:4614562")
+    implementation fg.deobf("curse.maven:ccore-573646:4771884")
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
