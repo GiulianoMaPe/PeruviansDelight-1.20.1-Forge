@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.CAUSA.get());
                         output.accept(ModItems.INCA_KOLA.get());
+                        output.accept(ModItems.AJI_AMARILLO.get());
 
                         output.accept(ModBlocks.CARA.get());
                     })

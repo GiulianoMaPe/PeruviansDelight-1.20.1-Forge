@@ -44,10 +44,7 @@ public class PeruviansDelight {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.CAUSA);
-            event.accept(ModItems.INCA_KOLA);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
