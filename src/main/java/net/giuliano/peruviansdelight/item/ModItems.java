@@ -25,8 +25,20 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.YUCA)));
     public static final RegistryObject<Item> YUCA_FRITA = ITEMS.register("yuca_frita",
             () -> new Item(new Item.Properties().food(ModFoods.YUCA_FRITA)));
+    public static final RegistryObject<Item> ATUN = ITEMS.register("atun",
+            () -> new Item(new Item.Properties().food(ModFoods.ATUN)));
+    public static final RegistryObject<Item> ATUN_COCIDO = ITEMS.register("atun_cocido",
+            () -> new Item(new Item.Properties().food(ModFoods.ATUN_COCIDO)));
+    public static final RegistryObject<Item> LIMON = ITEMS.register("limon",
+            () -> new Item(new Item.Properties().food(ModFoods.LIMON)));
+    public static final RegistryObject<Item> GAJO_LIMON = ITEMS.register("gajo_limon",
+            () -> new Item(new Item.Properties().food(ModFoods.GAJO_LIMON)));
 
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GRANOS_SOYA = ITEMS.register("granos_soya",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SILLAO = ITEMS.register("sillao",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ALMA_EN_PENA = ITEMS.register("alma_en_pena",
             () -> new Item(new Item.Properties()));

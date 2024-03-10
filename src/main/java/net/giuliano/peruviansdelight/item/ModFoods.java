@@ -12,15 +12,23 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 400), 1f)
             .build();
     public static final FoodProperties CAUSA = new FoodProperties.Builder().nutrition(12)
-            .saturationMod(1f).meat().build();
+            .saturationMod(1f).build();
     public static final FoodProperties AJI_AMARILLO = new FoodProperties.Builder().nutrition(1).fast().saturationMod(0.1f)
             .effect(() -> new MobEffectInstance(MobEffects.POISON, 200, 0), 1f).build();
     public static final FoodProperties CAMOTE = new FoodProperties.Builder().nutrition(1)
-            .saturationMod(0.6f).build();
+            .saturationMod(0.6f).meat().build();
     public static final FoodProperties CAMOTE_COCIDO = new FoodProperties.Builder().nutrition(5).fast()
-            .saturationMod(1.2f).build();
+            .saturationMod(1.2f).meat().build();
     public static final FoodProperties YUCA = new FoodProperties.Builder().nutrition(2).fast()
             .saturationMod(0.5f).build();
     public static final FoodProperties YUCA_FRITA = new FoodProperties.Builder().nutrition(6).fast()
             .saturationMod(1.3f).build();
+    public static final FoodProperties ATUN = new FoodProperties.Builder().nutrition(2).fast()
+            .saturationMod(0.2f).build();
+    public static final FoodProperties ATUN_COCIDO = new FoodProperties.Builder().nutrition(6).fast()
+            .saturationMod(0.5f).build();
+    public static final FoodProperties LIMON = new FoodProperties.Builder().nutrition(6).fast()
+            .saturationMod(0.5f).build();
+    public static final FoodProperties GAJO_LIMON = new FoodProperties.Builder().nutrition(6).fast()
+            .saturationMod(0.5f).build();
 }

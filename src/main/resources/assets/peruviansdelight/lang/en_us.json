@@ -8,8 +8,14 @@
   "item.peruviansdelight.camote_cocido": "Cooked Sweet Potato",
   "item.peruviansdelight.yuca": "Yuca",
   "item.peruviansdelight.yuca_frita": "Fried Yuca",
+  "item.peruviansdelight.granos_soya": "Soybeans",
+  "item.peruviansdelight.sillao": "Sillao",
+  "item.peruviansdelight.atun": "Tuna",
+  "item.peruviansdelight.atun_cocido": "Cooked Tuna",
+  "item.peruviansdelight.limon": "Lemon",
+  "item.peruviansdelight.gajo_limon": "Lemon Wedge",
 
-  "block.peruviansdelight.cara": "Cabeza Clavas",
+  "block.peruviansdelight.cara": "Cabeza Clava",
 
   "creativetab.peruviansdelight_tab": "Peruvian's Delight"
 }

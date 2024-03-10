@@ -26,6 +26,12 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CAMOTE_COCIDO.get());
                         output.accept(ModItems.YUCA.get());
                         output.accept(ModItems.YUCA_FRITA.get());
+                        output.accept(ModItems.GRANOS_SOYA.get());
+                        output.accept(ModItems.SILLAO.get());
+                        output.accept(ModItems.ATUN.get());
+                        output.accept(ModItems.ATUN_COCIDO.get());
+                        output.accept(ModItems.LIMON.get());
+                        output.accept(ModItems.GAJO_LIMON.get());
 
                         output.accept(ModBlocks.CARA.get());
                         output.accept(ModItems.ALMA_EN_PENA.get());
