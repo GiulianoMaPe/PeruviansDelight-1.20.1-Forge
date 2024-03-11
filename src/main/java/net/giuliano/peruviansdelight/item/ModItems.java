@@ -1,16 +1,12 @@
 package net.giuliano.peruviansdelight.item;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
-import net.minecraft.world.food.Foods;
-import net.minecraft.world.item.HoneyBottleItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import static net.minecraft.world.item.Items.GLASS_BOTTLE;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PeruviansDelight.MOD_ID);
