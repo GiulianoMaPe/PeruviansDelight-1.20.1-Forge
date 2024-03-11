@@ -3,13 +3,24 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "peruviansdelight:pote_aji_amarillo"
-    },
-    {
       "item": "minecraft:baked_potato"
     },
+    [
+      {
+        "item": "peruviansdelight:pote_aji_amarillo"
+      },
+      {
+        "item": "peruviansdelight:aji_amarillo"
+      }
+    ],
     {
-      "item": "minecraft:cooked_chicken"
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "tag": "forge:cooked_chicken"
     }
   ],
   "result": {

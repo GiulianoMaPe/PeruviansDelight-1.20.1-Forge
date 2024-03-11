@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:limon"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "peruviansdelight:gajo_limon"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}
