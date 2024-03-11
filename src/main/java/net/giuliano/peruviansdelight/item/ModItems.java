@@ -1,19 +1,25 @@
 package net.giuliano.peruviansdelight.item;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
+import net.minecraft.world.food.Foods;
+import net.minecraft.world.item.HoneyBottleItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import static net.minecraft.world.item.Items.GLASS_BOTTLE;
+
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PeruviansDelight.MOD_ID);
 
     public static final RegistryObject<Item> INCA_KOLA = ITEMS.register("inca_kola",
-            () -> new Item(new Item.Properties().food(ModFoods.INCA_KOLA)));
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(ModFoods.INCA_KOLA)));
+
     public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
-            () -> new Item(new Item.Properties().food(ModFoods.CAUSA)));
+            () -> new Item(new Item.Properties().stacksTo(16).food(ModFoods.CAUSA)));
 
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
@@ -35,7 +41,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.GAJO_LIMON)));
 
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> GRANOS_SOYA = ITEMS.register("granos_soya",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SILLAO = ITEMS.register("sillao",

@@ -3,9 +3,9 @@ package net.giuliano.peruviansdelight.item;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
 
 public class ModFoods {
-
     public static final FoodProperties INCA_KOLA = new FoodProperties.Builder().fast().alwaysEat().nutrition(4)
             .saturationMod(1f)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400), 1f)

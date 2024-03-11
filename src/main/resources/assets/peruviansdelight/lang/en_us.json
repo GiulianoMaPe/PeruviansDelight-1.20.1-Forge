@@ -1,21 +1,21 @@
 {
-  "item.peruviansdelight.causa": "Causa",
   "item.peruviansdelight.inca_kola": "Inca Kola",
-  "item.peruviansdelight.aji_amarillo": "Ají Amarillo",
-  "item.peruviansdelight.pote_aji_amarillo": "Ají Amarillo Jar",
-  "item.peruviansdelight.alma_en_pena": "Suffering Soul",
-  "item.peruviansdelight.camote": "Sweet Potato",
-  "item.peruviansdelight.camote_cocido": "Cooked Sweet Potato",
+  "item.peruviansdelight.causa": "Causa",
+  "item.peruviansdelight.aji_amarillo": "Ají amarillo",
+  "item.peruviansdelight.pote_aji_amarillo": "Ají amarillo jar",
+  "item.peruviansdelight.alma_en_pena": "Suffering soul",
+  "item.peruviansdelight.camote": "Sweet potato",
+  "item.peruviansdelight.camote_cocido": "Cooked sweet potato",
   "item.peruviansdelight.yuca": "Yuca",
-  "item.peruviansdelight.yuca_frita": "Fried Yuca",
+  "item.peruviansdelight.yuca_frita": "Fried yuca",
   "item.peruviansdelight.granos_soya": "Soybeans",
   "item.peruviansdelight.sillao": "Sillao",
   "item.peruviansdelight.atun": "Tuna",
-  "item.peruviansdelight.atun_cocido": "Cooked Tuna",
+  "item.peruviansdelight.atun_cocido": "Cooked tuna",
   "item.peruviansdelight.limon": "Lemon",
-  "item.peruviansdelight.gajo_limon": "Lemon Wedge",
+  "item.peruviansdelight.gajo_limon": "Lemon wedge",
 
-  "block.peruviansdelight.cara": "Cabeza Clava",
+  "block.peruviansdelight.cara": "Cabeza clava",
 
   "creativetab.peruviansdelight_tab": "Peruvian's Delight"
 }
