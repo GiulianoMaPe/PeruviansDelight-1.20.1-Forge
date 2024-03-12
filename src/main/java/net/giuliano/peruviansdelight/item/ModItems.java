@@ -3,6 +3,7 @@ package net.giuliano.peruviansdelight.item;
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -12,7 +13,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PeruviansDelight.MOD_ID);
 
     public static final RegistryObject<Item> INCA_KOLA = ITEMS.register("inca_kola",
-            () -> new Item(new Item.Properties().rarity(Rarity.EPIC).food(ModFoods.INCA_KOLA)));
+            () -> new Item(new Item.Properties().fireResistant().rarity(Rarity.EPIC).food(ModFoods.INCA_KOLA)));
 
     public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
             () -> new Item(new Item.Properties().stacksTo(16).food(ModFoods.CAUSA)));
