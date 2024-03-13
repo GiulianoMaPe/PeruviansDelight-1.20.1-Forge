@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:palta"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "peruviansdelight:palta_cortada"
+    },
+    {
+      "item": "peruviansdelight:semilla_palta"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

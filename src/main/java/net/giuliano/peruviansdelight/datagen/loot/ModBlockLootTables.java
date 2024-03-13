@@ -1,7 +1,9 @@
 package net.giuliano.peruviansdelight.datagen.loot;
 
 import net.giuliano.peruviansdelight.block.ModBlocks;
+import net.giuliano.peruviansdelight.block.custom.AjiAmarilloCropBlock;
 import net.giuliano.peruviansdelight.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
@@ -13,6 +15,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -27,6 +31,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.add(ModBlocks.CARA.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.CARA.get(), ModItems.ALMA_EN_PENA.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.AJI_AMARILLO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AjiAmarilloCropBlock.AGE, 5));
+
+        this.add(ModBlocks.AJI_AMARILLO_CROP.get(), createCropDrops(ModBlocks.AJI_AMARILLO_CROP.get(), ModItems.AJI_AMARILLO.get(),
+                ModItems.SEMILLAS_AJI_AMARILLO.get(), lootitemcondition$builder));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

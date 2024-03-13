@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:vaina_soya"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "peruviansdelight:granos_soya"
+  }
+}

@@ -1,5 +1,6 @@
 package net.giuliano.peruviansdelight.block.custom;
 
+import net.giuliano.peruviansdelight.item.ModItems;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
@@ -18,11 +19,11 @@ public class AjiAmarilloCropBlock extends CropBlock {
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return super.getBaseSeedId();
+        return ModItems.SEMILLAS_AJI_AMARILLO.get();
     }
 
     @Override
-    protected IntegerProperty getAgeProperty() {
+    public IntegerProperty getAgeProperty() {
         return AGE;
     }
 

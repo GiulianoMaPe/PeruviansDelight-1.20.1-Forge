@@ -1,21 +1,34 @@
 {
-  "item.peruviansdelight.causa": "Causa",
   "item.peruviansdelight.inca_kola": "Inca Kola",
+
+  "item.peruviansdelight.causa": "Causa de pollo",
+  "item.peruviansdelight.causa_atun": "Causa de atún",
+
   "item.peruviansdelight.aji_amarillo": "Ají amarillo",
-  "item.peruviansdelight.pote_aji_amarillo": "Pote de ají amarillo",
-  "item.peruviansdelight.alma_en_pena": "Alma en pena",
   "item.peruviansdelight.camote": "Camote",
   "item.peruviansdelight.camote_cocido": "Camote cocido",
   "item.peruviansdelight.yuca": "Yuca",
   "item.peruviansdelight.yuca_frita": "Yuca frita",
-  "item.peruviansdelight.granos_soya": "Granos de soya",
-  "item.peruviansdelight.sillao": "Sillao",
   "item.peruviansdelight.atun": "Atún",
   "item.peruviansdelight.atun_cocido": "Atún cocido",
   "item.peruviansdelight.limon": "Limón",
   "item.peruviansdelight.gajo_limon": "Gajo de limón",
+  "item.peruviansdelight.palta": "Palta",
+  "item.peruviansdelight.palta_cortada": "Palta cortada",
+
+  "item.peruviansdelight.pote_aji_amarillo": "Pote de ají amarillo",
+  "item.peruviansdelight.sillao": "Sillao",
+
+  "item.peruviansdelight.vaina_soya": "Vaina de soya",
+  "item.peruviansdelight.granos_soya": "Granos de soya",
+  "item.peruviansdelight.semillas_aji_amarillo": "Semillas de ají amarillo",
+  "item.peruviansdelight.semilla_palta": "Semilla de palta",
+
+  "item.peruviansdelight.alma_en_pena": "Alma en pena",
 
   "block.peruviansdelight.cara": "Cabeza clava",
+
+  "effect.peruviansdelight.glugluglu": "GluGLuGlu Aaaah",
 
   "creativetab.peruviansdelight_tab": "Peruvian's Delight"
 }

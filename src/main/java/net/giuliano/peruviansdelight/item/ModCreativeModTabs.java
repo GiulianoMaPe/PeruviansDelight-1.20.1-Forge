@@ -20,18 +20,25 @@ public class ModCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.INCA_KOLA.get());
                         output.accept(ModItems.CAUSA.get());
+                        output.accept(ModItems.CAUSA_ATUN.get());
                         output.accept(ModItems.AJI_AMARILLO.get());
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.CAMOTE.get());
                         output.accept(ModItems.CAMOTE_COCIDO.get());
                         output.accept(ModItems.YUCA.get());
                         output.accept(ModItems.YUCA_FRITA.get());
-                        output.accept(ModItems.GRANOS_SOYA.get());
                         output.accept(ModItems.SILLAO.get());
                         output.accept(ModItems.ATUN.get());
                         output.accept(ModItems.ATUN_COCIDO.get());
                         output.accept(ModItems.LIMON.get());
                         output.accept(ModItems.GAJO_LIMON.get());
+                        output.accept(ModItems.PALTA.get());
+                        output.accept(ModItems.PALTA_CORTADA.get());
+
+                        output.accept(ModItems.VAINA_SOYA.get());
+                        output.accept(ModItems.GRANOS_SOYA.get());
+                        output.accept(ModItems.SEMILLAS_AJI_AMARILLO.get());
+                        output.accept(ModItems.SEMILLA_PALTA.get());
 
                         output.accept(ModBlocks.CARA.get());
                         output.accept(ModItems.ALMA_EN_PENA.get());

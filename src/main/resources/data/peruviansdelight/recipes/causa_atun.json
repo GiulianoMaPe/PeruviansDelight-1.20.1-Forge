@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:baked_potato"
+    },
+    [
+      {
+        "item": "peruviansdelight:pote_aji_amarillo"
+      },
+      {
+        "item": "peruviansdelight:aji_amarillo"
+      }
+    ],
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "peruviansdelight:atun"
+    }
+  ],
+  "result": {
+    "item": "peruviansdelight:causa_atun"
+  }
+}

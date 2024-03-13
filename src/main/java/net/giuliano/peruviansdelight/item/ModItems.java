@@ -1,6 +1,7 @@
 package net.giuliano.peruviansdelight.item;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
+import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class ModItems {
     public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
             () -> new Item(new Item.Properties().stacksTo(16)
                     .food(ModFoods.CAUSA)));
+    public static final RegistryObject<Item> CAUSA_ATUN = ITEMS.register("causa_atun",
+            () -> new Item(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.CAUSA_ATUN)));
 
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
@@ -36,13 +40,25 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.LIMON)));
     public static final RegistryObject<Item> GAJO_LIMON = ITEMS.register("gajo_limon",
             () -> new Item(new Item.Properties().food(ModFoods.GAJO_LIMON)));
+    public static final RegistryObject<Item> PALTA = ITEMS.register("palta",
+            () -> new Item(new Item.Properties().food(ModFoods.PALTA)));
+    public static final RegistryObject<Item> PALTA_CORTADA = ITEMS.register("palta_cortada",
+            () -> new Item(new Item.Properties().food(ModFoods.PALTA_CORTADA)));
 
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
             () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> SILLAO = ITEMS.register("sillao",
+            () -> new Item(new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> VAINA_SOYA = ITEMS.register("vaina_soya",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GRANOS_SOYA = ITEMS.register("granos_soya",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SILLAO = ITEMS.register("sillao",
+    public static final RegistryObject<Item> SEMILLAS_AJI_AMARILLO = ITEMS.register("semillas_aji_amarillo",
+            () -> new ItemNameBlockItem(ModBlocks.AJI_AMARILLO_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> SEMILLA_PALTA = ITEMS.register("semilla_palta",
             () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> ALMA_EN_PENA = ITEMS.register("alma_en_pena",
             () -> new Item(new Item.Properties()));
 

@@ -20,6 +20,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.INCA_KOLA);
 
         simpleItem(ModItems.CAUSA);
+        simpleItem(ModItems.CAUSA_ATUN);
+
         simpleItem(ModItems.AJI_AMARILLO);
         simpleItem(ModItems.CAMOTE);
         simpleItem(ModItems.CAMOTE_COCIDO);
@@ -29,10 +31,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ATUN_COCIDO);
         simpleItem(ModItems.LIMON);
         simpleItem(ModItems.GAJO_LIMON);
+        simpleItem(ModItems.PALTA);
+        simpleItem(ModItems.PALTA_CORTADA);
 
         simpleItem(ModItems.POTE_AJI_AMARILLO);
-        simpleItem(ModItems.GRANOS_SOYA);
         simpleItem(ModItems.SILLAO);
+
+        simpleItem(ModItems.VAINA_SOYA);
+        simpleItem(ModItems.GRANOS_SOYA);
+        simpleItem(ModItems.SEMILLAS_AJI_AMARILLO);
+        simpleItem(ModItems.SEMILLA_PALTA);
+
         simpleItem(ModItems.ALMA_EN_PENA);
     }
 
