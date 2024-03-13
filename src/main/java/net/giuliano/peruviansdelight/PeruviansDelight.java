@@ -6,6 +6,7 @@ import net.giuliano.peruviansdelight.effect.ModEffects;
 import net.giuliano.peruviansdelight.item.ModCreativeModTabs;
 import net.giuliano.peruviansdelight.item.ModDrinkItems;
 import net.giuliano.peruviansdelight.item.ModItems;
+import net.giuliano.peruviansdelight.sound.ModSounds;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,6 +34,8 @@ public class PeruviansDelight {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDrinkItems.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         ModEffects.register(modEventBus);
 

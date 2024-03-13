@@ -22,6 +22,7 @@ public class ModDrinkItems extends Item {
     public SoundEvent getEatingSound() {
         return SoundEvents.GENERIC_DRINK;
     }
+
     public static void register(IEventBus eventBus) {
         DRINK_ITEMS.register(eventBus);
     }
