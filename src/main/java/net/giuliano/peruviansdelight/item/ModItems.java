@@ -1,9 +1,7 @@
 package net.giuliano.peruviansdelight.item;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,11 +11,12 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PeruviansDelight.MOD_ID);
 
     public static final RegistryObject<Item> INCA_KOLA = ITEMS.register("inca_kola",
-            () -> new IncaKolaItem(new Item.Properties().fireResistant().craftRemainder(Items.GLASS_BOTTLE)
-                    .rarity(Rarity.EPIC).food(ModFoods.INCA_KOLA)));
+            () -> new ModDrinkItems(new Item.Properties().fireResistant().rarity(Rarity.EPIC)
+                    .food(ModFoods.INCA_KOLA)));
 
     public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
-            () -> new Item(new Item.Properties().stacksTo(16).food(ModFoods.CAUSA)));
+            () -> new Item(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.CAUSA)));
 
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));

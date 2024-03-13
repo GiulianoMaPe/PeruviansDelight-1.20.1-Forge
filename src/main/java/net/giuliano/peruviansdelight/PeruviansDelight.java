@@ -3,8 +3,8 @@ package net.giuliano.peruviansdelight;
 import com.mojang.logging.LogUtils;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.effect.ModEffects;
-import net.giuliano.peruviansdelight.item.IncaKolaItem;
 import net.giuliano.peruviansdelight.item.ModCreativeModTabs;
+import net.giuliano.peruviansdelight.item.ModDrinkItems;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,7 +32,7 @@ public class PeruviansDelight {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        IncaKolaItem.register(modEventBus);
+        ModDrinkItems.register(modEventBus);
 
         ModEffects.register(modEventBus);
 
