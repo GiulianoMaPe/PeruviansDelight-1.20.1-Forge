@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:aji_amarillo"
+    }
+  ],
+  "result": {
+    "item": "peruviansdelight:semillas_aji_amarillo"
+  }
+}

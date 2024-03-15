@@ -34,8 +34,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.YUCA_FRITA)));
     public static final RegistryObject<Item> ATUN = ITEMS.register("atun",
             () -> new Item(new Item.Properties().food(ModFoods.ATUN)));
-    public static final RegistryObject<Item> ATUN_COCIDO = ITEMS.register("atun_cocido",
-            () -> new Item(new Item.Properties().food(ModFoods.ATUN_COCIDO)));
+    public static final RegistryObject<Item> FILETE_ATUN = ITEMS.register("filete_atun",
+            () -> new Item(new Item.Properties().food(ModFoods.FILETE_ATUN)));
+    public static final RegistryObject<Item> FILETE_ATUN_COCIDO = ITEMS.register("filete_atun_cocido",
+            () -> new Item(new Item.Properties().food(ModFoods.FILETE_ATUN_COCIDO)));
     public static final RegistryObject<Item> LIMON = ITEMS.register("limon",
             () -> new Item(new Item.Properties().food(ModFoods.LIMON)));
     public static final RegistryObject<Item> GAJO_LIMON = ITEMS.register("gajo_limon",
@@ -57,6 +59,8 @@ public class ModItems {
     public static final RegistryObject<Item> SEMILLAS_AJI_AMARILLO = ITEMS.register("semillas_aji_amarillo",
             () -> new ItemNameBlockItem(ModBlocks.AJI_AMARILLO_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> SEMILLA_PALTA = ITEMS.register("semilla_palta",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SEMILLAS_LIMON = ITEMS.register("semillas_limon",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> ALMA_EN_PENA = ITEMS.register("alma_en_pena",

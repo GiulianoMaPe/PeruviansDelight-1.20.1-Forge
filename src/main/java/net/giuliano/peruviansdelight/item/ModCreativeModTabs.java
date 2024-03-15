@@ -29,7 +29,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.YUCA_FRITA.get());
                         output.accept(ModItems.SILLAO.get());
                         output.accept(ModItems.ATUN.get());
-                        output.accept(ModItems.ATUN_COCIDO.get());
+                        output.accept(ModItems.FILETE_ATUN.get());
+                        output.accept(ModItems.FILETE_ATUN_COCIDO.get());
                         output.accept(ModItems.LIMON.get());
                         output.accept(ModItems.GAJO_LIMON.get());
                         output.accept(ModItems.PALTA.get());
@@ -39,6 +40,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.GRANOS_SOYA.get());
                         output.accept(ModItems.SEMILLAS_AJI_AMARILLO.get());
                         output.accept(ModItems.SEMILLA_PALTA.get());
+                        output.accept(ModItems.SEMILLAS_LIMON.get());
 
                         output.accept(ModBlocks.CARA.get());
                         output.accept(ModItems.ALMA_EN_PENA.get());

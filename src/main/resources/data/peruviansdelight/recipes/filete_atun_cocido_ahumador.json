@@ -4,7 +4,7 @@
   "cookingtime": 100,
   "experience": 0.35,
   "ingredient": {
-    "item": "peruviansdelight:atun"
+    "item": "peruviansdelight:filete_atun"
   },
-  "result": "peruviansdelight:atun_cocido"
+  "result": "peruviansdelight:filete_atun_cocido"
 }

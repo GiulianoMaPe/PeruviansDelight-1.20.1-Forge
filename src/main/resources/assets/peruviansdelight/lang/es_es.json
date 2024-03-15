@@ -10,7 +10,8 @@
   "item.peruviansdelight.yuca": "Yuca",
   "item.peruviansdelight.yuca_frita": "Yuca frita",
   "item.peruviansdelight.atun": "Atún",
-  "item.peruviansdelight.atun_cocido": "Atún cocido",
+  "item.peruviansdelight.filete_atun": "Filete de atún",
+  "item.peruviansdelight.filete_atun_cocido": "Filete de atún cocido",
   "item.peruviansdelight.limon": "Limón",
   "item.peruviansdelight.gajo_limon": "Gajo de limón",
   "item.peruviansdelight.palta": "Palta",
@@ -23,6 +24,7 @@
   "item.peruviansdelight.granos_soya": "Granos de soya",
   "item.peruviansdelight.semillas_aji_amarillo": "Semillas de ají amarillo",
   "item.peruviansdelight.semilla_palta": "Semilla de palta",
+  "item.peruviansdelight.semillas_limon": "Semillas de limón",
 
   "item.peruviansdelight.alma_en_pena": "Alma en pena",
 

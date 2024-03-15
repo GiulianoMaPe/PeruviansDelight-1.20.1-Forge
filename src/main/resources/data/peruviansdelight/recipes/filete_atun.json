@@ -2,16 +2,13 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "peruviansdelight:limon"
+      "item": "peruviansdelight:atun"
     }
   ],
   "result": [
     {
       "count": 4,
-      "item": "peruviansdelight:gajo_limon"
-    },
-    {
-      "item": "peruviansdelight:semillas_limon"
+      "item": "peruviansdelight:filete_atun"
     }
   ],
   "tool": {

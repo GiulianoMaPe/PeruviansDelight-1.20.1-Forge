@@ -28,7 +28,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.YUCA);
         simpleItem(ModItems.YUCA_FRITA);
         simpleItem(ModItems.ATUN);
-        simpleItem(ModItems.ATUN_COCIDO);
+        simpleItem(ModItems.FILETE_ATUN);
+        simpleItem(ModItems.FILETE_ATUN_COCIDO);
         simpleItem(ModItems.LIMON);
         simpleItem(ModItems.GAJO_LIMON);
         simpleItem(ModItems.PALTA);
@@ -41,6 +42,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GRANOS_SOYA);
         simpleItem(ModItems.SEMILLAS_AJI_AMARILLO);
         simpleItem(ModItems.SEMILLA_PALTA);
+        simpleItem(ModItems.SEMILLAS_LIMON);
 
         simpleItem(ModItems.ALMA_EN_PENA);
     }

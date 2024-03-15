@@ -28,9 +28,11 @@ public class ModFoods {
             .saturationMod(0.5f).build();
     public static final FoodProperties YUCA_FRITA = new FoodProperties.Builder().nutrition(6).fast()
             .saturationMod(1.3f).build();
-    public static final FoodProperties ATUN = new FoodProperties.Builder().nutrition(2).fast()
+    public static final FoodProperties ATUN = new FoodProperties.Builder().nutrition(10).fast()
+            .saturationMod(0.1f).build();
+    public static final FoodProperties FILETE_ATUN = new FoodProperties.Builder().nutrition(2).fast()
             .saturationMod(0.2f).build();
-    public static final FoodProperties ATUN_COCIDO = new FoodProperties.Builder().nutrition(6).fast()
+    public static final FoodProperties FILETE_ATUN_COCIDO = new FoodProperties.Builder().nutrition(6).fast()
             .saturationMod(0.5f).build();
     public static final FoodProperties LIMON = new FoodProperties.Builder().nutrition(2).fast()
             .saturationMod(0.5f)
