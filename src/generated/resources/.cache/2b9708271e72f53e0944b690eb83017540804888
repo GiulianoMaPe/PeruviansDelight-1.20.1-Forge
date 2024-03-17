@@ -1,4 +1,4 @@
-// 1.20.1	2024-03-15T11:51:23.5196985	Item Models: peruviansdelight
+// 1.20.1	2024-03-17T01:24:50.7505182	Item Models: peruviansdelight
 dcf18155835be8e9cd9769605bc6733dbbb45cbb assets/peruviansdelight/models/item/aji_amarillo.json
 9db1f311e7932dcdb39e72bd5e48559e80e5c94a assets/peruviansdelight/models/item/alma_en_pena.json
 58f618ab0f1f3f57a11f9e4c30052fbb50d368c0 assets/peruviansdelight/models/item/atun.json
@@ -19,6 +19,7 @@ e4d27fb3f3a02646ae17089a2c76c068bf869b94 assets/peruviansdelight/models/item/sem
 bad94fb433ff7d147e526e202c9a360c6170e0bc assets/peruviansdelight/models/item/semillas_limon.json
 34fb2fa6d7f5e8752208f96851ae9549e8d7b90b assets/peruviansdelight/models/item/semilla_palta.json
 2d7d8f47be8d4ff7df7fcedddc5a018588f6ab0d assets/peruviansdelight/models/item/sillao.json
+669d9caf950d46089ca1011cdaacbe7dbc3cae13 assets/peruviansdelight/models/item/tocosh.json
 ad803e4a070baaaffbf4bc4455e0f2c564b7db04 assets/peruviansdelight/models/item/vaina_soya.json
 df2d1bcdf94d01f44ffc0ef790d5b2dc9b76dc50 assets/peruviansdelight/models/item/yuca.json
 c20c401e56bd98118cac005ba4dc586cdf3fce43 assets/peruviansdelight/models/item/yuca_frita.json

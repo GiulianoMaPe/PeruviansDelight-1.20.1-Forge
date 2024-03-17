@@ -47,6 +47,9 @@ public class ModItems {
     public static final RegistryObject<Item> PALTA_CORTADA = ITEMS.register("palta_cortada",
             () -> new Item(new Item.Properties().food(ModFoods.PALTA_CORTADA)));
 
+    public static final RegistryObject<Item> TOCOSH = ITEMS.register("tocosh",
+            () -> new Item(new Item.Properties().food(ModFoods.TOCOSH)));
+
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
             () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SILLAO = ITEMS.register("sillao",

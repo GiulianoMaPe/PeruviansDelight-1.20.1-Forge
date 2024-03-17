@@ -35,6 +35,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.GAJO_LIMON.get());
                         output.accept(ModItems.PALTA.get());
                         output.accept(ModItems.PALTA_CORTADA.get());
+                        output.accept(ModItems.TOCOSH.get());
 
                         output.accept(ModItems.VAINA_SOYA.get());
                         output.accept(ModItems.GRANOS_SOYA.get());
