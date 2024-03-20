@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "peruviansdelight:atun"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "peruviansdelight:entities/atun"
+}
