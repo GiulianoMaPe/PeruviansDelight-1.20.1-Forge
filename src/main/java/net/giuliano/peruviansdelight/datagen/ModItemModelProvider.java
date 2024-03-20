@@ -46,6 +46,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SEMILLAS_LIMON);
 
         simpleItem(ModItems.ALMA_EN_PENA);
+
+        withExistingParent(ModItems.ATUN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

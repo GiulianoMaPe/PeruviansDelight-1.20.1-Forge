@@ -3,10 +3,13 @@ package net.giuliano.peruviansdelight;
 import com.mojang.logging.LogUtils;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.effect.ModEffects;
+import net.giuliano.peruviansdelight.entity.ModEntities;
+import net.giuliano.peruviansdelight.entity.client.AtunRenderer;
 import net.giuliano.peruviansdelight.item.ModCreativeModTabs;
 import net.giuliano.peruviansdelight.item.ModDrinkItems;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.giuliano.peruviansdelight.sound.ModSounds;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -18,6 +21,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+import javax.swing.text.html.parser.Entity;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(PeruviansDelight.MOD_ID)
@@ -34,6 +39,8 @@ public class PeruviansDelight {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDrinkItems.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         ModSounds.register(modEventBus);
 
@@ -66,7 +73,7 @@ public class PeruviansDelight {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.ATUN.get(), AtunRenderer::new);
         }
     }
 }

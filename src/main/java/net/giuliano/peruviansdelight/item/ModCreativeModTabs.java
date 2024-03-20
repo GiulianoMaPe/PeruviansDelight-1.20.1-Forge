@@ -43,6 +43,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SEMILLA_PALTA.get());
                         output.accept(ModItems.SEMILLAS_LIMON.get());
 
+                        output.accept(ModItems.ATUN_SPAWN_EGG.get());
+
                         output.accept(ModBlocks.CARA.get());
                         output.accept(ModItems.ALMA_EN_PENA.get());
                     })
