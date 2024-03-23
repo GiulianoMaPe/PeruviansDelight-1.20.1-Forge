@@ -15,7 +15,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<AtunEntity>> ATUN =
             ENTITY_TYPES.register("atun", () -> EntityType.Builder.of(AtunEntity::new, MobCategory.WATER_AMBIENT)
-                    .sized(1f, 0.8f).clientTrackingRange(4).build("atun"));
+                    .sized(1.3f, 0.8f).clientTrackingRange(4).build("atun"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

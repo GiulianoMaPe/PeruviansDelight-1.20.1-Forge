@@ -22,14 +22,14 @@ public class AtunModel<T extends Entity> extends HierarchicalModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition atun = partdefinition.addOrReplaceChild("atun", CubeListBuilder.create(), PartPose.offset(2.0F, 24.0F, -2.0F));
+		PartDefinition atun = partdefinition.addOrReplaceChild("atun", CubeListBuilder.create(), PartPose.offset(2.0F, 20.0F, 0.0F));
 
-		PartDefinition bone = atun.addOrReplaceChild("bone", CubeListBuilder.create(), PartPose.offset(-1.5F, 0.0F, 7.0F));
+		PartDefinition bone = atun.addOrReplaceChild("bone", CubeListBuilder.create(), PartPose.offset(-1.5F, 4.0F, -5.0F));
 
 		PartDefinition mitad1 = bone.addOrReplaceChild("mitad1", CubeListBuilder.create().texOffs(44, 0).addBox(-4.0F, -9.0F, -6.0F, 5.0F, 8.0F, 5.0F, new CubeDeformation(0.0F))
 		.texOffs(0, 0).addBox(-5.0F, -10.0F, -1.0F, 7.0F, 10.0F, 15.0F, new CubeDeformation(0.0F))
 		.texOffs(0, 35).addBox(-1.5F, -15.0F, 1.0F, 0.0F, 5.0F, 13.0F, new CubeDeformation(0.0F))
-		.texOffs(26, 43).addBox(-1.5F, 0.0F, 9.0F, 0.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(1.903F, 0.0F, -7.0605F));
+		.texOffs(27, 43).addBox(-1.5F, 0.0F, 9.0F, 0.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(1.903F, 0.0F, -7.0605F));
 
 		PartDefinition cube_r1 = mitad1.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(3, 3).addBox(0.0F, -2.0F, 0.0F, 0.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.0F, -4.0F, 6.0F, 0.0F, -0.1745F, 0.0F));
 

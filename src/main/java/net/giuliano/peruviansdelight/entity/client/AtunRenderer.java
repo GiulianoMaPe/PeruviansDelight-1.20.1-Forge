@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class AtunRenderer extends MobRenderer<AtunEntity, AtunModel<AtunEntity>> {
     public AtunRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new AtunModel<>(pContext.bakeLayer(ModModelLayers.ATUN_LAYER)), 0.5f);
+        super(pContext, new AtunModel<>(pContext.bakeLayer(ModModelLayers.ATUN_LAYER)), 0.8f);
     }
 
     @Override
