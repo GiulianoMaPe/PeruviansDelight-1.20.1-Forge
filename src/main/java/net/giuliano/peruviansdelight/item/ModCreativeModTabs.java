@@ -37,7 +37,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.PALTA_CORTADA.get());
                         output.accept(ModItems.TOCOSH.get());
 
-                        output.accept(ModItems.VAINA_SOYA.get());
+                        output.accept(ModItems.VAINA_SOYA.get(1));
                         output.accept(ModItems.GRANOS_SOYA.get());
                         output.accept(ModItems.SEMILLAS_AJI_AMARILLO.get());
                         output.accept(ModItems.SEMILLA_PALTA.get());
