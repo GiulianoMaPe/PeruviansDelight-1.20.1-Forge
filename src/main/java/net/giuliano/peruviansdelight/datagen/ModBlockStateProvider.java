@@ -35,7 +35,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private ConfiguredModel[] AjiAmarilloStates(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
-        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((AjiAmarilloCropBlock) block).getAgeProperty()),
+        models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(((AjiAmarilloCropBlock) block).getAgeProperty()),
                 new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + textureName + state.getValue(((AjiAmarilloCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;

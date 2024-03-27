@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "peruviansdelight:block/aji_amarillo_stage3"
+    "cross": "peruviansdelight:block/aji_amarillo_stage7"
   }
 }
