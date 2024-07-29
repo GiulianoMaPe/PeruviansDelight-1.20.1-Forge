@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.CAUSA);
         simpleItem(ModItems.CAUSA_ATUN);
+        simpleItem(ModItems.CHAUFA);
 
         simpleItem(ModItems.AJI_AMARILLO);
         simpleItem(ModItems.CAMOTE);

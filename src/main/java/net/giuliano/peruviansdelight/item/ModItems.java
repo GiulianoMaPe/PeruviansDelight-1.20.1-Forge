@@ -3,6 +3,7 @@ package net.giuliano.peruviansdelight.item;
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.entity.ModEntities;
+import net.giuliano.peruviansdelight.item.custom.DrinkFoil;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,7 +15,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PeruviansDelight.MOD_ID);
 
     public static final RegistryObject<Item> INCA_KOLA = ITEMS.register("inca_kola",
-            () -> new ModDrinkItems(new Item.Properties().fireResistant().rarity(Rarity.EPIC)
+            () -> new DrinkFoil(new Item.Properties().fireResistant().rarity(Rarity.EPIC)
                     .food(ModFoods.INCA_KOLA)));
 
     public static final RegistryObject<Item> CAUSA = ITEMS.register("causa",
@@ -23,6 +24,9 @@ public class ModItems {
     public static final RegistryObject<Item> CAUSA_ATUN = ITEMS.register("causa_atun",
             () -> new Item(new Item.Properties().stacksTo(16)
                     .food(ModFoods.CAUSA_ATUN)));
+    public static final RegistryObject<Item> CHAUFA = ITEMS.register("chaufa",
+            () -> new Item(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.CHAUFA)));
 
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
@@ -50,7 +54,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.PALTA_CORTADA)));
 
     public static final RegistryObject<Item> TOCOSH = ITEMS.register("tocosh",
-            () -> new Item(new Item.Properties().food(ModFoods.TOCOSH)));
+            () -> new ModDrinkItems(new Item.Properties().food(ModFoods.TOCOSH)));
 
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
             () -> new Item(new Item.Properties().stacksTo(16)));

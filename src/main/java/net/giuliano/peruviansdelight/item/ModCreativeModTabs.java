@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.INCA_KOLA.get());
                         output.accept(ModItems.CAUSA.get());
                         output.accept(ModItems.CAUSA_ATUN.get());
+                        output.accept(ModItems.CHAUFA.get());
                         output.accept(ModItems.AJI_AMARILLO.get());
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.CAMOTE.get());

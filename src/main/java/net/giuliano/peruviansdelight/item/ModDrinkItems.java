@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModDrinkItems extends Item {
+
     public ModDrinkItems(Properties pProperties) {
         super(pProperties);
     }

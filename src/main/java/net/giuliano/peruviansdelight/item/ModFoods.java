@@ -16,6 +16,8 @@ public class ModFoods {
             .saturationMod(1f).build();
     public static final FoodProperties CAUSA_ATUN = new FoodProperties.Builder().nutrition(12)
             .saturationMod(1f).build();
+    public static final FoodProperties CHAUFA = new FoodProperties.Builder().nutrition(10)
+            .saturationMod(1f).build();
 
     public static final FoodProperties TOCOSH = new FoodProperties.Builder().nutrition(8).fast().saturationMod(0.5f)
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 1f)

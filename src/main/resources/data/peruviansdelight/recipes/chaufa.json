@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:crops/rice"
+    },
+    {
+      "item": "farmersdelight:fried_egg"
+    },
+    {
+      "item": "peruviansdelight:sillao"
+    },
+    {
+      "tag": "forge:raw_chicken"
+    }
+  ],
+  "result": {
+    "item": "peruviansdelight:chaufa"
+  }
+}
