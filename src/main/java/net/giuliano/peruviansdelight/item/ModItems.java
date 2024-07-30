@@ -3,8 +3,13 @@ package net.giuliano.peruviansdelight.item;
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.entity.ModEntities;
+import net.giuliano.peruviansdelight.item.custom.AtunBucket;
 import net.giuliano.peruviansdelight.item.custom.DrinkFoil;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.material.Fluids;
+import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,6 +32,9 @@ public class ModItems {
     public static final RegistryObject<Item> CHAUFA = ITEMS.register("chaufa",
             () -> new Item(new Item.Properties().stacksTo(16)
                     .food(ModFoods.CHAUFA)));
+    public static final RegistryObject<Item> TALLARIN_SALTADO = ITEMS.register("tallarin_saltado",
+            () -> new Item(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.TALLARIN_SALTADO)));
 
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
@@ -52,6 +60,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.PALTA)));
     public static final RegistryObject<Item> PALTA_CORTADA = ITEMS.register("palta_cortada",
             () -> new Item(new Item.Properties().food(ModFoods.PALTA_CORTADA)));
+    public static final RegistryObject<Item> KION = ITEMS.register("kion",
+            () -> new Item(new Item.Properties().food(ModFoods.KION)));
 
     public static final RegistryObject<Item> TOCOSH = ITEMS.register("tocosh",
             () -> new ModDrinkItems(new Item.Properties().food(ModFoods.TOCOSH)));
@@ -60,6 +70,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SILLAO = ITEMS.register("sillao",
             () -> new Item(new Item.Properties().stacksTo(16)));
+
+    public static final RegistryObject<Item> ATUN_BUCKET = ITEMS.register("atun_bucket",
+            () -> new AtunBucket(EntityType.SALMON, Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> VAINA_SOYA = ITEMS.register("vaina_soya",
             () -> new Item(new Item.Properties()));

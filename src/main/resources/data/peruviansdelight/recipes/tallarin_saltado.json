@@ -7,13 +7,13 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "tag": "forge:crops/rice"
-    },
-    {
-      "item": "farmersdelight:fried_egg"
+      "tag": "forge:pasta"
     },
     {
       "item": "peruviansdelight:sillao"
+    },
+    {
+      "item": "peruviansdelight:aji_amarillo"
     },
     {
       "tag": "forge:raw_chicken"
@@ -22,10 +22,10 @@
       "tag": "forge:crops/onion"
     },
     {
-      "item": "peruviansdelight:kion"
+      "tag": "forge:crops/tomato"
     }
   ],
   "result": {
-    "item": "peruviansdelight:chaufa"
+    "item": "peruviansdelight:tallarin_saltado"
   }
 }

@@ -23,12 +23,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CAUSA_ATUN.get());
                         output.accept(ModItems.CHAUFA.get());
                         output.accept(ModItems.AJI_AMARILLO.get());
-                        output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.CAMOTE.get());
                         output.accept(ModItems.CAMOTE_COCIDO.get());
                         output.accept(ModItems.YUCA.get());
                         output.accept(ModItems.YUCA_FRITA.get());
-                        output.accept(ModItems.SILLAO.get());
                         output.accept(ModItems.ATUN.get());
                         output.accept(ModItems.FILETE_ATUN.get());
                         output.accept(ModItems.FILETE_ATUN_COCIDO.get());
@@ -37,6 +35,12 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.PALTA.get());
                         output.accept(ModItems.PALTA_CORTADA.get());
                         output.accept(ModItems.TOCOSH.get());
+                        output.accept(ModItems.KION.get());
+                        output.accept(ModItems.TALLARIN_SALTADO.get());
+
+                        output.accept(ModItems.POTE_AJI_AMARILLO.get());
+                        output.accept(ModItems.SILLAO.get());
+                        output.accept(ModItems.ATUN_BUCKET.get());
 
                         output.accept(ModItems.VAINA_SOYA.get());
                         output.accept(ModItems.GRANOS_SOYA.get());

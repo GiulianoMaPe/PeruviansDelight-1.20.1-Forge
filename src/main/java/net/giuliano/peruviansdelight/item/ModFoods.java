@@ -18,6 +18,8 @@ public class ModFoods {
             .saturationMod(1f).build();
     public static final FoodProperties CHAUFA = new FoodProperties.Builder().nutrition(10)
             .saturationMod(1f).build();
+    public static final FoodProperties TALLARIN_SALTADO = new FoodProperties.Builder().nutrition(10)
+            .saturationMod(1f).build();
 
     public static final FoodProperties TOCOSH = new FoodProperties.Builder().nutrition(8).fast().saturationMod(0.5f)
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 1), 1f)
@@ -53,4 +55,6 @@ public class ModFoods {
             .saturationMod(0.5f).build();
     public static final FoodProperties PALTA_CORTADA = new FoodProperties.Builder().nutrition(3)
             .saturationMod(0.7f).build();
+    public static final FoodProperties KION = new FoodProperties.Builder().nutrition(1).fast().saturationMod(0.1f)
+            .effect(() -> new MobEffectInstance(MobEffects.POISON, 200, 0), 1f).build();
 }

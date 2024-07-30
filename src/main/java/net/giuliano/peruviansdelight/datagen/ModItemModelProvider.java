@@ -36,9 +36,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PALTA);
         simpleItem(ModItems.PALTA_CORTADA);
         simpleItem(ModItems.TOCOSH);
+        simpleItem(ModItems.KION);
+        simpleItem(ModItems.TALLARIN_SALTADO);
 
         simpleItem(ModItems.POTE_AJI_AMARILLO);
         simpleItem(ModItems.SILLAO);
+        simpleItem(ModItems.ATUN_BUCKET);
 
         simpleItem(ModItems.VAINA_SOYA);
         simpleItem(ModItems.GRANOS_SOYA);
