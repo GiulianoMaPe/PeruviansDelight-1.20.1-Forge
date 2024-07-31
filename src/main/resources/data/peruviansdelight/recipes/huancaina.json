@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    [
+      {
+        "item": "peruviansdelight:pote_aji_amarillo"
+      },
+      {
+        "item": "peruviansdelight:aji_amarillo"
+      }
+    ],
+    {
+      "tag": "forge:bread"
+    },
+    {
+      "tag": "forge:milk"
+    }
+  ],
+  "result": {
+    "item": "peruviansdelight:huancaina",
+    "count": 2
+  }
+}

@@ -35,6 +35,9 @@ public class ModItems {
     public static final RegistryObject<Item> TALLARIN_SALTADO = ITEMS.register("tallarin_saltado",
             () -> new Item(new Item.Properties().stacksTo(16)
                     .food(ModFoods.TALLARIN_SALTADO)));
+    public static final RegistryObject<Item> LOMO_SALTADO = ITEMS.register("lomo_saltado",
+            () -> new Item(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.LOMO_SALTADO)));
 
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
@@ -62,6 +65,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.PALTA_CORTADA)));
     public static final RegistryObject<Item> KION = ITEMS.register("kion",
             () -> new Item(new Item.Properties().food(ModFoods.KION)));
+    public static final RegistryObject<Item> PAPAS_CORTADAS = ITEMS.register("papas_cortadas",
+            () -> new Item(new Item.Properties().food(ModFoods.PAPAS_CORTADAS)));
+    public static final RegistryObject<Item> PAPAS_FRITAS = ITEMS.register("papas_fritas",
+            () -> new Item(new Item.Properties().food(ModFoods.PAPAS_FRITAS)));
 
     public static final RegistryObject<Item> TOCOSH = ITEMS.register("tocosh",
             () -> new ModDrinkItems(new Item.Properties().food(ModFoods.TOCOSH)));
@@ -69,6 +76,8 @@ public class ModItems {
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
             () -> new Item(new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> SILLAO = ITEMS.register("sillao",
+            () -> new Item(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> HUANCAINA = ITEMS.register("huancaina",
             () -> new Item(new Item.Properties().stacksTo(16)));
 
     public static final RegistryObject<Item> ATUN_BUCKET = ITEMS.register("atun_bucket",

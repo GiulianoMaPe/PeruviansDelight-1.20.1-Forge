@@ -4,6 +4,8 @@
   "item.peruviansdelight.causa": "Causa de pollo",
   "item.peruviansdelight.causa_atun": "Causa de atún",
   "item.peruviansdelight.chaufa": "Chaufa",
+  "item.peruviansdelight.tallarin_saltado": "Tallarín Saltado",
+  "item.peruviansdelight.lomo_saltado": "Lomo Saltado",
 
   "item.peruviansdelight.aji_amarillo": "Ají amarillo",
   "item.peruviansdelight.camote": "Sweet potato",
@@ -16,13 +18,16 @@
   "item.peruviansdelight.limon": "Lemon",
   "item.peruviansdelight.gajo_limon": "Lemon Wedge",
   "item.peruviansdelight.palta": "Avocado",
-  "item.peruviansdelight.palta_cortada": "Avocado Slice",
+  "item.peruviansdelight.palta_cortada": "Avocado slice",
   "item.peruviansdelight.tocosh": "Tocosh",
   "item.peruviansdelight.kion": "Kion",
-  "item.peruviansdelight.tallarin_saltado": "Tallarín Saltado",
+  "item.peruviansdelight.papas_cortadas": "Potato slices",
+  "item.peruviansdelight.papas_fritas": "French fries",
 
   "item.peruviansdelight.pote_aji_amarillo": "Ají amarillo jar",
   "item.peruviansdelight.sillao": "Soy sauce",
+  "item.peruviansdelight.huancaina": "Huancaína",
+
   "item.peruviansdelight.atun_bucket": "Tuna Bucket",
 
   "item.peruviansdelight.vaina_soya": "Soybean pod",

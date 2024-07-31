@@ -19,9 +19,13 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.peruviansdelight_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.INCA_KOLA.get());
+
                         output.accept(ModItems.CAUSA.get());
                         output.accept(ModItems.CAUSA_ATUN.get());
                         output.accept(ModItems.CHAUFA.get());
+                        output.accept(ModItems.TALLARIN_SALTADO.get());
+                        output.accept(ModItems.LOMO_SALTADO.get());
+
                         output.accept(ModItems.AJI_AMARILLO.get());
                         output.accept(ModItems.CAMOTE.get());
                         output.accept(ModItems.CAMOTE_COCIDO.get());
@@ -36,10 +40,13 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.PALTA_CORTADA.get());
                         output.accept(ModItems.TOCOSH.get());
                         output.accept(ModItems.KION.get());
-                        output.accept(ModItems.TALLARIN_SALTADO.get());
+                        output.accept(ModItems.PAPAS_CORTADAS.get());
+                        output.accept(ModItems.PAPAS_FRITAS.get());
 
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.SILLAO.get());
+                        output.accept(ModItems.HUANCAINA.get());
+
                         output.accept(ModItems.ATUN_BUCKET.get());
 
                         output.accept(ModItems.VAINA_SOYA.get());

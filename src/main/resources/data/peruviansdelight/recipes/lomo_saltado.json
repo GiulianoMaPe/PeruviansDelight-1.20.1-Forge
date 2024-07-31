@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:raw_beef"
+    },
+    {
+      "item": "peruviansdelight:sillao"
+    },
+    {
+      "item": "peruviansdelight:aji_amarillo"
+    },
+    {
+      "item": "peruviansdelight:papas_fritas"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    {
+      "tag": "forge:crops/tomato"
+    }
+  ],
+  "result": {
+    "item": "peruviansdelight:lomo_saltado"
+  }
+}

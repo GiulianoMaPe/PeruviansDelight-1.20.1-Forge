@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CAUSA);
         simpleItem(ModItems.CAUSA_ATUN);
         simpleItem(ModItems.CHAUFA);
+        simpleItem(ModItems.TALLARIN_SALTADO);
+        simpleItem(ModItems.LOMO_SALTADO);
 
         simpleItem(ModItems.AJI_AMARILLO);
         simpleItem(ModItems.CAMOTE);
@@ -37,10 +39,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PALTA_CORTADA);
         simpleItem(ModItems.TOCOSH);
         simpleItem(ModItems.KION);
-        simpleItem(ModItems.TALLARIN_SALTADO);
+        simpleItem(ModItems.PAPAS_CORTADAS);
+        simpleItem(ModItems.PAPAS_FRITAS);
 
         simpleItem(ModItems.POTE_AJI_AMARILLO);
         simpleItem(ModItems.SILLAO);
+        simpleItem(ModItems.HUANCAINA);
+
         simpleItem(ModItems.ATUN_BUCKET);
 
         simpleItem(ModItems.VAINA_SOYA);
