@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-30T19:21:34.163979	Item Models: peruviansdelight
+// 1.20.1	2024-07-30T23:10:22.7945399	Item Models: peruviansdelight
 dcf18155835be8e9cd9769605bc6733dbbb45cbb assets/peruviansdelight/models/item/aji_amarillo.json
 9db1f311e7932dcdb39e72bd5e48559e80e5c94a assets/peruviansdelight/models/item/alma_en_pena.json
 58f618ab0f1f3f57a11f9e4c30052fbb50d368c0 assets/peruviansdelight/models/item/atun.json
@@ -6,8 +6,11 @@ dcf18155835be8e9cd9769605bc6733dbbb45cbb assets/peruviansdelight/models/item/aji
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/peruviansdelight/models/item/atun_spawn_egg.json
 f74615ebd7df1f83c322f48fca38f29407cf7bba assets/peruviansdelight/models/item/camote.json
 802b950a699de385e0a3af1d03951133ce43253c assets/peruviansdelight/models/item/camote_cocido.json
+c9b68c76255c0e3305683e1408b3add5391d9b73 assets/peruviansdelight/models/item/camote_cortado.json
+0fe7b0f7fb7c72d2da2edd2232a1a0fecafc1da4 assets/peruviansdelight/models/item/camote_frito.json
 aa9c8b3deb4b8e77d1371b0786276f91cedf95b4 assets/peruviansdelight/models/item/causa.json
 48f48822201a2fe35fc77166f9c6f0c77aee598c assets/peruviansdelight/models/item/causa_atun.json
+885fbe925d668f543bbe965351ea84afe9ecf6f1 assets/peruviansdelight/models/item/ceviche.json
 3db0e48b2cd013b9b004297ce3597885588b92e6 assets/peruviansdelight/models/item/chaufa.json
 4c3da9e2509b3d1c65bab4f2a98c3de757b89143 assets/peruviansdelight/models/item/filete_atun.json
 c1e5246b5d66394b55e7993ebfd4261f5da4d080 assets/peruviansdelight/models/item/filete_atun_cocido.json
@@ -22,6 +25,7 @@ a3bac6c87b4665d3529135368b9b619593e09794 assets/peruviansdelight/models/item/inc
 3a7f23b9c80767a495f3d61ba4054d0d73ed57dd assets/peruviansdelight/models/item/palta_cortada.json
 b565a95177c289b841a65667686d0dd63fcfe720 assets/peruviansdelight/models/item/papas_cortadas.json
 f423d51a2462097d22f23b2e6d1e6fb12d6ffdf7 assets/peruviansdelight/models/item/papas_fritas.json
+a420306780751670eb6ec1457594b1bfd2f3cdee assets/peruviansdelight/models/item/pollo_brasa.json
 bb43fe0c8b06980145671086d8da323566812c6c assets/peruviansdelight/models/item/pote_aji_amarillo.json
 e4d27fb3f3a02646ae17089a2c76c068bf869b94 assets/peruviansdelight/models/item/semillas_aji_amarillo.json
 bad94fb433ff7d147e526e202c9a360c6170e0bc assets/peruviansdelight/models/item/semillas_limon.json
@@ -31,4 +35,5 @@ bad94fb433ff7d147e526e202c9a360c6170e0bc assets/peruviansdelight/models/item/sem
 669d9caf950d46089ca1011cdaacbe7dbc3cae13 assets/peruviansdelight/models/item/tocosh.json
 ad803e4a070baaaffbf4bc4455e0f2c564b7db04 assets/peruviansdelight/models/item/vaina_soya.json
 df2d1bcdf94d01f44ffc0ef790d5b2dc9b76dc50 assets/peruviansdelight/models/item/yuca.json
+ab40ccbcdad8bf6d83cc602523339f721204b23e assets/peruviansdelight/models/item/yuca_cortada.json
 c20c401e56bd98118cac005ba4dc586cdf3fce43 assets/peruviansdelight/models/item/yuca_frita.json

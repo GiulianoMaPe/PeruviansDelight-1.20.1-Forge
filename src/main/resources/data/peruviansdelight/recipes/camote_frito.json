@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.35,
   "ingredient": {
-    "item": "peruviansdelight:yuca_cortada"
+    "item": "peruviansdelight:camote_cortado"
   },
-  "result": "peruviansdelight:yuca_frita"
+  "result": "peruviansdelight:camote_frito"
 }

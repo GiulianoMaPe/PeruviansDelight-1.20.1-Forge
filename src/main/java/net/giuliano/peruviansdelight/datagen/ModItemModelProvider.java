@@ -24,11 +24,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CHAUFA);
         simpleItem(ModItems.TALLARIN_SALTADO);
         simpleItem(ModItems.LOMO_SALTADO);
+        simpleItem(ModItems.POLLO_BRASA);
+        simpleItem(ModItems.CEVICHE);
 
         simpleItem(ModItems.AJI_AMARILLO);
         simpleItem(ModItems.CAMOTE);
         simpleItem(ModItems.CAMOTE_COCIDO);
+        simpleItem(ModItems.CAMOTE_CORTADO);
+        simpleItem(ModItems.CAMOTE_FRITO);
         simpleItem(ModItems.YUCA);
+        simpleItem(ModItems.YUCA_CORTADA);
         simpleItem(ModItems.YUCA_FRITA);
         simpleItem(ModItems.ATUN);
         simpleItem(ModItems.FILETE_ATUN);

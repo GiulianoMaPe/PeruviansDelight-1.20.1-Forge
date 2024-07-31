@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:camote_cortado"
+    },
+    {
+      "item": "peruviansdelight:aji_amarillo"
+    },
+    {
+      "item": "peruviansdelight:filete_atun"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    {
+      "item": "peruviansdelight:gajo_limon"
+    }
+  ],
+  "result": {
+    "item": "peruviansdelight:ceviche"
+  }
+}

@@ -25,11 +25,16 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CHAUFA.get());
                         output.accept(ModItems.TALLARIN_SALTADO.get());
                         output.accept(ModItems.LOMO_SALTADO.get());
+                        output.accept(ModItems.POLLO_BRASA.get());
+                        output.accept(ModItems.CEVICHE.get());
 
                         output.accept(ModItems.AJI_AMARILLO.get());
                         output.accept(ModItems.CAMOTE.get());
                         output.accept(ModItems.CAMOTE_COCIDO.get());
+                        output.accept(ModItems.CAMOTE_CORTADO.get());
+                        output.accept(ModItems.CAMOTE_FRITO.get());
                         output.accept(ModItems.YUCA.get());
+                        output.accept(ModItems.YUCA_CORTADA.get());
                         output.accept(ModItems.YUCA_FRITA.get());
                         output.accept(ModItems.ATUN.get());
                         output.accept(ModItems.FILETE_ATUN.get());

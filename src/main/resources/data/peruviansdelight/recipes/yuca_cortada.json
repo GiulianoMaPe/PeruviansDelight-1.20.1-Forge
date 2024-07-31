@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:yuca"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "peruviansdelight:yuca_cortada"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

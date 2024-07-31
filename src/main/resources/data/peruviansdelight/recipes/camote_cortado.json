@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:camote"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "peruviansdelight:camote_cortado"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}
