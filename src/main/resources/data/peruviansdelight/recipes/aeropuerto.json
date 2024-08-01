@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:chaufa"
+    },
+    {
+      "item": "peruviansdelight:tallarin_saltado"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "peruviansdelight:aeropuerto"
+  }
+}

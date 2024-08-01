@@ -26,6 +26,12 @@ public class ModFoods {
             .saturationMod(1f).build();
     public static final FoodProperties CEVICHE = new FoodProperties.Builder().nutrition(8)
             .saturationMod(1f).build();
+    public static final FoodProperties AEROPUERTO = new FoodProperties.Builder().nutrition(14)
+            .saturationMod(1f).build();
+    public static final FoodProperties MOSTRITO = new FoodProperties.Builder().nutrition(14)
+            .saturationMod(1f).build();
+    public static final FoodProperties PAPA_HUANCAINA = new FoodProperties.Builder().nutrition(10)
+            .saturationMod(1f).build();
 
     public static final FoodProperties TOCOSH = new FoodProperties.Builder().nutrition(8).fast()
             .saturationMod(0.5f)

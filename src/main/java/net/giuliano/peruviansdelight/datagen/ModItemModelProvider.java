@@ -26,6 +26,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LOMO_SALTADO);
         simpleItem(ModItems.POLLO_BRASA);
         simpleItem(ModItems.CEVICHE);
+        simpleItem(ModItems.AEROPUERTO);
+        simpleItem(ModItems.MOSTRITO);
+        simpleItem(ModItems.PAPA_HUANCAINA);
 
         simpleItem(ModItems.AJI_AMARILLO);
         simpleItem(ModItems.CAMOTE);

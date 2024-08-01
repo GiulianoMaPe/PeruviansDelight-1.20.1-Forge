@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "item": "peruviansdelight:huancaina"
+    },
+    {
+      "tag": "forge:eggs"
+    },
+    [
+      {
+        "item": "farmersdelight:cabbage"
+      },
+      {
+        "item": "farmersdelight:cabbage_leaf"
+      }
+    ]
+  ],
+  "result": {
+    "item": "peruviansdelight:papa_huancaina"
+  }
+}

@@ -27,6 +27,9 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.LOMO_SALTADO.get());
                         output.accept(ModItems.POLLO_BRASA.get());
                         output.accept(ModItems.CEVICHE.get());
+                        output.accept(ModItems.AEROPUERTO.get());
+                        output.accept(ModItems.MOSTRITO.get());
+                        output.accept(ModItems.PAPA_HUANCAINA.get());
 
                         output.accept(ModItems.AJI_AMARILLO.get());
                         output.accept(ModItems.CAMOTE.get());
