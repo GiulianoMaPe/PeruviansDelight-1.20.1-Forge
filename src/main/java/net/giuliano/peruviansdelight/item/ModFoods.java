@@ -1,7 +1,6 @@
 package net.giuliano.peruviansdelight.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffectUtil;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
@@ -82,4 +81,10 @@ public class ModFoods {
             .saturationMod(0.2f).build();
     public static final FoodProperties PAPAS_FRITAS = new FoodProperties.Builder().nutrition(5).fast()
             .saturationMod(0.6f).build();
+    public static final FoodProperties TENTACULO_POTA = new FoodProperties.Builder().nutrition(4).fast()
+            .saturationMod(0.6f).build();
+    public static final FoodProperties POTA_CORTADO = new FoodProperties.Builder().nutrition(1).fast()
+            .saturationMod(1f).build();
+    public static final FoodProperties CHICHARRON_POTA = new FoodProperties.Builder().nutrition(4).fast()
+            .saturationMod(0.75f).build();
 }

@@ -12,7 +12,13 @@
   "item.peruviansdelight.mostrito": "Mostrito",
   "item.peruviansdelight.papa_huancaina": "Papa a la Huancaína",
 
+  "item.peruviansdelight.tocosh": "Tocosh",
+
   "item.peruviansdelight.aji_amarillo": "Ají amarillo",
+  "item.peruviansdelight.limon": "Lemon",
+  "item.peruviansdelight.gajo_limon": "Lemon Wedge",
+  "item.peruviansdelight.kion": "Kion",
+
   "item.peruviansdelight.camote": "Sweet potato",
   "item.peruviansdelight.camote_cocido": "Cooked sweet potato",
   "item.peruviansdelight.camote_cortado": "Sweet potato slice",
@@ -23,14 +29,13 @@
   "item.peruviansdelight.atun": "Tuna fish",
   "item.peruviansdelight.filete_atun": "Tuna fish slice",
   "item.peruviansdelight.filete_atun_cocido": "Cooked tuna fish slice",
-  "item.peruviansdelight.limon": "Lemon",
-  "item.peruviansdelight.gajo_limon": "Lemon Wedge",
   "item.peruviansdelight.palta": "Avocado",
   "item.peruviansdelight.palta_cortada": "Avocado slice",
-  "item.peruviansdelight.tocosh": "Tocosh",
-  "item.peruviansdelight.kion": "Kion",
   "item.peruviansdelight.papas_cortadas": "Potato slices",
   "item.peruviansdelight.papas_fritas": "French fries",
+  "item.peruviansdelight.tentaculo_pota": "Pota tentacle",
+  "item.peruviansdelight.pota_cortado": "Cut pota tentacle",
+  "item.peruviansdelight.chicharron_pota": "Chicharrón de pota",
 
   "item.peruviansdelight.pote_aji_amarillo": "Ají amarillo jar",
   "item.peruviansdelight.sillao": "Soy sauce",

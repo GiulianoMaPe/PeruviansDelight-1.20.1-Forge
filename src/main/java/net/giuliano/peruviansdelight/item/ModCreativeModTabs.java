@@ -31,7 +31,13 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MOSTRITO.get());
                         output.accept(ModItems.PAPA_HUANCAINA.get());
 
+                        output.accept(ModItems.TOCOSH.get());
+
                         output.accept(ModItems.AJI_AMARILLO.get());
+                        output.accept(ModItems.LIMON.get());
+                        output.accept(ModItems.GAJO_LIMON.get());
+                        output.accept(ModItems.KION.get());
+
                         output.accept(ModItems.CAMOTE.get());
                         output.accept(ModItems.CAMOTE_COCIDO.get());
                         output.accept(ModItems.CAMOTE_CORTADO.get());
@@ -42,14 +48,13 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ATUN.get());
                         output.accept(ModItems.FILETE_ATUN.get());
                         output.accept(ModItems.FILETE_ATUN_COCIDO.get());
-                        output.accept(ModItems.LIMON.get());
-                        output.accept(ModItems.GAJO_LIMON.get());
                         output.accept(ModItems.PALTA.get());
                         output.accept(ModItems.PALTA_CORTADA.get());
-                        output.accept(ModItems.TOCOSH.get());
-                        output.accept(ModItems.KION.get());
                         output.accept(ModItems.PAPAS_CORTADAS.get());
                         output.accept(ModItems.PAPAS_FRITAS.get());
+                        output.accept(ModItems.TENTACULO_POTA.get());
+                        output.accept(ModItems.POTA_CORTADO.get());
+                        output.accept(ModItems.CHICHARRON_POTA.get());
 
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.SILLAO.get());

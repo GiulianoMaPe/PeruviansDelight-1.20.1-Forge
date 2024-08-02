@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "peruviansdelight:tentaculo_pota"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "peruviansdelight:pota_cortado"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

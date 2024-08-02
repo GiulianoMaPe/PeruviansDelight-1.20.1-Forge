@@ -9,7 +9,6 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -54,8 +53,18 @@ public class ModItems {
             () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
                     .food(ModFoods.PAPA_HUANCAINA)));
 
+    public static final RegistryObject<Item> TOCOSH = ITEMS.register("tocosh",
+            () -> new ModDrinkItems(new Item.Properties().stacksTo(16).food(ModFoods.TOCOSH)));
+
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
+    public static final RegistryObject<Item> LIMON = ITEMS.register("limon",
+            () -> new Item(new Item.Properties().food(ModFoods.LIMON)));
+    public static final RegistryObject<Item> GAJO_LIMON = ITEMS.register("gajo_limon",
+            () -> new Item(new Item.Properties().food(ModFoods.GAJO_LIMON)));
+    public static final RegistryObject<Item> KION = ITEMS.register("kion",
+            () -> new Item(new Item.Properties().food(ModFoods.KION)));
+
     public static final RegistryObject<Item> CAMOTE = ITEMS.register("camote",
             () -> new Item(new Item.Properties().food(ModFoods.CAMOTE)));
     public static final RegistryObject<Item> CAMOTE_COCIDO = ITEMS.register("camote_cocido",
@@ -76,23 +85,23 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.FILETE_ATUN)));
     public static final RegistryObject<Item> FILETE_ATUN_COCIDO = ITEMS.register("filete_atun_cocido",
             () -> new Item(new Item.Properties().food(ModFoods.FILETE_ATUN_COCIDO)));
-    public static final RegistryObject<Item> LIMON = ITEMS.register("limon",
-            () -> new Item(new Item.Properties().food(ModFoods.LIMON)));
-    public static final RegistryObject<Item> GAJO_LIMON = ITEMS.register("gajo_limon",
-            () -> new Item(new Item.Properties().food(ModFoods.GAJO_LIMON)));
     public static final RegistryObject<Item> PALTA = ITEMS.register("palta",
             () -> new Item(new Item.Properties().food(ModFoods.PALTA)));
     public static final RegistryObject<Item> PALTA_CORTADA = ITEMS.register("palta_cortada",
             () -> new Item(new Item.Properties().food(ModFoods.PALTA_CORTADA)));
-    public static final RegistryObject<Item> KION = ITEMS.register("kion",
-            () -> new Item(new Item.Properties().food(ModFoods.KION)));
     public static final RegistryObject<Item> PAPAS_CORTADAS = ITEMS.register("papas_cortadas",
             () -> new Item(new Item.Properties().food(ModFoods.PAPAS_CORTADAS)));
     public static final RegistryObject<Item> PAPAS_FRITAS = ITEMS.register("papas_fritas",
             () -> new Item(new Item.Properties().food(ModFoods.PAPAS_FRITAS)));
-
-    public static final RegistryObject<Item> TOCOSH = ITEMS.register("tocosh",
-            () -> new ModDrinkItems(new Item.Properties().stacksTo(16).food(ModFoods.TOCOSH)));
+    public static final RegistryObject<Item> TENTACULO_POTA = ITEMS.register("tentaculo_pota",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.TENTACULO_POTA)));
+    public static final RegistryObject<Item> POTA_CORTADO = ITEMS.register("pota_cortado",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.POTA_CORTADO)));
+    public static final RegistryObject<Item> CHICHARRON_POTA = ITEMS.register("chicharron_pota",
+            () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.CHICHARRON_POTA)));
 
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
             () -> new Item(new Item.Properties().stacksTo(16)));

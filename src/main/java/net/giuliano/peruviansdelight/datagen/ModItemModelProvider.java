@@ -30,7 +30,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MOSTRITO);
         simpleItem(ModItems.PAPA_HUANCAINA);
 
+        simpleItem(ModItems.TOCOSH);
+
         simpleItem(ModItems.AJI_AMARILLO);
+        simpleItem(ModItems.LIMON);
+        simpleItem(ModItems.GAJO_LIMON);
+        simpleItem(ModItems.KION);
+
         simpleItem(ModItems.CAMOTE);
         simpleItem(ModItems.CAMOTE_COCIDO);
         simpleItem(ModItems.CAMOTE_CORTADO);
@@ -41,14 +47,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ATUN);
         simpleItem(ModItems.FILETE_ATUN);
         simpleItem(ModItems.FILETE_ATUN_COCIDO);
-        simpleItem(ModItems.LIMON);
-        simpleItem(ModItems.GAJO_LIMON);
         simpleItem(ModItems.PALTA);
         simpleItem(ModItems.PALTA_CORTADA);
-        simpleItem(ModItems.TOCOSH);
-        simpleItem(ModItems.KION);
         simpleItem(ModItems.PAPAS_CORTADAS);
         simpleItem(ModItems.PAPAS_FRITAS);
+        simpleItem(ModItems.TENTACULO_POTA);
+        simpleItem(ModItems.POTA_CORTADO);
+        simpleItem(ModItems.CHICHARRON_POTA);
 
         simpleItem(ModItems.POTE_AJI_AMARILLO);
         simpleItem(ModItems.SILLAO);
