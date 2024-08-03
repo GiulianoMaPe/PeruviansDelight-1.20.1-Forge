@@ -3,6 +3,7 @@ package net.giuliano.peruviansdelight.datagen;
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.block.custom.AjiAmarilloCropBlock;
+import net.giuliano.peruviansdelight.block.custom.KionCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -25,6 +26,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CARA);
 
         makeAjiAmarilloCrop((CropBlock) ModBlocks.AJI_AMARILLO_CROP.get(), "aji_amarillo_stage", "aji_amarillo_stage");
+        makeKionCrop((CropBlock) ModBlocks.KION_CROP.get(), "kion_stage", "kion_stage");
     }
 
     public void makeAjiAmarilloCrop(CropBlock block, String modelName, String textureName) {
@@ -32,11 +34,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         getVariantBuilder(block).forAllStates(function);
     }
-
     private ConfiguredModel[] AjiAmarilloStates(BlockState state, CropBlock block, String modelName, String textureName) {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().cross(modelName + state.getValue(((AjiAmarilloCropBlock) block).getAgeProperty()),
                 new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + textureName + state.getValue(((AjiAmarilloCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+    public void makeKionCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> KionStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+    private ConfiguredModel[] KionStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((KionCropBlock) block).getAgeProperty()),
+                new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + textureName + state.getValue(((KionCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }

@@ -62,8 +62,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.LIMON)));
     public static final RegistryObject<Item> GAJO_LIMON = ITEMS.register("gajo_limon",
             () -> new Item(new Item.Properties().food(ModFoods.GAJO_LIMON)));
+
     public static final RegistryObject<Item> KION = ITEMS.register("kion",
-            () -> new Item(new Item.Properties().food(ModFoods.KION)));
+            () -> new ItemNameBlockItem(ModBlocks.KION_CROP.get(), (new Item.Properties()).food(ModFoods.KION)));
 
     public static final RegistryObject<Item> CAMOTE = ITEMS.register("camote",
             () -> new Item(new Item.Properties().food(ModFoods.CAMOTE)));

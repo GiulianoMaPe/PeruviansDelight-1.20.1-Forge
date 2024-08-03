@@ -16,18 +16,18 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "peruviansdelight:aji_amarillo_crop",
+                  "block": "peruviansdelight:kion_crop",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "age": "7"
+                    "age": "4"
                   }
                 }
               ],
-              "name": "peruviansdelight:semillas_aji_amarillo"
+              "name": "peruviansdelight:kion"
             },
             {
               "type": "minecraft:item",
-              "name": "peruviansdelight:semillas_aji_amarillo"
+              "name": "peruviansdelight:kion"
             }
           ]
         }
@@ -38,10 +38,10 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "peruviansdelight:aji_amarillo_crop",
+          "block": "peruviansdelight:kion_crop",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "age": "7"
+            "age": "4"
           }
         }
       ],
@@ -59,11 +59,11 @@
               }
             }
           ],
-          "name": "peruviansdelight:aji_amarillo"
+          "name": "peruviansdelight:kion"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "peruviansdelight:blocks/aji_amarillo_crop"
+  "random_sequence": "peruviansdelight:blocks/kion_crop"
 }
