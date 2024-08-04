@@ -1,9 +1,7 @@
 package net.giuliano.peruviansdelight.datagen.loot;
 
 import net.giuliano.peruviansdelight.block.ModBlocks;
-import net.giuliano.peruviansdelight.block.custom.AjiAmarilloCropBlock;
-import net.giuliano.peruviansdelight.block.custom.KionCropBlock;
-import net.giuliano.peruviansdelight.block.custom.SoyaCropBlock;
+import net.giuliano.peruviansdelight.block.custom.*;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -50,6 +48,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SoyaCropBlock.AGE, 7));
         this.add(ModBlocks.SOYA_CROP.get(), createModCropDrops(ModBlocks.SOYA_CROP.get(), ModItems.VAINA_SOYA.get(),
                 ModItems.GRANOS_SOYA.get(), lootitemcondition$builder3));
+
+        LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CAMOTE_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CamoteCropBlock.AGE, 5));
+        this.add(ModBlocks.CAMOTE_CROP.get(), createModCropDrops(ModBlocks.CAMOTE_CROP.get(), ModItems.CAMOTE.get(),
+                ModItems.CAMOTE.get(), lootitemcondition$builder4));
+
+        LootItemCondition.Builder lootitemcondition$builder5 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.YUCA_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(YucaCropBlock.AGE, 4));
+        this.add(ModBlocks.YUCA_CROP.get(), createModCropDrops(ModBlocks.YUCA_CROP.get(), ModItems.YUCA.get(),
+                ModItems.YUCA.get(), lootitemcondition$builder5));
     }
 
     protected LootTable.Builder createModCropDrops(Block pCropBlock, Item pGrownCropItem, Item pSeedsItem, LootItemCondition.Builder pDropGrownCropCondition) {

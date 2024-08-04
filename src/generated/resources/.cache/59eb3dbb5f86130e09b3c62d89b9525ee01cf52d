@@ -1,5 +1,7 @@
-// 1.20.1	2024-08-04T01:23:23.3820258	Loot Tables
+// 1.20.1	2024-08-04T02:57:28.678335	Loot Tables
 0ba7d23981419dd414b9dc8fe9b396b6e730deaa data/peruviansdelight/loot_tables/blocks/ajies_amarillos.json
+0afffbf94efc94273ae6544ed97a19279fb45123 data/peruviansdelight/loot_tables/blocks/camotes.json
 d74ce24c68e7edfabe3f0f9581411d84ab33474f data/peruviansdelight/loot_tables/blocks/cara.json
 230953eae26270567fd3b318948179add2ec1a0c data/peruviansdelight/loot_tables/blocks/kiones.json
 b67800ebc845848c7543f02e65f5e101cdcc8b18 data/peruviansdelight/loot_tables/blocks/soyas.json
+326374c92013590fa163602b9a6ee9bf9d8b6e20 data/peruviansdelight/loot_tables/blocks/yucas.json

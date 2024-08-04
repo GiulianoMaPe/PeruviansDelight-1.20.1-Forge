@@ -67,7 +67,7 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.KION_CROP.get(), (new Item.Properties()).food(ModFoods.KION)));
 
     public static final RegistryObject<Item> CAMOTE = ITEMS.register("camote",
-            () -> new Item(new Item.Properties().food(ModFoods.CAMOTE)));
+            () -> new ItemNameBlockItem(ModBlocks.CAMOTE_CROP.get(), (new Item.Properties()).food(ModFoods.CAMOTE)));
     public static final RegistryObject<Item> CAMOTE_COCIDO = ITEMS.register("camote_cocido",
             () -> new Item(new Item.Properties().food(ModFoods.CAMOTE_COCIDO)));
     public static final RegistryObject<Item> CAMOTE_CORTADO = ITEMS.register("camote_cortado",
@@ -75,7 +75,7 @@ public class ModItems {
     public static final RegistryObject<Item> CAMOTE_FRITO= ITEMS.register("camote_frito",
             () -> new Item(new Item.Properties().food(ModFoods.CAMOTE_FRITO)));
     public static final RegistryObject<Item> YUCA = ITEMS.register("yuca",
-            () -> new Item(new Item.Properties().food(ModFoods.YUCA)));
+            () -> new ItemNameBlockItem(ModBlocks.YUCA_CROP.get(), (new Item.Properties()).food(ModFoods.YUCA)));
     public static final RegistryObject<Item> YUCA_CORTADA = ITEMS.register("yuca_cortada",
             () -> new Item(new Item.Properties().food(ModFoods.YUCA_CORTADA)));
     public static final RegistryObject<Item> YUCA_FRITA = ITEMS.register("yuca_frita",

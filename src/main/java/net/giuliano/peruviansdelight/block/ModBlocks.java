@@ -1,9 +1,7 @@
 package net.giuliano.peruviansdelight.block;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
-import net.giuliano.peruviansdelight.block.custom.AjiAmarilloCropBlock;
-import net.giuliano.peruviansdelight.block.custom.KionCropBlock;
-import net.giuliano.peruviansdelight.block.custom.SoyaCropBlock;
+import net.giuliano.peruviansdelight.block.custom.*;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -33,6 +31,10 @@ public class ModBlocks {
             () -> new KionCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
     public static final RegistryObject<Block> SOYA_CROP = BLOCKS.register("soyas",
             () -> new SoyaCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> CAMOTE_CROP = BLOCKS.register("camotes",
+            () -> new CamoteCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> YUCA_CROP = BLOCKS.register("yucas",
+            () -> new YucaCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
