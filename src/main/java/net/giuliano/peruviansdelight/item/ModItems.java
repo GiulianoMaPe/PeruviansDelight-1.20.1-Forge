@@ -118,7 +118,7 @@ public class ModItems {
     public static final RegistryObject<Item> VAINA_SOYA = ITEMS.register("vaina_soya",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GRANOS_SOYA = ITEMS.register("granos_soya",
-            () -> new Item(new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.SOYA_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> SEMILLAS_AJI_AMARILLO = ITEMS.register("semillas_aji_amarillo",
             () -> new ItemNameBlockItem(ModBlocks.AJI_AMARILLO_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> SEMILLA_PALTA = ITEMS.register("semilla_palta",

@@ -3,6 +3,7 @@ package net.giuliano.peruviansdelight.datagen.loot;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.block.custom.AjiAmarilloCropBlock;
 import net.giuliano.peruviansdelight.block.custom.KionCropBlock;
+import net.giuliano.peruviansdelight.block.custom.SoyaCropBlock;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -18,7 +19,6 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -44,6 +44,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(KionCropBlock.AGE, 4));
         this.add(ModBlocks.KION_CROP.get(), createModCropDrops(ModBlocks.KION_CROP.get(), ModItems.KION.get(),
                 ModItems.KION.get(), lootitemcondition$builder2));
+
+        LootItemCondition.Builder lootitemcondition$builder3 = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.SOYA_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SoyaCropBlock.AGE, 7));
+        this.add(ModBlocks.SOYA_CROP.get(), createModCropDrops(ModBlocks.SOYA_CROP.get(), ModItems.VAINA_SOYA.get(),
+                ModItems.GRANOS_SOYA.get(), lootitemcondition$builder3));
     }
 
     protected LootTable.Builder createModCropDrops(Block pCropBlock, Item pGrownCropItem, Item pSeedsItem, LootItemCondition.Builder pDropGrownCropCondition) {

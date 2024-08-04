@@ -1,0 +1,7 @@
+{
+  "parent": "peruviansdelight:block/crop_cross",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "peruviansdelight:block/ajies_amarillos_stage3"
+  }
+}
