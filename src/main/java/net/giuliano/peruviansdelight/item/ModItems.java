@@ -121,8 +121,7 @@ public class ModItems {
             () -> new ItemNameBlockItem(ModBlocks.SOYA_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> SEMILLAS_AJI_AMARILLO = ITEMS.register("semillas_aji_amarillo",
             () -> new ItemNameBlockItem(ModBlocks.AJI_AMARILLO_CROP.get(), new Item.Properties()));
-    public static final RegistryObject<Item> SEMILLA_PALTA = ITEMS.register("semilla_palta",
-            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> SEMILLAS_LIMON = ITEMS.register("semillas_limon",
             () -> new Item(new Item.Properties()));
 

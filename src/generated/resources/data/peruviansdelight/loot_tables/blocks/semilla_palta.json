@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "peruviansdelight:semilla_palta"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "peruviansdelight:blocks/semilla_palta"
+}

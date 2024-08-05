@@ -1,10 +1,13 @@
 package net.giuliano.peruviansdelight.datagen;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
+import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -64,12 +67,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.VAINA_SOYA);
         simpleItem(ModItems.GRANOS_SOYA);
         simpleItem(ModItems.SEMILLAS_AJI_AMARILLO);
-        simpleItem(ModItems.SEMILLA_PALTA);
+
         simpleItem(ModItems.SEMILLAS_LIMON);
+
+        saplingItem(ModBlocks.SEMILLA_PALTA);
 
         simpleItem(ModItems.ALMA_EN_PENA);
 
         withExistingParent(ModItems.ATUN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(PeruviansDelight.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

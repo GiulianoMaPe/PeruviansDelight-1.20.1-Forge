@@ -47,6 +47,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 this.resourceBlock("crop_cross"), "cross", CamoteCropBlock.AGE, new ArrayList());
         this.customStageBlock((CropBlock) ModBlocks.YUCA_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", YucaCropBlock.AGE, new ArrayList());
+
+        leavesBlock(ModBlocks.PALTA_LEAVES);
+        saplingBlock(ModBlocks.SEMILLA_PALTA);
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    public void leavesBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(), new ResourceLocation("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     public void customStageBlock(CropBlock block, @Nullable ResourceLocation parent, String textureKey, IntegerProperty ageProperty, List<Integer> suffixes, Property<?>... ignored) {

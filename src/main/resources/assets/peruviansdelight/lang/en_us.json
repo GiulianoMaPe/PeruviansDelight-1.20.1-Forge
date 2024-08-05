@@ -46,12 +46,15 @@
   "item.peruviansdelight.vaina_soya": "Soybean pod",
   "item.peruviansdelight.granos_soya": "Soybeans",
   "item.peruviansdelight.semillas_aji_amarillo": "Aji amarillo seeds",
-  "item.peruviansdelight.semilla_palta": "Avocado seed",
+
   "item.peruviansdelight.semillas_limon": "Lemon seed",
 
   "item.peruviansdelight.atun_spawn_egg": "Tuna Spawn Egg",
 
   "item.peruviansdelight.alma_en_pena": "Suffering soul",
+
+  "block.peruviansdelight.palta_leaves": "Avocado leaves",
+  "block.peruviansdelight.semilla_palta": "Avocado seed",
 
   "block.peruviansdelight.cara": "Cabeza clava",
 

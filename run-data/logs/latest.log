@@ -1,33 +1,35 @@
-[04ago.2024 02:57:17.324] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\giuli\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, peruviansdelight, --all, --output, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\generated\resources, --existing, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\main\resources]
-[04ago.2024 02:57:17.328] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.10 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[04ago.2024 02:57:17.465] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[04ago.2024 02:57:17.531] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/giuli/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[04ago.2024 02:57:17.956] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[04ago.2024 02:57:17.961] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[04ago.2024 02:57:17.966] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[04ago.2024 02:57:17.972] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[04ago.2024 02:57:18.178] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[04ago.2024 02:57:20.111] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[04ago.2024 02:57:20.118] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\giuli\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, peruviansdelight, --all, --output, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\generated\resources, --existing, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\main\resources]
-[04ago.2024 02:57:20.762] [main/INFO] [mixin/]: Remapping refMap farmersdelight.refmap.json using F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\build\createSrgToMcp\output.srg
-[04ago.2024 02:57:21.189] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [peruviansdelight]
-[04ago.2024 02:57:27.111] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
-[04ago.2024 02:57:27.112] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
-[04ago.2024 02:57:27.651] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[04ago.2024 02:57:27.658] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 5.046 ms
-[04ago.2024 02:57:28.137] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/giuli/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[04ago.2024 02:57:28.138] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/giuli/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[04ago.2024 02:57:28.355] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[04ago.2024 02:57:28.360] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 4 ms
-[04ago.2024 02:57:28.360] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[04ago.2024 02:57:28.427] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 66 ms
-[04ago.2024 02:57:28.427] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: peruviansdelight
-[04ago.2024 02:57:28.626] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: peruviansdelight finished after 199 ms
-[04ago.2024 02:57:28.627] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: peruviansdelight
-[04ago.2024 02:57:28.661] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: peruviansdelight finished after 33 ms
-[04ago.2024 02:57:28.661] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id peruviansdelight
-[04ago.2024 02:57:28.676] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id peruviansdelight finished after 14 ms
-[04ago.2024 02:57:28.676] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id peruviansdelight
-[04ago.2024 02:57:28.677] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id peruviansdelight finished after 1 ms
-[04ago.2024 02:57:28.677] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 322 ms
-[04ago.2024 02:57:28.689] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 92, old count: 85, new count: 93, removed stale: 0, written: 7
+[05ago.2024 03:07:26.945] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\giuli\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, peruviansdelight, --all, --output, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\generated\resources, --existing, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\main\resources]
+[05ago.2024 03:07:26.945] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.10 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[05ago.2024 03:07:27.086] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[05ago.2024 03:07:27.133] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/giuli/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[05ago.2024 03:07:27.492] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[05ago.2024 03:07:27.508] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[05ago.2024 03:07:27.508] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[05ago.2024 03:07:27.523] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\giuli\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[05ago.2024 03:07:27.680] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[05ago.2024 03:07:29.305] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[05ago.2024 03:07:29.305] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\giuli\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, peruviansdelight, --all, --output, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\generated\resources, --existing, F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\src\main\resources]
+[05ago.2024 03:07:29.805] [main/INFO] [mixin/]: Remapping refMap farmersdelight.refmap.json using F:\DESCARGAS\MinecraftMods\forge-Peru's Delight-1.20.1\build\createSrgToMcp\output.srg
+[05ago.2024 03:07:30.232] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [peruviansdelight]
+[05ago.2024 03:07:35.792] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[05ago.2024 03:07:35.793] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[05ago.2024 03:07:36.221] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[05ago.2024 03:07:36.237] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 5.440 ms
+[05ago.2024 03:07:36.776] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/giuli/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[05ago.2024 03:07:36.776] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/giuli/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[05ago.2024 03:07:36.981] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[05ago.2024 03:07:36.981] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 3 ms
+[05ago.2024 03:07:36.981] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[05ago.2024 03:07:37.075] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 94 ms
+[05ago.2024 03:07:37.075] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: peruviansdelight
+[05ago.2024 03:07:37.278] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: peruviansdelight finished after 201 ms
+[05ago.2024 03:07:37.278] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: peruviansdelight
+[05ago.2024 03:07:37.309] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: peruviansdelight finished after 33 ms
+[05ago.2024 03:07:37.309] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id peruviansdelight
+[05ago.2024 03:07:37.325] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id peruviansdelight finished after 13 ms
+[05ago.2024 03:07:37.325] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id peruviansdelight
+[05ago.2024 03:07:37.325] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id peruviansdelight finished after 0 ms
+[05ago.2024 03:07:37.325] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[05ago.2024 03:07:37.341] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 12 ms
+[05ago.2024 03:07:37.341] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 362 ms
+[05ago.2024 03:07:37.356] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 100, old count: 100, new count: 101, removed stale: 0, written: 1
