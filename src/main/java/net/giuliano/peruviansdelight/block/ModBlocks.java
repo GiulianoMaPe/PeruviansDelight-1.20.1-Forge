@@ -2,10 +2,9 @@ package net.giuliano.peruviansdelight.block;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.block.custom.*;
-import net.giuliano.peruviansdelight.item.ModFoods;
 import net.giuliano.peruviansdelight.item.ModItems;
-import net.giuliano.peruviansdelight.worldgen.tree.LimonTreeGrower;
-import net.giuliano.peruviansdelight.worldgen.tree.PaltaTreeGrower;
+import net.giuliano.peruviansdelight.worldgen.tree.LimoneroTreeGrower;
+import net.giuliano.peruviansdelight.worldgen.tree.PaltoTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -41,7 +40,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> YUCA_CROP = BLOCKS.register("yucas",
             () -> new YucaCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
 
-    public static final RegistryObject<Block> PALTA_LEAVES = registerBlock("palta_leaves",
+    public static final RegistryObject<Block> PALTO_LEAVES = registerBlock("palto_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -58,7 +57,7 @@ public class ModBlocks {
                     return 30;
                 }
             });
-    public static final RegistryObject<Block> LIMON_LEAVES = registerBlock("limon_leaves",
+    public static final RegistryObject<Block> LIMONERO_LEAVES = registerBlock("limonero_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -77,9 +76,9 @@ public class ModBlocks {
             });
 
     public static final RegistryObject<Block> SEMILLA_PALTA = registerBlock("semilla_palta",
-            () -> new SaplingBlock(new PaltaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new PaltoTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> SEMILLAS_LIMON = registerBlock("semillas_limon",
-            () -> new SaplingBlock(new LimonTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new LimoneroTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -71,8 +71,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.SEMILLA_PALTA.get());
                         output.accept(ModBlocks.SEMILLAS_LIMON.get());
 
-                        output.accept(ModBlocks.PALTA_LEAVES.get());
-                        output.accept(ModBlocks.LIMON_LEAVES.get());
+                        output.accept(ModBlocks.PALTO_LEAVES.get());
+                        output.accept(ModBlocks.LIMONERO_LEAVES.get());
 
                         output.accept(ModBlocks.CARA.get());
                         output.accept(ModItems.ALMA_EN_PENA.get());

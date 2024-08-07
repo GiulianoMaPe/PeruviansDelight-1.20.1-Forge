@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "peruviansdelight:palta_leaves"
+              "name": "peruviansdelight:palto_leaves"
             },
             {
               "type": "minecraft:item",
@@ -143,5 +143,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "peruviansdelight:blocks/palta_leaves"
+  "random_sequence": "peruviansdelight:blocks/palto_leaves"
 }

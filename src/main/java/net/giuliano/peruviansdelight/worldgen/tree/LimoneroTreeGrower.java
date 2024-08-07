@@ -7,10 +7,10 @@ import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
-public class PaltaTreeGrower extends AbstractTreeGrower {
+public class LimoneroTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return ModConfiguredFeatures.PALTA_KEY;
+        return ModConfiguredFeatures.LIMONERO_KEY;
     }
 }

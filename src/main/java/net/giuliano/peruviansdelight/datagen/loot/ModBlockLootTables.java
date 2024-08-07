@@ -75,9 +75,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.YUCA_CROP.get(), createModCropDrops(ModBlocks.YUCA_CROP.get(), ModItems.YUCA.get(),
                 ModItems.YUCA.get(), lootitemcondition$builder5));
 
-        this.add(ModBlocks.PALTA_LEAVES.get(), block ->
+        this.add(ModBlocks.PALTO_LEAVES.get(), block ->
                 createModLeavesDrops(block, ModItems.PALTA.get(), 1.0F, 1.25F, 1.6667F, 2.0F));
-        this.add(ModBlocks.LIMON_LEAVES.get(), block ->
+        this.add(ModBlocks.LIMONERO_LEAVES.get(), block ->
                 createModLeavesDrops(block, ModItems.LIMON.get(), 1.0F, 1.25F, 1.6667F, 2.0F));
 
         this.dropSelf(ModBlocks.SEMILLA_PALTA.get());

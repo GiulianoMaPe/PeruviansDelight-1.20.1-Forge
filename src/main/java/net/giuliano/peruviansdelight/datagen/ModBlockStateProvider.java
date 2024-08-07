@@ -48,8 +48,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         this.customStageBlock((CropBlock) ModBlocks.YUCA_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", YucaCropBlock.AGE, new ArrayList());
 
-        leavesBlock(ModBlocks.PALTA_LEAVES);
-        leavesBlock(ModBlocks.LIMON_LEAVES);
+        leavesBlock(ModBlocks.PALTO_LEAVES);
+        leavesBlock(ModBlocks.LIMONERO_LEAVES);
 
         saplingBlock(ModBlocks.SEMILLA_PALTA);
         saplingBlock(ModBlocks.SEMILLAS_LIMON);

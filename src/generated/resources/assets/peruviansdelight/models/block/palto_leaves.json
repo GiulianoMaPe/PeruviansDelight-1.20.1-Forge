@@ -2,6 +2,6 @@
   "parent": "minecraft:block/leaves",
   "render_type": "minecraft:cutout",
   "textures": {
-    "all": "peruviansdelight:block/limon_leaves"
+    "all": "peruviansdelight:block/palto_leaves"
   }
 }

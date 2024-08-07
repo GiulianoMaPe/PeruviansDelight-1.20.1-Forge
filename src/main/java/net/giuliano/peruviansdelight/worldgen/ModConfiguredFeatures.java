@@ -18,24 +18,24 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
-    public static final ResourceKey<ConfiguredFeature<?, ?>> PALTA_KEY = registerKey("palta");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> LIMON_KEY = registerKey("limon");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PALTO_KEY = registerKey("palto");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LIMONERO_KEY = registerKey("limonero");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
-        register(context, PALTA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        register(context, PALTO_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.OAK_LOG),
                 new StraightTrunkPlacer(5, 4, 3),
 
-                BlockStateProvider.simple(ModBlocks.PALTA_LEAVES.get()),
+                BlockStateProvider.simple(ModBlocks.PALTO_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
 
                 new TwoLayersFeatureSize(1, 0,2)).build());
 
-        register(context, LIMON_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+        register(context, LIMONERO_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.OAK_LOG),
                 new StraightTrunkPlacer(5, 4, 3),
 
-                BlockStateProvider.simple(ModBlocks.LIMON_LEAVES.get()),
+                BlockStateProvider.simple(ModBlocks.LIMONERO_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
 
                 new TwoLayersFeatureSize(1, 0,2)).build());
