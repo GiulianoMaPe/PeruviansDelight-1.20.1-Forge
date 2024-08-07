@@ -4,6 +4,7 @@ import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.block.custom.*;
 import net.giuliano.peruviansdelight.item.ModFoods;
 import net.giuliano.peruviansdelight.item.ModItems;
+import net.giuliano.peruviansdelight.worldgen.tree.LimonTreeGrower;
 import net.giuliano.peruviansdelight.worldgen.tree.PaltaTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -57,9 +58,28 @@ public class ModBlocks {
                     return 30;
                 }
             });
+    public static final RegistryObject<Block> LIMON_LEAVES = registerBlock("limon_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
 
     public static final RegistryObject<Block> SEMILLA_PALTA = registerBlock("semilla_palta",
             () -> new SaplingBlock(new PaltaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> SEMILLAS_LIMON = registerBlock("semillas_limon",
+            () -> new SaplingBlock(new LimonTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

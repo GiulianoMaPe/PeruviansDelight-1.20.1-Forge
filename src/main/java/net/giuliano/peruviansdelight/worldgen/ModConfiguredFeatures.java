@@ -19,6 +19,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PALTA_KEY = registerKey("palta");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LIMON_KEY = registerKey("limon");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         register(context, PALTA_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -26,6 +27,15 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(5, 4, 3),
 
                 BlockStateProvider.simple(ModBlocks.PALTA_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
+
+                new TwoLayersFeatureSize(1, 0,2)).build());
+
+        register(context, LIMON_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(5, 4, 3),
+
+                BlockStateProvider.simple(ModBlocks.LIMON_LEAVES.get()),
                 new BlobFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
 
                 new TwoLayersFeatureSize(1, 0,2)).build());

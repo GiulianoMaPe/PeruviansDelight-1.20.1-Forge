@@ -65,13 +65,14 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.VAINA_SOYA.get());
                         output.accept(ModItems.GRANOS_SOYA.get());
                         output.accept(ModItems.SEMILLAS_AJI_AMARILLO.get());
-                        output.accept(ModItems.SEMILLAS_LIMON.get());
 
                         output.accept(ModItems.ATUN_SPAWN_EGG.get());
 
                         output.accept(ModBlocks.SEMILLA_PALTA.get());
+                        output.accept(ModBlocks.SEMILLAS_LIMON.get());
 
                         output.accept(ModBlocks.PALTA_LEAVES.get());
+                        output.accept(ModBlocks.LIMON_LEAVES.get());
 
                         output.accept(ModBlocks.CARA.get());
                         output.accept(ModItems.ALMA_EN_PENA.get());

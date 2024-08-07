@@ -49,7 +49,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 this.resourceBlock("crop_cross"), "cross", YucaCropBlock.AGE, new ArrayList());
 
         leavesBlock(ModBlocks.PALTA_LEAVES);
+        leavesBlock(ModBlocks.LIMON_LEAVES);
+
         saplingBlock(ModBlocks.SEMILLA_PALTA);
+        saplingBlock(ModBlocks.SEMILLAS_LIMON);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

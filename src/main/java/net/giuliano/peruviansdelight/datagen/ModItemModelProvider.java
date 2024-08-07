@@ -68,9 +68,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.GRANOS_SOYA);
         simpleItem(ModItems.SEMILLAS_AJI_AMARILLO);
 
-        simpleItem(ModItems.SEMILLAS_LIMON);
-
         saplingItem(ModBlocks.SEMILLA_PALTA);
+        saplingItem(ModBlocks.SEMILLAS_LIMON);
 
         simpleItem(ModItems.ALMA_EN_PENA);
 

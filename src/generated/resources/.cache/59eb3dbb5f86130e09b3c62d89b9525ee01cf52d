@@ -1,9 +1,11 @@
-// 1.20.1	2024-08-05T03:07:37.3410639	Loot Tables
+// 1.20.1	2024-08-06T23:25:49.0594871	Loot Tables
 0ba7d23981419dd414b9dc8fe9b396b6e730deaa data/peruviansdelight/loot_tables/blocks/ajies_amarillos.json
 0afffbf94efc94273ae6544ed97a19279fb45123 data/peruviansdelight/loot_tables/blocks/camotes.json
 d74ce24c68e7edfabe3f0f9581411d84ab33474f data/peruviansdelight/loot_tables/blocks/cara.json
 230953eae26270567fd3b318948179add2ec1a0c data/peruviansdelight/loot_tables/blocks/kiones.json
+404411ec46098795af5f0f4e2e969ccd5c82af7a data/peruviansdelight/loot_tables/blocks/limon_leaves.json
 f4bf805d9ba6ae820c1110c5ffbaa229289568eb data/peruviansdelight/loot_tables/blocks/palta_leaves.json
+abfdbbad1d6ffb5859dd617605bdd444b18bb89a data/peruviansdelight/loot_tables/blocks/semillas_limon.json
 780e0e26ef1e8508c09d7f05cfaf5c35fed05502 data/peruviansdelight/loot_tables/blocks/semilla_palta.json
 b67800ebc845848c7543f02e65f5e101cdcc8b18 data/peruviansdelight/loot_tables/blocks/soyas.json
 326374c92013590fa163602b9a6ee9bf9d8b6e20 data/peruviansdelight/loot_tables/blocks/yucas.json

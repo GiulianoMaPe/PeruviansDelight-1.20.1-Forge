@@ -76,9 +76,12 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 ModItems.YUCA.get(), lootitemcondition$builder5));
 
         this.add(ModBlocks.PALTA_LEAVES.get(), block ->
-                createModLeavesDrops(block, ModItems.PALTA.get(), 1.0F, 1.25F, 1.6667F, 2.0F));    //NORMAL_LEAVES_SAPLING_CHANCES
+                createModLeavesDrops(block, ModItems.PALTA.get(), 1.0F, 1.25F, 1.6667F, 2.0F));
+        this.add(ModBlocks.LIMON_LEAVES.get(), block ->
+                createModLeavesDrops(block, ModItems.LIMON.get(), 1.0F, 1.25F, 1.6667F, 2.0F));
 
         this.dropSelf(ModBlocks.SEMILLA_PALTA.get());
+        this.dropSelf(ModBlocks.SEMILLAS_LIMON.get());
     }
 
     protected LootTable.Builder createModLeavesDrops(Block pLeavesBlock, Item pSaplingBlock, float... pChances) {

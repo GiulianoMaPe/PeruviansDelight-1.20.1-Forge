@@ -122,9 +122,6 @@ public class ModItems {
     public static final RegistryObject<Item> SEMILLAS_AJI_AMARILLO = ITEMS.register("semillas_aji_amarillo",
             () -> new ItemNameBlockItem(ModBlocks.AJI_AMARILLO_CROP.get(), new Item.Properties()));
 
-    public static final RegistryObject<Item> SEMILLAS_LIMON = ITEMS.register("semillas_limon",
-            () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> ATUN_SPAWN_EGG = ITEMS.register("atun_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ATUN, 0xb4d4e1, 0x195a75,
                     new Item.Properties()));
