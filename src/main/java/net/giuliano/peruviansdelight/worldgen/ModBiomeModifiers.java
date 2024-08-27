@@ -21,7 +21,7 @@ public class ModBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
 
         context.register(ADD_TREE_PALTO, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                biomes.getOrThrow(Tags.Biomes.IS_SPARSE_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.PALTO_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
         context.register(ADD_TREE_LIMONERO, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

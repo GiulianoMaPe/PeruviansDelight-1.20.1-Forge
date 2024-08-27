@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#forge:is_plains",
+  "biomes": "#forge:is_sparse/overworld",
   "features": "peruviansdelight:palto_placed",
   "step": "vegetal_decoration"
 }
