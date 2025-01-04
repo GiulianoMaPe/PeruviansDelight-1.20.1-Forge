@@ -15,6 +15,7 @@ import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.FarmersDelight;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -53,6 +54,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         saplingBlock(ModBlocks.SEMILLA_PALTA);
         saplingBlock(ModBlocks.SEMILLAS_LIMON);
+
+        crateWithItem(ModBlocks.AJI_AMARILLO_CRATE);
+        crateWithItem(ModBlocks.SWEET_POTATO_CRATE);
+        crateWithItem(ModBlocks.YUCA_CRATE);
+        crateWithItem(ModBlocks.LEMON_CRATE);
+        crateWithItem(ModBlocks.AVOCADO_CRATE);
+        crateWithItem(ModBlocks.GINGER_CRATE);
+        crateWithItem(ModBlocks.SOYBEAN_POD_CRATE);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
@@ -78,5 +87,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void crateWithItem(RegistryObject<Block> blockRegistryObject){
+        ResourceLocation side = new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_side");
+        ResourceLocation top = new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
+        ResourceLocation bottom = new ResourceLocation(PeruviansDelight.MOD_ID, "block/crate_bottom");
+        simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), side, bottom, top));
     }
 }

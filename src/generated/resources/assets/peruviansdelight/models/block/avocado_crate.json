@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "peruviansdelight:block/crate_bottom",
+    "side": "peruviansdelight:block/avocado_crate_side",
+    "top": "peruviansdelight:block/avocado_crate_top"
+  }
+}
