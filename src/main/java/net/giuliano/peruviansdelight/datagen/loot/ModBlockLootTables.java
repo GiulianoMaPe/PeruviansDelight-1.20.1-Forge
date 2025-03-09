@@ -82,13 +82,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.SEMILLA_PALTA.get());
         this.dropSelf(ModBlocks.SEMILLAS_LIMON.get());
-        this.dropSelf(ModBlocks.AJI_AMARILLO_CRATE.get());
-        this.dropSelf(ModBlocks.SWEET_POTATO_CRATE.get());
-        this.dropSelf(ModBlocks.YUCA_CRATE.get());
-        this.dropSelf(ModBlocks.LEMON_CRATE.get());
-        this.dropSelf(ModBlocks.AVOCADO_CRATE.get());
-        this.dropSelf(ModBlocks.GINGER_CRATE.get());
-        this.dropSelf(ModBlocks.SOYBEAN_POD_CRATE.get());
     }
 
     protected LootTable.Builder createModLeavesDrops(Block pLeavesBlock, Item pSaplingBlock, float... pChances) {

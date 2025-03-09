@@ -54,14 +54,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         saplingBlock(ModBlocks.SEMILLA_PALTA);
         saplingBlock(ModBlocks.SEMILLAS_LIMON);
-
-        crateWithItem(ModBlocks.AJI_AMARILLO_CRATE);
-        crateWithItem(ModBlocks.SWEET_POTATO_CRATE);
-        crateWithItem(ModBlocks.YUCA_CRATE);
-        crateWithItem(ModBlocks.LEMON_CRATE);
-        crateWithItem(ModBlocks.AVOCADO_CRATE);
-        crateWithItem(ModBlocks.GINGER_CRATE);
-        crateWithItem(ModBlocks.SOYBEAN_POD_CRATE);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

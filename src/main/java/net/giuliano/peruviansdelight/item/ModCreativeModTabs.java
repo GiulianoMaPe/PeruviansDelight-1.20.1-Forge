@@ -76,14 +76,6 @@ public class ModCreativeModTabs {
 
                         output.accept(ModBlocks.CARA.get());
                         output.accept(ModItems.ALMA_EN_PENA.get());
-
-                        output.accept(ModBlocks.AJI_AMARILLO_CRATE.get());
-                        output.accept(ModBlocks.SWEET_POTATO_CRATE.get());
-                        output.accept(ModBlocks.YUCA_CRATE.get());
-                        output.accept(ModBlocks.LEMON_CRATE.get());
-                        output.accept(ModBlocks.AVOCADO_CRATE.get());
-                        output.accept(ModBlocks.GINGER_CRATE.get());
-                        output.accept(ModBlocks.SOYBEAN_POD_CRATE.get());
                     })
                     .build());
 
