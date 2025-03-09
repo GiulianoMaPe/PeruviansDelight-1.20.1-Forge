@@ -54,6 +54,17 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         saplingBlock(ModBlocks.SEMILLA_PALTA);
         saplingBlock(ModBlocks.SEMILLAS_LIMON);
+
+        simpleBlockWithItem(ModBlocks.AJI_AMARILLO_SILVESTRE.get(), models().cross(blockTexture(ModBlocks.AJI_AMARILLO_SILVESTRE.get()).getPath(),
+                blockTexture(ModBlocks.AJI_AMARILLO_SILVESTRE.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.KION_SILVESTRE.get(), models().cross(blockTexture(ModBlocks.KION_SILVESTRE.get()).getPath(),
+                blockTexture(ModBlocks.KION_SILVESTRE.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.SOYA_SILVESTRE.get(), models().cross(blockTexture(ModBlocks.SOYA_SILVESTRE.get()).getPath(),
+                blockTexture(ModBlocks.SOYA_SILVESTRE.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.CAMOTE_SILVESTRE.get(), models().cross(blockTexture(ModBlocks.CAMOTE_SILVESTRE.get()).getPath(),
+                blockTexture(ModBlocks.CAMOTE_SILVESTRE.get())).renderType("cutout"));
+        simpleBlockWithItem(ModBlocks.YUCA_SILVESTRE.get(), models().cross(blockTexture(ModBlocks.YUCA_SILVESTRE.get()).getPath(),
+                blockTexture(ModBlocks.YUCA_SILVESTRE.get())).renderType("cutout"));
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

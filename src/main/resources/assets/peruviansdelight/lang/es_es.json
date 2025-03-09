@@ -49,14 +49,19 @@
 
   "item.peruviansdelight.atun_spawn_egg": "Generar atún",
 
-  "item.peruviansdelight.alma_en_pena": "Alma en pena",
-
   "block.peruviansdelight.palto_leaves": "Hojas de palto",
   "block.peruviansdelight.semilla_palta": "Semilla de palta",
   "block.peruviansdelight.limonero_leaves": "Hojas de limonero",
   "block.peruviansdelight.semillas_limon": "Semillas de limón",
 
+  "block.peruviansdelight.aji_amarillo_silvestre": "Ají amarillo silvestre",
+  "block.peruviansdelight.kion_silvestre": "Kion silvestre",
+  "block.peruviansdelight.soya_silvestre": "Soya silvestre",
+  "block.peruviansdelight.camote_silvestre": "Camote silvestre",
+  "block.peruviansdelight.yuca_silvestre": "Yuca silvestre",
+
   "block.peruviansdelight.cara": "Cabeza clava",
+  "item.peruviansdelight.alma_en_pena": "Alma en pena",
 
   "sounds.peruviansdelight.inca_kola_aaaah": "Aaaaaah",
 

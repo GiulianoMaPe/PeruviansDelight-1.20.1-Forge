@@ -73,6 +73,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.ALMA_EN_PENA);
 
+        simpleBlockItemBlockTexture(ModBlocks.AJI_AMARILLO_SILVESTRE);
+        simpleBlockItemBlockTexture(ModBlocks.KION_SILVESTRE);
+        simpleBlockItemBlockTexture(ModBlocks.SOYA_SILVESTRE);
+        simpleBlockItemBlockTexture(ModBlocks.CAMOTE_SILVESTRE);
+        simpleBlockItemBlockTexture(ModBlocks.YUCA_SILVESTRE);
+
         withExistingParent(ModItems.ATUN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
@@ -86,5 +92,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(PeruviansDelight.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItemBlockTexture(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + item.getId().getPath()));
     }
 }

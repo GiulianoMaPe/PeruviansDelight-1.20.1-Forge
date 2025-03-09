@@ -49,14 +49,16 @@
 
   "item.peruviansdelight.atun_spawn_egg": "Tuna Spawn Egg",
 
-  "item.peruviansdelight.alma_en_pena": "Suffering Soul",
-
   "block.peruviansdelight.palto_leaves": "Palto Leaves",
   "block.peruviansdelight.semilla_palta": "Avocado Seed",
   "block.peruviansdelight.limonero_leaves": "Lemon Tree Leaves",
   "block.peruviansdelight.semillas_limon": "Lemon Seed",
 
-  "block.peruviansdelight.cara": "Cabeza Clava",
+  "block.peruviansdelight.aji_amarillo_silvestre": "Wild Ají Amarillo",
+  "block.peruviansdelight.kion_silvestre": "Wild Ginger",
+  "block.peruviansdelight.soya_silvestre": "Wild Soybean",
+  "block.peruviansdelight.camote_silvestre": "Wild Sweet Potato",
+  "block.peruviansdelight.yuca_silvestre": "Wild Yuca",
 
   "block.peruviansdelight.aji_amarillo_crate": "Ají Amarillo Crate",
   "block.peruviansdelight.sweet_potato_crate": "Sweet Potato Crate",
@@ -65,6 +67,9 @@
   "block.peruviansdelight.avocado_crate": "Avocado Crate",
   "block.peruviansdelight.ginger_crate": "Ginger Crate",
   "block.peruviansdelight.soybean_pod_crate": "Soybean Pod Crate",
+
+  "block.peruviansdelight.cara": "Cabeza Clava",
+  "item.peruviansdelight.alma_en_pena": "Suffering Soul",
 
   "sounds.peruviansdelight.inca_kola_aaaah": "Aaaaaah",
 
