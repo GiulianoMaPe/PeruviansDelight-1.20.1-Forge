@@ -1,7 +1,7 @@
-// 1.20.1	2025-03-10T20:56:21.2512603	Registries
-d8843648c70fa4f19a570b375cace0d2d8214ea3 data/peruviansdelight/forge/biome_modifier/add_tree_limorero.json
-4a21c33eada610923cb62b82037ed54a22db4211 data/peruviansdelight/forge/biome_modifier/add_tree_palto.json
+// 1.20.1	2025-03-10T22:55:29.011678	Registries
+9a2d5a3f090ef6caa82637c77da5f861c9a06a9d data/peruviansdelight/forge/biome_modifier/add_tree_limonero.json
+a3ed1fce80c0dfed33637683c333ac5207b9c7e7 data/peruviansdelight/forge/biome_modifier/add_tree_palto.json
 0441367eabee6c2fbaa1cb92a69431b71ae9ce46 data/peruviansdelight/worldgen/configured_feature/limonero.json
 79a09979f40c4c83d5e7bdac0cfdafc70f176053 data/peruviansdelight/worldgen/configured_feature/palto.json
-2beb37b0daffe2b2b6c63a0862172f428b9e3f3e data/peruviansdelight/worldgen/placed_feature/limonero_placed.json
-12d77034ab91ea512256be1faea3df1e06dfd822 data/peruviansdelight/worldgen/placed_feature/palto_placed.json
+01f638fa5191a5e86094c214e344c56c0cb068b0 data/peruviansdelight/worldgen/placed_feature/limonero_placed.json
+07817f77e3948471267ed60c6ae2aea06aaafa07 data/peruviansdelight/worldgen/placed_feature/palto_placed.json
