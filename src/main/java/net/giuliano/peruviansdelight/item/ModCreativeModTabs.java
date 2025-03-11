@@ -72,7 +72,9 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.SEMILLAS_LIMON.get());
 
                         output.accept(ModBlocks.PALTO_LEAVES.get());
+                        output.accept(ModBlocks.PALTO_LEAVES_EMPTY.get());
                         output.accept(ModBlocks.LIMONERO_LEAVES.get());
+                        output.accept(ModBlocks.LIMONERO_LEAVES_EMPTY.get());
 
                         output.accept(ModBlocks.AJI_AMARILLO_SILVESTRE.get());
                         output.accept(ModBlocks.KION_SILVESTRE.get());

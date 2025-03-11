@@ -1,6 +1,7 @@
 package net.giuliano.peruviansdelight;
 
 import com.mojang.logging.LogUtils;
+import net.giuliano.peruviansdelight.block.ModBlockStateProviderTypes;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.effect.ModEffects;
 import net.giuliano.peruviansdelight.entity.ModEntities;
@@ -9,6 +10,8 @@ import net.giuliano.peruviansdelight.item.ModCreativeModTabs;
 import net.giuliano.peruviansdelight.item.ModDrinkItems;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.giuliano.peruviansdelight.sound.ModSounds;
+import net.giuliano.peruviansdelight.worldgen.tree.ModFoliagePlacers;
+import net.giuliano.peruviansdelight.worldgen.tree.ModTrunkPlacerTypes;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,8 +25,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-import javax.swing.text.html.parser.Entity;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(PeruviansDelight.MOD_ID)
 public class PeruviansDelight {
@@ -31,8 +32,11 @@ public class PeruviansDelight {
     public static final String MOD_ID = "peruviansdelight";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
     public PeruviansDelight() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModBlockStateProviderTypes.BLOCK_STATE_PROVIDERS.register(modEventBus);
 
         ModCreativeModTabs.register(modEventBus);
 
@@ -45,6 +49,9 @@ public class PeruviansDelight {
         ModSounds.register(modEventBus);
 
         ModEffects.register(modEventBus);
+
+        ModTrunkPlacerTypes.register(modEventBus);
+        ModFoliagePlacers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -49,9 +49,11 @@
 
   "item.peruviansdelight.atun_spawn_egg": "Tuna Spawn Egg",
 
-  "block.peruviansdelight.palto_leaves": "Palto Leaves",
+  "block.peruviansdelight.palto_leaves": "Palto Leaves with Avocado",
+  "block.peruviansdelight.palto_leaves_empty": "Palto Leaves",
   "block.peruviansdelight.semilla_palta": "Avocado Seed",
-  "block.peruviansdelight.limonero_leaves": "Lemon Tree Leaves",
+  "block.peruviansdelight.limonero_leaves": "Lemon Tree Leaves with Lemon",
+  "block.peruviansdelight.limonero_leaves_empty": "Lemon Tree Leaves",
   "block.peruviansdelight.semillas_limon": "Lemon Seed",
 
   "block.peruviansdelight.aji_amarillo_silvestre": "Wild Ají Amarillo",

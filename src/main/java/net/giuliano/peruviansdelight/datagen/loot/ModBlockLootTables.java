@@ -81,6 +81,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.LIMONERO_LEAVES.get(), block ->
                 createModLeavesDrops(block, ModItems.LIMON.get(), 1.0F, 1.25F, 1.6667F, 2.0F));
 
+        this.add(ModBlocks.PALTO_LEAVES_EMPTY.get(), this::createEmptyLeavesDrops);
+        this.add(ModBlocks.LIMONERO_LEAVES_EMPTY.get(), this::createEmptyLeavesDrops);
+
         this.dropSelf(ModBlocks.SEMILLA_PALTA.get());
         this.dropSelf(ModBlocks.SEMILLAS_LIMON.get());
 
@@ -101,21 +104,26 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 this.applyExplosionCondition(pLeavesBlock, LootItem.lootTableItem(pSaplingBlock)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 2.0F))))
                         .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, pChances)))
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).when(HAS_NO_SHEARS_OR_SILK_TOUCH)
+                        .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).when(HAS_NO_SHEARS_OR_SILK_TOUCH)
+                                .add(this.applyExplosionDecay(pLeavesBlock, LootItem.lootTableItem(Items.STICK)
+                                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))))
+                                        .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, NORMAL_LEAVES_STICK_CHANCES))));
+    }
+    protected LootTable.Builder createEmptyLeavesDrops(Block pLeavesBlock) {
+        return LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .when(HAS_NO_SHEARS_OR_SILK_TOUCH)
                         .add(this.applyExplosionDecay(pLeavesBlock, LootItem.lootTableItem(Items.STICK)
-                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F))))
-                                .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, NORMAL_LEAVES_STICK_CHANCES))));
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, NORMAL_LEAVES_STICK_CHANCES)))));
     }
 
     protected LootTable.Builder createModFlowersDrops(Block pLeavesBlock, Item pSaplingBlock, float... pChances) {
         return createSilkTouchOrShearsDispatchTable(pLeavesBlock,
                 this.applyExplosionCondition(pLeavesBlock, LootItem.lootTableItem(pSaplingBlock)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F))))
-                        .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, pChances)))
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).when(HAS_NO_SHEARS_OR_SILK_TOUCH)
-                        .add(this.applyExplosionDecay(pLeavesBlock, LootItem.lootTableItem(Items.STICK)
-                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F))))
-                                .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, NORMAL_LEAVES_STICK_CHANCES))));
+                        .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, pChances)));
     }
 
     protected LootTable.Builder createModCropDrops(Block pCropBlock, Item pGrownCropItem, Item pSeedsItem, LootItemCondition.Builder pDropGrownCropCondition) {

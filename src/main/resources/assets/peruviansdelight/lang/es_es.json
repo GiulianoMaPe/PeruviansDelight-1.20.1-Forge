@@ -49,9 +49,11 @@
 
   "item.peruviansdelight.atun_spawn_egg": "Generar atún",
 
-  "block.peruviansdelight.palto_leaves": "Hojas de palto",
+  "block.peruviansdelight.palto_leaves": "Hojas de palto con palta",
+  "block.peruviansdelight.palto_leaves_empty": "Hojas de palto",
   "block.peruviansdelight.semilla_palta": "Semilla de palta",
-  "block.peruviansdelight.limonero_leaves": "Hojas de limonero",
+  "block.peruviansdelight.limonero_leaves": "Hojas de limonero con limón",
+  "block.peruviansdelight.limonero_leaves_empty": "Hojas de limonero",
   "block.peruviansdelight.semillas_limon": "Semillas de limón",
 
   "block.peruviansdelight.aji_amarillo_silvestre": "Ají amarillo silvestre",
