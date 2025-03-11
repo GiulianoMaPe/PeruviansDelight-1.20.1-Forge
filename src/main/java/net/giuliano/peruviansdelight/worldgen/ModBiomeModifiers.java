@@ -1,16 +1,20 @@
 package net.giuliano.peruviansdelight.worldgen;
 
 import net.giuliano.peruviansdelight.PeruviansDelight;
+import net.giuliano.peruviansdelight.entity.ModEntities;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.util.List;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_TREE_PALTO = registerKey("add_tree_palto");
@@ -20,6 +24,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_SOYA_SILVESTRE = registerKey("add_soya_silvestre");
     public static final ResourceKey<BiomeModifier> ADD_CAMOTE_SILVESTRE = registerKey("add_camote_silvestre");
     public static final ResourceKey<BiomeModifier> ADD_YUCA_SILVESTRE = registerKey("add_yuca_silvestre");
+    public static final ResourceKey<BiomeModifier> ADD_ATUN = registerKey("add_atun");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -54,6 +59,10 @@ public class ModBiomeModifiers {
                 biomes.getOrThrow(BiomeTags.IS_FOREST),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.YUCA_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(ADD_ATUN, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OCEAN),
+                List.of(new MobSpawnSettings.SpawnerData(ModEntities.ATUN.get(), 20, 4, 8))));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
