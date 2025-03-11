@@ -10,15 +10,20 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
 public class ModPLacedFeatures {
     public static final ResourceKey<PlacedFeature> PALTO_PLACED_KEY = registerKey("palto_placed");
     public static final ResourceKey<PlacedFeature> LIMONERO_PLACED_KEY = registerKey("limonero_placed");
+    public static final ResourceKey<PlacedFeature> AJI_AMARILLO_SILVESTRE_PLACED_KEY = registerKey("aji_amarillo_silvestre_placed");
+    public static final ResourceKey<PlacedFeature> KION_SILVESTRE_PLACED_KEY = registerKey("kion_silvestre_placed");
+    public static final ResourceKey<PlacedFeature> SOYA_SILVESTRE_PLACED_KEY = registerKey("soya_silvestre_placed");
+    public static final ResourceKey<PlacedFeature> CAMOTE_SILVESTRE_PLACED_KEY = registerKey("camote_silvestre_placed");
+    public static final ResourceKey<PlacedFeature> YUCA_SILVESTRE_PLACED_KEY = registerKey("yuca_silvestre_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -29,6 +34,32 @@ public class ModPLacedFeatures {
         register(context, LIMONERO_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LIMONERO_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.02f, 2),
                         ModBlocks.SEMILLAS_LIMON.get()));   //p_195366_: Debe ser un número que al ser dividendo de uno no de un número largo.
+
+        register(context, AJI_AMARILLO_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.AJI_AMARILLO_SILVESTRE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32), // Adjust the rarity to make it less frequent
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
+                        PlacementUtils.countExtra(1, 0.1f, 1))); // Adjust the count to reduce density
+        register(context, KION_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.KION_SILVESTRE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
+                        PlacementUtils.countExtra(1, 0.1f, 1)));
+        register(context, SOYA_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOYA_SILVESTRE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
+                        PlacementUtils.countExtra(1, 0.1f, 1)));
+        register(context, CAMOTE_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMOTE_SILVESTRE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
+                        PlacementUtils.countExtra(1, 0.1f, 1)));
+        register(context, YUCA_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.YUCA_SILVESTRE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
+                        PlacementUtils.countExtra(1, 0.1f, 1)));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
