@@ -36,30 +36,35 @@ public class ModPLacedFeatures {
                         ModBlocks.SEMILLAS_LIMON.get()));   //p_195366_: Debe ser un número que al ser dividendo de uno no de un número largo.
 
         register(context, AJI_AMARILLO_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.AJI_AMARILLO_SILVESTRE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(32), // Adjust the rarity to make it less frequent
+                List.of(RarityFilter.onAverageOnceEvery(32), // Frecuencia de generación normal
                         InSquarePlacement.spread(),
-                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
-                        PlacementUtils.countExtra(1, 0.1f, 1))); // Adjust the count to reduce density
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+                        BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.AJI_AMARILLO_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
+                        BiomeFilter.biome()));
         register(context, KION_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.KION_SILVESTRE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
-                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
-                        PlacementUtils.countExtra(1, 0.1f, 1)));
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+                        BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.KION_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
+                        BiomeFilter.biome()));
         register(context, SOYA_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOYA_SILVESTRE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
-                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
-                        PlacementUtils.countExtra(1, 0.1f, 1)));
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+                        BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.SOYA_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
+                        BiomeFilter.biome()));
         register(context, CAMOTE_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMOTE_SILVESTRE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
-                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
-                        PlacementUtils.countExtra(1, 0.1f, 1)));
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+                        BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.CAMOTE_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
+                        BiomeFilter.biome()));
         register(context, YUCA_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.YUCA_SILVESTRE_KEY),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
-                        HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE),
-                        PlacementUtils.countExtra(1, 0.1f, 1)));
+                        PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
+                        BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.YUCA_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
+                        BiomeFilter.biome()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

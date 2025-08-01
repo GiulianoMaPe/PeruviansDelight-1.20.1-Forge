@@ -8,6 +8,8 @@ import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.common.world.BiomeModifier;
@@ -15,6 +17,7 @@ import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_TREE_PALTO = registerKey("add_tree_palto");
@@ -39,24 +42,32 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.LIMONERO_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
-        context.register(ADD_AJI_AMARILLO_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_FOREST),
+        HolderSet<Biome> cropSpawnBiomes = HolderSet.direct(Stream.concat(
+                biomes.getOrThrow(BiomeTags.IS_FOREST).stream(),
+                Stream.of(
+                        biomes.getOrThrow(Biomes.PLAINS),
+                        biomes.getOrThrow(Biomes.SUNFLOWER_PLAINS),
+                        biomes.getOrThrow(Biomes.BIRCH_FOREST),
+                        biomes.getOrThrow(Biomes.OLD_GROWTH_BIRCH_FOREST),
+                        biomes.getOrThrow(Biomes.DARK_FOREST),
+                        biomes.getOrThrow(Biomes.FOREST),
+                        biomes.getOrThrow(Biomes.MEADOW)
+                )
+        ).toList());
+
+        context.register(ADD_AJI_AMARILLO_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.AJI_AMARILLO_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
-        context.register(ADD_KION_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_FOREST),
+        context.register(ADD_KION_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.KION_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
-        context.register(ADD_SOYA_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_FOREST),
+        context.register(ADD_SOYA_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.SOYA_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
-        context.register(ADD_CAMOTE_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_FOREST),
+        context.register(ADD_CAMOTE_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.CAMOTE_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
-        context.register(ADD_YUCA_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_FOREST),
+        context.register(ADD_YUCA_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
                 HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.YUCA_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
