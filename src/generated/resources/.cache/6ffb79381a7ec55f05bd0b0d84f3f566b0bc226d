@@ -1,0 +1,5 @@
+// 1.20.1	2025-08-01T15:34:18.0349578	Global Loot Modifiers : peruviansdelight
+da868c65c74a3c44b44163fb0a985d8708fa56ab data/forge/loot_modifiers/global_loot_modifiers.json
+474f258f20d1d9a08f89954c468bbbe8e7829a52 data/peruviansdelight/loot_modifiers/inka_for_chest1.json
+04f45b133cf75975db8eb1e75bc8d28b4fab7686 data/peruviansdelight/loot_modifiers/inka_for_grass.json
+2637c4bb458e40d97f3f1c5c5230e4139a0a5e13 data/peruviansdelight/loot_modifiers/lana_for_llama.json
