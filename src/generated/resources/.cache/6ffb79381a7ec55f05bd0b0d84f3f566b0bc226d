@@ -1,5 +1,5 @@
-// 1.20.1	2025-08-01T16:28:34.5121862	Global Loot Modifiers : peruviansdelight
-2081703c26d3f51d8c70dbe850a6fc9ba0f9d220 data/forge/loot_modifiers/global_loot_modifiers.json
+// 1.20.1	2025-08-01T17:54:36.8977805	Global Loot Modifiers : peruviansdelight
+9fd58e69811e0ab85bc7cd0cdce82afaaa96d8a8 data/forge/loot_modifiers/global_loot_modifiers.json
 7fb07f95cee839c6c65eb004123bea76ee5209e2 data/peruviansdelight/loot_modifiers/inka_for_chest1.json
 88b87602c230e51a25afafd38962f632371ef083 data/peruviansdelight/loot_modifiers/inka_for_chest10.json
 168bd23a00f2877a593769fb38aa3e068bed316e data/peruviansdelight/loot_modifiers/inka_for_chest11.json
@@ -20,3 +20,5 @@ cf20d01a44e089aea3098aa66ca7bf74fe89df2e data/peruviansdelight/loot_modifiers/in
 19f19bad847211229ab50b8a4d3a2f278da0392c data/peruviansdelight/loot_modifiers/inka_for_chest8.json
 27f9eb5de64299c6105ff062c831cdeb36eb35ee data/peruviansdelight/loot_modifiers/inka_for_chest9.json
 049e86b4deb8987f0180ee60b6f355ec4eb56c6f data/peruviansdelight/loot_modifiers/lana_from_llama_x_color.json
+a573f0707f3ca8d1e0dc35850f77ad871e065cce data/peruviansdelight/loot_modifiers/pota_for_calamar.json
+226d696aba749a748db5ce476e5cd61cf7ea59be data/peruviansdelight/loot_modifiers/pota_for_glow_calamar.json

@@ -3,6 +3,7 @@ package net.giuliano.peruviansdelight.datagen;
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.giuliano.peruviansdelight.loot.AddItemModifier;
+import net.giuliano.peruviansdelight.loot.AddRandomCountItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
@@ -30,6 +31,13 @@ public class ModGlobalLootModifierProvider  extends GlobalLootModifierProvider {
         add("lana_from_llama_x_color", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/llama")).build()
         }));
+
+        add("pota_for_calamar", new AddRandomCountItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/squid")).build()
+        }, ModItems.TENTACULO_POTA.get(), 6, 8));
+        add("pota_for_glow_calamar", new AddRandomCountItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/glow_squid")).build()
+        }, ModItems.TENTACULO_POTA.get(), 6, 8));
 
         add("inka_for_chest1", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/pillager_outpost")).build(),

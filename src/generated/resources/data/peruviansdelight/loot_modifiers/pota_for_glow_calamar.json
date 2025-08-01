@@ -1,0 +1,12 @@
+{
+  "type": "peruviansdelight:add_random_count_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/glow_squid"
+    }
+  ],
+  "item": "peruviansdelight:tentaculo_pota",
+  "max_count": 8,
+  "min_count": 6
+}
