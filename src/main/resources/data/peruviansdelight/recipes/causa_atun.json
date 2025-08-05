@@ -3,6 +3,9 @@
   "category": "misc",
   "ingredients": [
     {
+      "item": "minecraft:bowl"
+    },
+    {
       "item": "minecraft:baked_potato"
     },
     [

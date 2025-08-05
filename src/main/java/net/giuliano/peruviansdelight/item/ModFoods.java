@@ -25,7 +25,7 @@ public class ModFoods {
             .saturationMod(1f).build();
     public static final FoodProperties CEVICHE = new FoodProperties.Builder().nutrition(8)
             .saturationMod(1f).build();
-    public static final FoodProperties AEROPUERTO = new FoodProperties.Builder().nutrition(14)
+    public static final FoodProperties AEROPUERTO = new FoodProperties.Builder().nutrition(12)
             .saturationMod(1f).build();
     public static final FoodProperties MOSTRITO = new FoodProperties.Builder().nutrition(14)
             .saturationMod(1f).build();

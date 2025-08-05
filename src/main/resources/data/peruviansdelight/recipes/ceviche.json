@@ -8,9 +8,14 @@
     {
       "item": "peruviansdelight:aji_amarillo"
     },
-    {
-      "item": "peruviansdelight:filete_atun"
-    },
+    [
+      {
+        "item": "peruviansdelight:filete_atun"
+      },
+      {
+        "tag": "forge:raw_fishes"
+      }
+    ],
     {
       "tag": "forge:crops/onion"
     },
