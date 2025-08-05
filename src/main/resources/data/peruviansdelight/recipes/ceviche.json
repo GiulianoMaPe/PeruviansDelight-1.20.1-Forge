@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "peruviansdelight:camote_cortado"
+      "item": "peruviansdelight:camote_frito"
     },
     {
       "item": "peruviansdelight:aji_amarillo"
@@ -16,6 +16,9 @@
     },
     {
       "item": "peruviansdelight:gajo_limon"
+    },
+    {
+      "item": "minecraft:bowl"
     }
   ],
   "result": {
