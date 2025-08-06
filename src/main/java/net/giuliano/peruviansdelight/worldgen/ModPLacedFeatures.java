@@ -10,7 +10,6 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
@@ -36,31 +35,31 @@ public class ModPLacedFeatures {
                         ModBlocks.SEMILLAS_LIMON.get()));   //p_195366_: Debe ser un número que al ser dividendo de uno no de un número largo.
 
         register(context, AJI_AMARILLO_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.AJI_AMARILLO_SILVESTRE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(32), // Frecuencia de generación normal
+                List.of(RarityFilter.onAverageOnceEvery(120), // Frecuencia de generación normal
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                         BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.AJI_AMARILLO_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
                         BiomeFilter.biome()));
         register(context, KION_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.KION_SILVESTRE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+                List.of(RarityFilter.onAverageOnceEvery(120),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                         BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.KION_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
                         BiomeFilter.biome()));
         register(context, SOYA_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SOYA_SILVESTRE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+                List.of(RarityFilter.onAverageOnceEvery(120),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                         BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.SOYA_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
                         BiomeFilter.biome()));
         register(context, CAMOTE_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CAMOTE_SILVESTRE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+                List.of(RarityFilter.onAverageOnceEvery(120),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                         BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.CAMOTE_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
                         BiomeFilter.biome()));
         register(context, YUCA_SILVESTRE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.YUCA_SILVESTRE_KEY),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+                List.of(RarityFilter.onAverageOnceEvery(120),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP_WORLD_SURFACE,
                         BlockPredicateFilter.forPredicate(net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate.wouldSurvive(ModBlocks.YUCA_SILVESTRE.get().defaultBlockState(), net.minecraft.core.BlockPos.ZERO)),
