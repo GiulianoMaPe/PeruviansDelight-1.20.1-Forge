@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-05T01:45:56.7026101	Loot Tables
+// 1.20.1	2025-08-06T17:45:12.5824341	Loot Tables
 0ba7d23981419dd414b9dc8fe9b396b6e730deaa data/peruviansdelight/loot_tables/blocks/ajies_amarillos.json
 c1e9484ea61e6ab1f4603363898b76da83dca107 data/peruviansdelight/loot_tables/blocks/aji_amarillo_silvestre.json
 0afffbf94efc94273ae6544ed97a19279fb45123 data/peruviansdelight/loot_tables/blocks/camotes.json
@@ -12,7 +12,7 @@ f175a7d42f396f86813eb52b171cba0f713e80b9 data/peruviansdelight/loot_tables/block
 4f8b1dc814a50fcbab1f3f9279ea37392c386ffa data/peruviansdelight/loot_tables/blocks/palto_leaves_empty.json
 abfdbbad1d6ffb5859dd617605bdd444b18bb89a data/peruviansdelight/loot_tables/blocks/semillas_limon.json
 780e0e26ef1e8508c09d7f05cfaf5c35fed05502 data/peruviansdelight/loot_tables/blocks/semilla_palta.json
-b67800ebc845848c7543f02e65f5e101cdcc8b18 data/peruviansdelight/loot_tables/blocks/soyas.json
+b31bef2dc5c99edf178f588ed72db9ef34eca807 data/peruviansdelight/loot_tables/blocks/soyas.json
 046a02ecf114bd45c94758e549c7499d34c67417 data/peruviansdelight/loot_tables/blocks/soya_silvestre.json
 326374c92013590fa163602b9a6ee9bf9d8b6e20 data/peruviansdelight/loot_tables/blocks/yucas.json
 7628fff153259ea23c53f7873b8e4d9eaf051dc1 data/peruviansdelight/loot_tables/blocks/yuca_silvestre.json
