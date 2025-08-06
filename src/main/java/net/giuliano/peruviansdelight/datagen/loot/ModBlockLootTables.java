@@ -119,10 +119,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                                 .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, NORMAL_LEAVES_STICK_CHANCES)))));
     }
 
-    protected LootTable.Builder createModFlowersDrops(Block pLeavesBlock, Item pSaplingBlock, float... pChances) {
-        return createSilkTouchOrShearsDispatchTable(pLeavesBlock,
-                this.applyExplosionCondition(pLeavesBlock, LootItem.lootTableItem(pSaplingBlock)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F))))
+    protected LootTable.Builder createModFlowersDrops(Block pFlowerBlock, Item pDroppedItem, float... pChances) {
+        return createSilkTouchOrShearsDispatchTable(pFlowerBlock,
+                this.applyExplosionCondition(pFlowerBlock, LootItem.lootTableItem(pDroppedItem)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1.0F))))
                         .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, pChances)));
     }
 
