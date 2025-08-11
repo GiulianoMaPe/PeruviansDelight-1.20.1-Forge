@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "peruviansdelight:limonero_planks"
+    }
+  },
+  "result": {
+    "item": "peruviansdelight:limonero_trapdoor",
+    "count": 2
+  }
+}

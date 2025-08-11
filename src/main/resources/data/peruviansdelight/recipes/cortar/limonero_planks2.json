@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      {
+        "item": "peruviansdelight:limonero_door"
+      },
+      {
+        "item": "peruviansdelight:limonero_trapdoor"
+      }
+    ]
+  ],
+  "result": [
+    {
+      "item": "peruviansdelight:limonero_planks"
+    }
+  ],
+  "sound": "minecraft:item.axe.strip",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_strip"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    [
+      {
+        "item": "peruviansdelight:palto_door"
+      },
+      {
+        "item": "peruviansdelight:palto_trapdoor"
+      }
+    ]
+  ],
+  "result": [
+    {
+      "item": "peruviansdelight:palto_planks"
+    }
+  ],
+  "sound": "minecraft:item.axe.strip",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_strip"
+  }
+}

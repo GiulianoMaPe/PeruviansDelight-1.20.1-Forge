@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#$#",
+    "#$#"
+  ],
+  "key": {
+    "#": {
+      "item": "peruviansdelight:limonero_planks"
+    },
+    "$": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "peruviansdelight:limonero_fence",
+    "count": 3
+  }
+}

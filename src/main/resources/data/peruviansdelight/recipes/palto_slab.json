@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "peruviansdelight:palto_planks"
+    }
+  },
+  "result": {
+    "item": "peruviansdelight:palto_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#$#",
+    "#$#"
+  ],
+  "key": {
+    "$": {
+      "item": "peruviansdelight:palto_planks"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "peruviansdelight:palto_fence_gate"
+  }
+}
