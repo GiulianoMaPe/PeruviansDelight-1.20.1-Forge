@@ -19,6 +19,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.TreeConfigurati
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
 
@@ -33,7 +34,7 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         register(context, PALTO_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(Blocks.OAK_LOG),
+                BlockStateProvider.simple(ModBlocks.PALTO_LOG.get()),
                 new PaltoTrunkPLacer(3, 1, 1),
 
                 new RandomLeafBlockStateProvider(List.of(
@@ -45,7 +46,7 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0,2)).build());
 
         register(context, LIMONERO_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(Blocks.OAK_LOG),
+                BlockStateProvider.simple(ModBlocks.LIMONERO_LOG.get()),
                 new PaltoTrunkPLacer(3, 1, 1),
 
                 new RandomLeafBlockStateProvider(List.of(
