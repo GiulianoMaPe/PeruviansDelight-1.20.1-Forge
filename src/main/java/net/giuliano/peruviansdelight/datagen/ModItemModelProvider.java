@@ -71,8 +71,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.SEMILLA_PALTA);
         saplingItem(ModBlocks.SEMILLAS_LIMON);
 
-        simpleItem(ModItems.ALMA_EN_PENA);
-
         simpleBlockItemBlockTexture(ModBlocks.AJI_AMARILLO_SILVESTRE);
         simpleBlockItemBlockTexture(ModBlocks.KION_SILVESTRE);
         simpleBlockItemBlockTexture(ModBlocks.SOYA_SILVESTRE);

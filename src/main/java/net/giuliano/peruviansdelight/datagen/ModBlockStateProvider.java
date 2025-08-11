@@ -7,11 +7,13 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.BlockModelBuilder;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -36,8 +38,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.CARA);
-
         this.customStageBlock((CropBlock) ModBlocks.AJI_AMARILLO_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", AjiAmarilloCropBlock.AGE, new ArrayList());
         this.customStageBlock((CropBlock) ModBlocks.KION_CROP.get(),
@@ -49,8 +49,39 @@ public class ModBlockStateProvider extends BlockStateProvider {
         this.customStageBlock((CropBlock) ModBlocks.YUCA_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", YucaCropBlock.AGE, new ArrayList());
 
+        logBlock(((RotatedPillarBlock) ModBlocks.PALTO_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PALTO_WOOD.get()), blockTexture(ModBlocks.PALTO_LOG.get()), blockTexture(ModBlocks.PALTO_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PALTO_LOG.get()), blockTexture(ModBlocks.STRIPPED_PALTO_LOG.get()),
+                new ResourceLocation(PeruviansDelight.MOD_ID, "block/stripped_palto_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_PALTO_WOOD.get()), blockTexture(ModBlocks.STRIPPED_PALTO_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_PALTO_LOG.get()));
+
+        blockItem(ModBlocks.PALTO_LOG);
+        blockItem(ModBlocks.PALTO_WOOD);
+        blockItem(ModBlocks.STRIPPED_PALTO_LOG);
+        blockItem(ModBlocks.STRIPPED_PALTO_WOOD);
+
+        blockWithItem(ModBlocks.PALTO_PLANKS);
+
         leavesBlock(ModBlocks.PALTO_LEAVES);
         leavesBlock(ModBlocks.PALTO_LEAVES_EMPTY);
+
+        logBlock(((RotatedPillarBlock) ModBlocks.LIMONERO_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.LIMONERO_WOOD.get()), blockTexture(ModBlocks.LIMONERO_LOG.get()), blockTexture(ModBlocks.LIMONERO_LOG.get()));
+
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_LIMONERO_LOG.get()), blockTexture(ModBlocks.STRIPPED_LIMONERO_LOG.get()),
+                new ResourceLocation(PeruviansDelight.MOD_ID, "block/stripped_limonero_log_top"));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_LIMONERO_WOOD.get()), blockTexture(ModBlocks.STRIPPED_LIMONERO_LOG.get()),
+                blockTexture(ModBlocks.STRIPPED_LIMONERO_LOG.get()));
+
+        blockItem(ModBlocks.LIMONERO_LOG);
+        blockItem(ModBlocks.LIMONERO_WOOD);
+        blockItem(ModBlocks.STRIPPED_LIMONERO_LOG);
+        blockItem(ModBlocks.STRIPPED_LIMONERO_WOOD);
+
+        blockWithItem(ModBlocks.LIMONERO_PLANKS);
+
         leavesBlock(ModBlocks.LIMONERO_LEAVES);
         leavesBlock(ModBlocks.LIMONERO_LEAVES_EMPTY);
 
@@ -88,6 +119,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
             stageName = stageName + (suffixes.isEmpty() ? ageSuffix : (Integer)suffixes.get(Math.min(suffixes.size(), ageSuffix)));
             return parent == null ? ConfiguredModel.builder().modelFile(((BlockModelBuilder)this.models().cross(stageName, this.resourceBlock(stageName))).renderType("cutout")).build() : ConfiguredModel.builder().modelFile(((BlockModelBuilder)this.models().singleTexture(stageName, parent, textureKey, this.resourceBlock(stageName))).renderType("cutout")).build();
         }, ignored);
+    }
+
+    private void blockItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile(PeruviansDelight.MOD_ID +
+                ":block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

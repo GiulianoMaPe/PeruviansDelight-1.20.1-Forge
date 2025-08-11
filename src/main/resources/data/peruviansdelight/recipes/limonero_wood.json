@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "peruviansdelight:limonero_log"
+    }
+  },
+  "result": {
+    "item": "peruviansdelight:limonero_wood",
+    "count": 3
+  }
+}

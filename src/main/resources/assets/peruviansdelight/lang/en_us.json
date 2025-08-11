@@ -49,9 +49,22 @@
 
   "item.peruviansdelight.atun_spawn_egg": "Tuna Spawn Egg",
 
+  "block.peruviansdelight.palto_log": "Palto Log",
+  "block.peruviansdelight.palto_wood": "Palto Wood",
+  "block.peruviansdelight.stripped_palto_log": "Stripped Palto Log",
+  "block.peruviansdelight.stripped_palto_wood": "Stripped Palto Wood",
+  "block.peruviansdelight.palto_planks": "Palto Planks",
+
   "block.peruviansdelight.palto_leaves": "Palto Leaves with Avocado",
   "block.peruviansdelight.palto_leaves_empty": "Palto Leaves",
   "block.peruviansdelight.semilla_palta": "Avocado Seed",
+
+  "block.peruviansdelight.limonero_log": "Limonero Log",
+  "block.peruviansdelight.limonero_wood": "Limonero Wood",
+  "block.peruviansdelight.stripped_limonero_log": "Stripped Limonero Log",
+  "block.peruviansdelight.stripped_limonero_wood": "Stripped Limonero Wood",
+  "block.peruviansdelight.limonero_planks": "Limonero Planks",
+
   "block.peruviansdelight.limonero_leaves": "Lemon Tree Leaves with Lemon",
   "block.peruviansdelight.limonero_leaves_empty": "Lemon Tree Leaves",
   "block.peruviansdelight.semillas_limon": "Lemon Seed",
@@ -69,9 +82,6 @@
   "block.peruviansdelight.avocado_crate": "Avocado Crate",
   "block.peruviansdelight.ginger_crate": "Ginger Crate",
   "block.peruviansdelight.soybean_pod_crate": "Soybean Pod Crate",
-
-  "block.peruviansdelight.cara": "Cabeza Clava",
-  "item.peruviansdelight.alma_en_pena": "Suffering Soul",
 
   "sounds.peruviansdelight.inca_kola_aaaah": "Aaaaaah",
 

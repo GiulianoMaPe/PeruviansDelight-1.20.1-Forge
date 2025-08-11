@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "peruviansdelight:block/stripped_palto_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "peruviansdelight:block/stripped_palto_wood"
+    },
+    "axis=z": {
+      "model": "peruviansdelight:block/stripped_palto_wood_horizontal",
+      "x": 90
+    }
+  }
+}

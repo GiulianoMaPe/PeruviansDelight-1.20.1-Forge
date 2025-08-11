@@ -49,9 +49,22 @@
 
   "item.peruviansdelight.atun_spawn_egg": "Generar atún",
 
+  "block.peruviansdelight.palto_log": "Tronco de palto",
+  "block.peruviansdelight.palto_wood": "Leño de palto",
+  "block.peruviansdelight.stripped_palto_log": "Tronco de palto sin corteza",
+  "block.peruviansdelight.stripped_palto_wood": "Leño de palto sin corteza",
+  "block.peruviansdelight.palto_planks": "Tablones de palto",
+
   "block.peruviansdelight.palto_leaves": "Hojas de palto con palta",
   "block.peruviansdelight.palto_leaves_empty": "Hojas de palto",
   "block.peruviansdelight.semilla_palta": "Semilla de palta",
+
+  "block.peruviansdelight.limonero_log": "Tronco de limonero",
+  "block.peruviansdelight.limonero_wood": "Leño de limonero",
+  "block.peruviansdelight.stripped_limonero_log": "Tronco de limonero sin corteza",
+  "block.peruviansdelight.stripped_limonero_wood": "Leño de limonero sin corteza",
+  "block.peruviansdelight.limonero_planks": "Tablones de limonero",
+
   "block.peruviansdelight.limonero_leaves": "Hojas de limonero con limón",
   "block.peruviansdelight.limonero_leaves_empty": "Hojas de limonero",
   "block.peruviansdelight.semillas_limon": "Semillas de limón",
@@ -61,9 +74,6 @@
   "block.peruviansdelight.soya_silvestre": "Soya silvestre",
   "block.peruviansdelight.camote_silvestre": "Camote silvestre",
   "block.peruviansdelight.yuca_silvestre": "Yuca silvestre",
-
-  "block.peruviansdelight.cara": "Cabeza clava",
-  "item.peruviansdelight.alma_en_pena": "Alma en pena",
 
   "sounds.peruviansdelight.inca_kola_aaaah": "Aaaaaah",
 

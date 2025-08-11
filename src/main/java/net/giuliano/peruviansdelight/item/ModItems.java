@@ -124,9 +124,6 @@ public class ModItems {
             () -> new ForgeSpawnEggItem(ModEntities.ATUN, 0xb4d4e1, 0x195a75,
                     new Item.Properties()));
 
-    public static final RegistryObject<Item> ALMA_EN_PENA = ITEMS.register("alma_en_pena",
-            () -> new Item(new Item.Properties()));
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

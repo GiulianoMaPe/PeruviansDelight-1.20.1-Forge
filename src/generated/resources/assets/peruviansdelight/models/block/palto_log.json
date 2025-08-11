@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "peruviansdelight:block/palto_log_top",
+    "side": "peruviansdelight:block/palto_log"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "peruviansdelight:stripped_palto_log"
+    }
+  },
+  "result": {
+    "item": "peruviansdelight:stripped_palto_wood",
+    "count": 3
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "peruviansdelight:block/stripped_limonero_log_top",
+    "side": "peruviansdelight:block/stripped_limonero_log"
+  }
+}

@@ -43,9 +43,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.add(ModBlocks.CARA.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.CARA.get(), ModItems.ALMA_EN_PENA.get()));
-
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.AJI_AMARILLO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(AjiAmarilloCropBlock.AGE, 7));
@@ -86,6 +83,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.SEMILLA_PALTA.get());
         this.dropSelf(ModBlocks.SEMILLAS_LIMON.get());
+
+        this.dropSelf(ModBlocks.PALTO_LOG.get());
+        this.dropSelf(ModBlocks.PALTO_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_PALTO_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_PALTO_WOOD.get());
+        this.dropSelf(ModBlocks.PALTO_PLANKS.get());
+
+        this.dropSelf(ModBlocks.LIMONERO_LOG.get());
+        this.dropSelf(ModBlocks.LIMONERO_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_LIMONERO_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_LIMONERO_WOOD.get());
+        this.dropSelf(ModBlocks.LIMONERO_PLANKS.get());
 
         this.add(ModBlocks.AJI_AMARILLO_SILVESTRE.get(), block ->
                 createModFlowersDrops(block, ModItems.AJI_AMARILLO.get(), 2.0F, 2.25F, 2.6667F, 3.0F));

@@ -27,10 +27,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, PeruviansDelight.MOD_ID);
 
-    public static final RegistryObject<Block> CARA = registerBlock("cara",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-                    .requiresCorrectToolForDrops(), UniformInt.of(3, 7)));
-
     public static final RegistryObject<Block> AJI_AMARILLO_CROP = BLOCKS.register("ajies_amarillos",
             () -> new AjiAmarilloCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> KION_CROP = BLOCKS.register("kiones",
@@ -42,18 +38,40 @@ public class ModBlocks {
     public static final RegistryObject<Block> YUCA_CROP = BLOCKS.register("yucas",
             () -> new YucaCropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noOcclusion().noCollission()));
 
+    public static final RegistryObject<Block> PALTO_LOG = registerBlock("palto_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> PALTO_WOOD = registerBlock("palto_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_PALTO_LOG = registerBlock("stripped_palto_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_PALTO_WOOD = registerBlock("stripped_palto_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+    public static final RegistryObject<Block> PALTO_PLANKS = registerBlock("palto_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(3f)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
     public static final RegistryObject<Block> PALTO_LEAVES = registerBlock("palto_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
                 }
-
                 @Override
                 public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 60;
                 }
-
                 @Override
                 public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 30;
@@ -65,15 +83,38 @@ public class ModBlocks {
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
                 }
-
                 @Override
                 public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 60;
                 }
-
                 @Override
                 public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 30;
+                }
+            });
+
+    public static final RegistryObject<Block> LIMONERO_LOG = registerBlock("limonero_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> LIMONERO_WOOD = registerBlock("limonero_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_LIMONERO_LOG = registerBlock("stripped_limonero_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3f)));
+    public static final RegistryObject<Block> STRIPPED_LIMONERO_WOOD = registerBlock("stripped_limonero_wood",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
+
+    public static final RegistryObject<Block> LIMONERO_PLANKS = registerBlock("limonero_planks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(3f)){
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 5;
                 }
             });
     public static final RegistryObject<Block> LIMONERO_LEAVES = registerBlock("limonero_leaves",
@@ -82,12 +123,10 @@ public class ModBlocks {
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
                 }
-
                 @Override
                 public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 60;
                 }
-
                 @Override
                 public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 30;
@@ -99,12 +138,10 @@ public class ModBlocks {
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
                 }
-
                 @Override
                 public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 60;
                 }
-
                 @Override
                 public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return 30;

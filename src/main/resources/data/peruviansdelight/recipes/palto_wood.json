@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "peruviansdelight:palto_log"
+    }
+  },
+  "result": {
+    "item": "peruviansdelight:palto_wood",
+    "count": 3
+  }
+}

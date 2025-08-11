@@ -71,8 +71,21 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.SEMILLA_PALTA.get());
                         output.accept(ModBlocks.SEMILLAS_LIMON.get());
 
+                        output.accept(ModBlocks.PALTO_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_PALTO_LOG.get());
+                        output.accept(ModBlocks.PALTO_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_PALTO_WOOD.get());
+
+                        output.accept(ModBlocks.PALTO_PLANKS.get());
                         output.accept(ModBlocks.PALTO_LEAVES.get());
                         output.accept(ModBlocks.PALTO_LEAVES_EMPTY.get());
+
+                        output.accept(ModBlocks.LIMONERO_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_LIMONERO_LOG.get());
+                        output.accept(ModBlocks.LIMONERO_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_LIMONERO_WOOD.get());
+
+                        output.accept(ModBlocks.LIMONERO_PLANKS.get());
                         output.accept(ModBlocks.LIMONERO_LEAVES.get());
                         output.accept(ModBlocks.LIMONERO_LEAVES_EMPTY.get());
 
@@ -82,8 +95,6 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.CAMOTE_SILVESTRE.get());
                         output.accept(ModBlocks.YUCA_SILVESTRE.get());
 
-                        output.accept(ModBlocks.CARA.get());
-                        output.accept(ModItems.ALMA_EN_PENA.get());
                     })
                     .build());
 

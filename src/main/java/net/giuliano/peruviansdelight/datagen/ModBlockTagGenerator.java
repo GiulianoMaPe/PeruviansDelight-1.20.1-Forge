@@ -18,10 +18,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.CARA.get());
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PALTO_LOG.get())
+                .add(ModBlocks.PALTO_WOOD.get())
+                .add(ModBlocks.STRIPPED_PALTO_LOG.get())
+                .add(ModBlocks.STRIPPED_PALTO_WOOD.get())
+                .add(ModBlocks.LIMONERO_LOG.get())
+                .add(ModBlocks.LIMONERO_WOOD.get())
+                .add(ModBlocks.STRIPPED_LIMONERO_LOG.get())
+                .add(ModBlocks.STRIPPED_LIMONERO_WOOD.get());
 
-        this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.CARA.get());
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.PALTO_PLANKS.get())
+                .add(ModBlocks.LIMONERO_PLANKS.get());
     }
 }
