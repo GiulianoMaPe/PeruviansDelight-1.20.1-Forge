@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "peruviansdelight:block/limonero_slab"
+    },
+    "type=double": {
+      "model": "peruviansdelight:block/limonero_planks"
+    },
+    "type=top": {
+      "model": "peruviansdelight:block/limonero_slab_top"
+    }
+  }
+}

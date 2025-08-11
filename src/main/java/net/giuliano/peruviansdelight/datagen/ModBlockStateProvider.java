@@ -5,9 +5,8 @@ import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.block.custom.*;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.flag.FeatureElement;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.BlockModelBuilder;
@@ -15,6 +14,7 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.FarmersDelight;
@@ -87,6 +87,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         saplingBlock(ModBlocks.SEMILLA_PALTA);
         saplingBlock(ModBlocks.SEMILLAS_LIMON);
+
+        stairsBlock(((StairBlock) ModBlocks.PALTO_STAIRS.get()), blockTexture(ModBlocks.PALTO_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.PALTO_SLAB.get()), blockTexture(ModBlocks.PALTO_PLANKS.get()), blockTexture(ModBlocks.PALTO_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.PALTO_BUTTON.get()), blockTexture(ModBlocks.PALTO_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.PALTO_PRESSURE_PLATE.get()), blockTexture(ModBlocks.PALTO_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.PALTO_FENCE.get()), blockTexture(ModBlocks.PALTO_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.PALTO_FENCE_GATE.get()), blockTexture(ModBlocks.PALTO_PLANKS.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.PALTO_DOOR.get()), modLoc("block/palto_door_bottom"), modLoc("block/palto_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.PALTO_TRAPDOOR.get()), modLoc("block/palto_trapdoor"), true, "cutout");
+
+        stairsBlock(((StairBlock) ModBlocks.LIMONERO_STAIRS.get()), blockTexture(ModBlocks.LIMONERO_PLANKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.LIMONERO_SLAB.get()), blockTexture(ModBlocks.LIMONERO_PLANKS.get()), blockTexture(ModBlocks.LIMONERO_PLANKS.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.LIMONERO_BUTTON.get()), blockTexture(ModBlocks.LIMONERO_PLANKS.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.LIMONERO_PRESSURE_PLATE.get()), blockTexture(ModBlocks.LIMONERO_PLANKS.get()));
+        fenceBlock(((FenceBlock) ModBlocks.LIMONERO_FENCE.get()), blockTexture(ModBlocks.LIMONERO_PLANKS.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.LIMONERO_FENCE_GATE.get()), blockTexture(ModBlocks.LIMONERO_PLANKS.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.LIMONERO_DOOR.get()), modLoc("block/limonero_door_bottom"), modLoc("block/limonero_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.LIMONERO_TRAPDOOR.get()), modLoc("block/limonero_trapdoor"), true, "cutout");
 
         simpleBlockWithItem(ModBlocks.AJI_AMARILLO_SILVESTRE.get(), models().cross(blockTexture(ModBlocks.AJI_AMARILLO_SILVESTRE.get()).getPath(),
                 blockTexture(ModBlocks.AJI_AMARILLO_SILVESTRE.get())).renderType("cutout"));

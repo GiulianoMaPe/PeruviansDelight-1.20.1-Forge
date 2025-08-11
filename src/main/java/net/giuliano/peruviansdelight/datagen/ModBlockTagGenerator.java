@@ -31,5 +31,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.PALTO_PLANKS.get())
                 .add(ModBlocks.LIMONERO_PLANKS.get());
+
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.PALTO_FENCE.get())
+                .add(ModBlocks.LIMONERO_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PALTO_FENCE_GATE.get())
+                .add(ModBlocks.LIMONERO_FENCE_GATE.get());
     }
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "peruviansdelight:block/palto_slab"
+    },
+    "type=double": {
+      "model": "peruviansdelight:block/palto_planks"
+    },
+    "type=top": {
+      "model": "peruviansdelight:block/palto_slab_top"
+    }
+  }
+}

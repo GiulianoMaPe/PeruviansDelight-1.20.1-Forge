@@ -75,17 +75,35 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.STRIPPED_PALTO_LOG.get());
                         output.accept(ModBlocks.PALTO_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_PALTO_WOOD.get());
-
                         output.accept(ModBlocks.PALTO_PLANKS.get());
-                        output.accept(ModBlocks.PALTO_LEAVES.get());
-                        output.accept(ModBlocks.PALTO_LEAVES_EMPTY.get());
+
+                        output.accept(ModBlocks.PALTO_STAIRS.get());
+                        output.accept(ModBlocks.PALTO_SLAB.get());
+                        output.accept(ModBlocks.PALTO_FENCE.get());
+                        output.accept(ModBlocks.PALTO_FENCE_GATE.get());
+                        output.accept(ModBlocks.PALTO_DOOR.get());
+                        output.accept(ModBlocks.PALTO_TRAPDOOR.get());
+                        output.accept(ModBlocks.PALTO_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.PALTO_BUTTON.get());
 
                         output.accept(ModBlocks.LIMONERO_LOG.get());
                         output.accept(ModBlocks.STRIPPED_LIMONERO_LOG.get());
                         output.accept(ModBlocks.LIMONERO_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_LIMONERO_WOOD.get());
-
                         output.accept(ModBlocks.LIMONERO_PLANKS.get());
+
+                        output.accept(ModBlocks.LIMONERO_STAIRS.get());
+                        output.accept(ModBlocks.LIMONERO_SLAB.get());
+                        output.accept(ModBlocks.LIMONERO_FENCE.get());
+                        output.accept(ModBlocks.LIMONERO_FENCE_GATE.get());
+                        output.accept(ModBlocks.LIMONERO_DOOR.get());
+                        output.accept(ModBlocks.LIMONERO_TRAPDOOR.get());
+                        output.accept(ModBlocks.LIMONERO_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.LIMONERO_BUTTON.get());
+
+                        output.accept(ModBlocks.PALTO_LEAVES.get());
+                        output.accept(ModBlocks.PALTO_LEAVES_EMPTY.get());
+
                         output.accept(ModBlocks.LIMONERO_LEAVES.get());
                         output.accept(ModBlocks.LIMONERO_LEAVES_EMPTY.get());
 

@@ -96,6 +96,30 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_LIMONERO_WOOD.get());
         this.dropSelf(ModBlocks.LIMONERO_PLANKS.get());
 
+        this.dropSelf(ModBlocks.PALTO_STAIRS.get());
+        this.dropSelf(ModBlocks.PALTO_BUTTON.get());
+        this.dropSelf(ModBlocks.PALTO_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.PALTO_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.PALTO_FENCE.get());
+        this.dropSelf(ModBlocks.PALTO_FENCE_GATE.get());
+
+        this.add(ModBlocks.PALTO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PALTO_SLAB.get()));
+        this.add(ModBlocks.PALTO_DOOR.get(),
+                block -> createDoorTable(ModBlocks.PALTO_DOOR.get()));
+
+        this.dropSelf(ModBlocks.LIMONERO_STAIRS.get());
+        this.dropSelf(ModBlocks.LIMONERO_BUTTON.get());
+        this.dropSelf(ModBlocks.LIMONERO_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.LIMONERO_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.LIMONERO_FENCE.get());
+        this.dropSelf(ModBlocks.LIMONERO_FENCE_GATE.get());
+
+        this.add(ModBlocks.LIMONERO_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LIMONERO_SLAB.get()));
+        this.add(ModBlocks.LIMONERO_DOOR.get(),
+                block -> createDoorTable(ModBlocks.LIMONERO_DOOR.get()));
+
         this.add(ModBlocks.AJI_AMARILLO_SILVESTRE.get(), block ->
                 createModFlowersDrops(block, ModItems.AJI_AMARILLO.get(), 2.0F, 2.25F, 2.6667F, 3.0F));
         this.add(ModBlocks.KION_SILVESTRE.get(), block ->

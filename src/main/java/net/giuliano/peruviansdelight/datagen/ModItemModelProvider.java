@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -71,6 +72,27 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.SEMILLA_PALTA);
         saplingItem(ModBlocks.SEMILLAS_LIMON);
 
+        simpleBlockItem(ModBlocks.PALTO_DOOR);
+        simpleBlockItem(ModBlocks.LIMONERO_DOOR);
+
+        fenceItem(ModBlocks.PALTO_FENCE, ModBlocks.PALTO_PLANKS);
+        fenceItem(ModBlocks.LIMONERO_FENCE, ModBlocks.LIMONERO_PLANKS);
+
+        buttonItem(ModBlocks.PALTO_BUTTON, ModBlocks.PALTO_PLANKS);
+        buttonItem(ModBlocks.LIMONERO_BUTTON, ModBlocks.LIMONERO_PLANKS);
+
+        evenSimplerBlockItem(ModBlocks.PALTO_STAIRS);
+        evenSimplerBlockItem(ModBlocks.PALTO_SLAB);
+        evenSimplerBlockItem(ModBlocks.PALTO_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.PALTO_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.LIMONERO_STAIRS);
+        evenSimplerBlockItem(ModBlocks.LIMONERO_SLAB);
+        evenSimplerBlockItem(ModBlocks.LIMONERO_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.LIMONERO_FENCE_GATE);
+
+        trapdoorItem(ModBlocks.PALTO_TRAPDOOR);
+        trapdoorItem(ModBlocks.LIMONERO_TRAPDOOR);
+
         simpleBlockItemBlockTexture(ModBlocks.AJI_AMARILLO_SILVESTRE);
         simpleBlockItemBlockTexture(ModBlocks.KION_SILVESTRE);
         simpleBlockItemBlockTexture(ModBlocks.SOYA_SILVESTRE);
@@ -96,5 +118,31 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + item.getId().getPath()));
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture", new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+            .texture("texture", new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(PeruviansDelight.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    private void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(PeruviansDelight.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    private void trapdoorItem(RegistryObject<Block> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_bottom"));
     }
 }

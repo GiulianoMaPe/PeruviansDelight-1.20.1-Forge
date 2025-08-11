@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "peruviansdelight:block/palto_planks",
+    "side": "peruviansdelight:block/palto_planks",
+    "top": "peruviansdelight:block/palto_planks"
+  }
+}
