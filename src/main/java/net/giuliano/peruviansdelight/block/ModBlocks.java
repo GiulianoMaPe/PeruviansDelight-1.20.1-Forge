@@ -117,19 +117,19 @@ public class ModBlocks {
             () -> new SaplingBlock(new LimoneroTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     public static final RegistryObject<Block> AJI_AMARILLO_SILVESTRE = registerBlock("aji_amarillo_silvestre",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+            () -> new PlantaSilvestreBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
     public static final RegistryObject<Block> KION_SILVESTRE = registerBlock("kion_silvestre",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+            () -> new PlantaSilvestreBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
     public static final RegistryObject<Block> SOYA_SILVESTRE = registerBlock("soya_silvestre",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+            () -> new PlantaSilvestreBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CAMOTE_SILVESTRE = registerBlock("camote_silvestre",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+            () -> new PlantaSilvestreBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
     public static final RegistryObject<Block> YUCA_SILVESTRE = registerBlock("yuca_silvestre",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+            () -> new PlantaSilvestreBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

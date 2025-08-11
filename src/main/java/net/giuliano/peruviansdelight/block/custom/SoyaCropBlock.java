@@ -1,6 +1,7 @@
 package net.giuliano.peruviansdelight.block.custom;
 
 import net.giuliano.peruviansdelight.item.ModItems;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
@@ -8,6 +9,10 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.storage.loot.LootParams;
+
+import java.util.Collections;
+import java.util.List;
 
 public class SoyaCropBlock extends CropBlock {
     public static final int MAX_AGE = 7;

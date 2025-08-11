@@ -61,7 +61,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         LootItemCondition.Builder lootitemcondition$builder3 = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.SOYA_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(SoyaCropBlock.AGE, 7));
-        this.add(ModBlocks.SOYA_CROP.get(), createModCropDrops(ModBlocks.SOYA_CROP.get(), ModItems.VAINA_SOYA.get(),
+        this.add(ModBlocks.SOYA_CROP.get(), createHarvestableCropDrops(ModBlocks.SOYA_CROP.get(), ModItems.VAINA_SOYA.get(),
                 ModItems.GRANOS_SOYA.get(), lootitemcondition$builder3));
 
         LootItemCondition.Builder lootitemcondition$builder4 = LootItemBlockStatePropertyCondition
@@ -119,10 +119,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                                 .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, NORMAL_LEAVES_STICK_CHANCES)))));
     }
 
-    protected LootTable.Builder createModFlowersDrops(Block pLeavesBlock, Item pSaplingBlock, float... pChances) {
-        return createSilkTouchOrShearsDispatchTable(pLeavesBlock,
-                this.applyExplosionCondition(pLeavesBlock, LootItem.lootTableItem(pSaplingBlock)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F))))
+    protected LootTable.Builder createModFlowersDrops(Block pFlowerBlock, Item pDroppedItem, float... pChances) {
+        return createSilkTouchOrShearsDispatchTable(pFlowerBlock,
+                this.applyExplosionCondition(pFlowerBlock, LootItem.lootTableItem(pDroppedItem)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1.0F))))
                         .when(BonusLevelTableCondition.bonusLevelFlatChance(Enchantments.BLOCK_FORTUNE, pChances)));
     }
 
@@ -144,6 +144,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 1.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createHarvestableCropDrops(Block pCropBlock, Item pFruitItem, Item pSeedItem, LootItemCondition.Builder pMaturityCondition) {
+        return this.applyExplosionDecay(pCropBlock, LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .add(LootItem.lootTableItem(pFruitItem)
+                                .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2))
+                                .when(pMaturityCondition) // Suelta el fruto cuando está maduro
+                                .otherwise(LootItem.lootTableItem(pSeedItem))))); // De lo contrario, suelta la semilla
     }
 
     @Override

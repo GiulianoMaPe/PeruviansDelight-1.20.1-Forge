@@ -98,11 +98,9 @@ public class ModItems {
             () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
                     .food(ModFoods.TENTACULO_POTA)));
     public static final RegistryObject<Item> POTA_CORTADO = ITEMS.register("pota_cortado",
-            () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
-                    .food(ModFoods.POTA_CORTADO)));
+            () -> new Item(new Item.Properties().food(ModFoods.POTA_CORTADO)));
     public static final RegistryObject<Item> CHICHARRON_POTA = ITEMS.register("chicharron_pota",
-            () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
-                    .food(ModFoods.CHICHARRON_POTA)));
+            () -> new Item(new Item.Properties().food(ModFoods.CHICHARRON_POTA)));
 
     public static final RegistryObject<Item> POTE_AJI_AMARILLO = ITEMS.register("pote_aji_amarillo",
             () -> new Item(new Item.Properties().stacksTo(16)));
