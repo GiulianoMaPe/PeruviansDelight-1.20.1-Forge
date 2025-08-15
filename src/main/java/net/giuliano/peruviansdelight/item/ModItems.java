@@ -54,7 +54,8 @@ public class ModItems {
                     .food(ModFoods.PAPA_HUANCAINA)));
 
     public static final RegistryObject<Item> TOCOSH = ITEMS.register("tocosh",
-            () -> new ModDrinkItems(new Item.Properties().stacksTo(16).food(ModFoods.TOCOSH)));
+            () -> new ModDrinkItems(new Item.Properties().stacksTo(16)
+                    .food(ModFoods.TOCOSH)));
 
     public static final RegistryObject<Item> AJI_AMARILLO = ITEMS.register("aji_amarillo",
             () -> new Item(new Item.Properties().food(ModFoods.AJI_AMARILLO)));
@@ -95,7 +96,7 @@ public class ModItems {
     public static final RegistryObject<Item> PAPAS_FRITAS = ITEMS.register("papas_fritas",
             () -> new Item(new Item.Properties().food(ModFoods.PAPAS_FRITAS)));
     public static final RegistryObject<Item> TENTACULO_POTA = ITEMS.register("tentaculo_pota",
-            () -> new BowlFoodItem(new Item.Properties().stacksTo(16)
+            () -> new Item(new Item.Properties().stacksTo(16)
                     .food(ModFoods.TENTACULO_POTA)));
     public static final RegistryObject<Item> POTA_CORTADO = ITEMS.register("pota_cortado",
             () -> new Item(new Item.Properties().food(ModFoods.POTA_CORTADO)));
