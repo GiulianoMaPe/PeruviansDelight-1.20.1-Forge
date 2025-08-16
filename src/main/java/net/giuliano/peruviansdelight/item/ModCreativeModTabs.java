@@ -60,6 +60,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.RAW_HEART_SLICES.get());
                         output.accept(ModItems.RAW_ANTICUCHO.get());
                         output.accept(ModItems.ANTICUCHO.get());
+                        output.accept(ModItems.MASA_PICARONES.get());
+                        output.accept(ModItems.PICARONES.get());
 
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.SILLAO.get());

@@ -96,4 +96,7 @@ public class ModFoods {
             .saturationMod(0.5f).build();
     public static final FoodProperties ANTICUCHO = new FoodProperties.Builder().nutrition(8)
             .saturationMod(0.75f).build();
+
+    public static final FoodProperties PICARONES = new FoodProperties.Builder().nutrition(8)
+            .saturationMod(1f).build();
 }

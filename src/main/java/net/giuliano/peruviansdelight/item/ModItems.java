@@ -133,6 +133,11 @@ public class ModItems {
     public static final RegistryObject<Item> ANTICUCHO = ITEMS.register("anticucho",
             () -> new Item(new Item.Properties().food(ModFoods.ANTICUCHO)));
 
+    public static final RegistryObject<Item> MASA_PICARONES = ITEMS.register("masa_picarones",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PICARONES = ITEMS.register("picarones",
+            () -> new Item(new Item.Properties().food(ModFoods.PICARONES)));
+
     public static final RegistryObject<Item> ATUN_SPAWN_EGG = ITEMS.register("atun_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ATUN, 0xb4d4e1, 0x195a75,
                     new Item.Properties()));

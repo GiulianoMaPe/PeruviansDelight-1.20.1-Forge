@@ -1,4 +1,4 @@
-// 1.20.1	2025-08-16T17:27:38.6036244	Item Models: peruviansdelight
+// 1.20.1	2025-08-16T18:31:36.5163388	Item Models: peruviansdelight
 605bacf25f31eb1b7b6aeb26d0fceec3ff1b93e3 assets/peruviansdelight/models/item/aeropuerto.json
 dcf18155835be8e9cd9769605bc6733dbbb45cbb assets/peruviansdelight/models/item/aji_amarillo.json
 2b4ddafe93c5a420a74b6127adab6d1bc43bbffd assets/peruviansdelight/models/item/aji_amarillo_silvestre.json
@@ -35,6 +35,7 @@ fbc748b7df5fb8564843e295e722780a70ecaa17 assets/peruviansdelight/models/item/lim
 c445392c7c736a4f12a96df67aa7a65411298013 assets/peruviansdelight/models/item/limonero_stairs.json
 e340019434a66a26f34f4ab3ad8efe7ebab07896 assets/peruviansdelight/models/item/limonero_trapdoor.json
 57349fa8a72646994e8c7b4f17e31efdd8df71ca assets/peruviansdelight/models/item/lomo_saltado.json
+46bad398159b0d2e7c69c586ae3de028c3fdeb52 assets/peruviansdelight/models/item/masa_picarones.json
 d41a936a25fc580942d1d6840bc57f7b241a3bdf assets/peruviansdelight/models/item/mostrito.json
 3858633c7a2828e9b03c12183138eee6800ed12a assets/peruviansdelight/models/item/palta.json
 3a7f23b9c80767a495f3d61ba4054d0d73ed57dd assets/peruviansdelight/models/item/palta_cortada.json
@@ -49,6 +50,7 @@ c59eedd3d3288a347af9252b75ad9a9f4ca648cb assets/peruviansdelight/models/item/pal
 b565a95177c289b841a65667686d0dd63fcfe720 assets/peruviansdelight/models/item/papas_cortadas.json
 f423d51a2462097d22f23b2e6d1e6fb12d6ffdf7 assets/peruviansdelight/models/item/papas_fritas.json
 254ad83d3699683aa84883579eea9a24c8b32dc5 assets/peruviansdelight/models/item/papa_huancaina.json
+460e6a96dfdc39f344bebf4003c0607e52b8a152 assets/peruviansdelight/models/item/picarones.json
 a420306780751670eb6ec1457594b1bfd2f3cdee assets/peruviansdelight/models/item/pollo_brasa.json
 4b5cbfcbdaa14fc92d24ba33cd51d61b7ba4f2ba assets/peruviansdelight/models/item/pota_cortado.json
 bb43fe0c8b06980145671086d8da323566812c6c assets/peruviansdelight/models/item/pote_aji_amarillo.json
