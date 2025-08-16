@@ -59,6 +59,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.POTA_CORTADO);
         simpleItem(ModItems.CHICHARRON_POTA);
 
+        simpleItem(ModItems.BEEF_HEART);
+        simpleItem(ModItems.RAW_HEART_SLICES);
+        simpleItem(ModItems.RAW_ANTICUCHO);
+        simpleItem(ModItems.ANTICUCHO);
+
         simpleItem(ModItems.POTE_AJI_AMARILLO);
         simpleItem(ModItems.SILLAO);
         simpleItem(ModItems.HUANCAINA);

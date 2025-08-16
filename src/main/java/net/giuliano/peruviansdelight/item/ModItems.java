@@ -124,6 +124,15 @@ public class ModItems {
     public static final RegistryObject<Item> SEMILLAS_AJI_AMARILLO = ITEMS.register("semillas_aji_amarillo",
             () -> new ItemNameBlockItem(ModBlocks.AJI_AMARILLO_CROP.get(), new Item.Properties()));
 
+    public static final RegistryObject<Item> BEEF_HEART = ITEMS.register("beef_heart",
+            () -> new Item(new Item.Properties().food(ModFoods.BEEF_HEART)));
+    public static final RegistryObject<Item> RAW_HEART_SLICES = ITEMS.register("raw_heart_slices",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_HEART_SLICES)));
+    public static final RegistryObject<Item> RAW_ANTICUCHO = ITEMS.register("raw_anticucho",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_ANTICUCHO)));
+    public static final RegistryObject<Item> ANTICUCHO = ITEMS.register("anticucho",
+            () -> new Item(new Item.Properties().food(ModFoods.ANTICUCHO)));
+
     public static final RegistryObject<Item> ATUN_SPAWN_EGG = ITEMS.register("atun_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ATUN, 0xb4d4e1, 0x195a75,
                     new Item.Properties()));

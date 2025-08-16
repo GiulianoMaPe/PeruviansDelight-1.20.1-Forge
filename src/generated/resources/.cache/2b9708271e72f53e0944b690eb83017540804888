@@ -1,10 +1,12 @@
-// 1.20.1	2025-08-11T03:04:13.4695078	Item Models: peruviansdelight
+// 1.20.1	2025-08-16T17:27:38.6036244	Item Models: peruviansdelight
 605bacf25f31eb1b7b6aeb26d0fceec3ff1b93e3 assets/peruviansdelight/models/item/aeropuerto.json
 dcf18155835be8e9cd9769605bc6733dbbb45cbb assets/peruviansdelight/models/item/aji_amarillo.json
 2b4ddafe93c5a420a74b6127adab6d1bc43bbffd assets/peruviansdelight/models/item/aji_amarillo_silvestre.json
+4e8e6e89c98d9962ec4b807f893c39bab5312be2 assets/peruviansdelight/models/item/anticucho.json
 58f618ab0f1f3f57a11f9e4c30052fbb50d368c0 assets/peruviansdelight/models/item/atun.json
 8facf0ad2eeec2552585f9ee50d60bb83eb130e0 assets/peruviansdelight/models/item/atun_bucket.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/peruviansdelight/models/item/atun_spawn_egg.json
+8def12f3b8c8f0ec6ddfb152dae1d75843140499 assets/peruviansdelight/models/item/beef_heart.json
 f74615ebd7df1f83c322f48fca38f29407cf7bba assets/peruviansdelight/models/item/camote.json
 802b950a699de385e0a3af1d03951133ce43253c assets/peruviansdelight/models/item/camote_cocido.json
 c9b68c76255c0e3305683e1408b3add5391d9b73 assets/peruviansdelight/models/item/camote_cortado.json
@@ -50,6 +52,8 @@ f423d51a2462097d22f23b2e6d1e6fb12d6ffdf7 assets/peruviansdelight/models/item/pap
 a420306780751670eb6ec1457594b1bfd2f3cdee assets/peruviansdelight/models/item/pollo_brasa.json
 4b5cbfcbdaa14fc92d24ba33cd51d61b7ba4f2ba assets/peruviansdelight/models/item/pota_cortado.json
 bb43fe0c8b06980145671086d8da323566812c6c assets/peruviansdelight/models/item/pote_aji_amarillo.json
+0dda0d30a1800e522fc8da216c8f6ffd34bf23d1 assets/peruviansdelight/models/item/raw_anticucho.json
+701d94073db668a88cffaeaa51919246b9f7bd4a assets/peruviansdelight/models/item/raw_heart_slices.json
 e4d27fb3f3a02646ae17089a2c76c068bf869b94 assets/peruviansdelight/models/item/semillas_aji_amarillo.json
 bad94fb433ff7d147e526e202c9a360c6170e0bc assets/peruviansdelight/models/item/semillas_limon.json
 34fb2fa6d7f5e8752208f96851ae9549e8d7b90b assets/peruviansdelight/models/item/semilla_palta.json

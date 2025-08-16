@@ -56,6 +56,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.POTA_CORTADO.get());
                         output.accept(ModItems.CHICHARRON_POTA.get());
 
+                        output.accept(ModItems.BEEF_HEART.get());
+                        output.accept(ModItems.RAW_HEART_SLICES.get());
+                        output.accept(ModItems.RAW_ANTICUCHO.get());
+                        output.accept(ModItems.ANTICUCHO.get());
+
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.SILLAO.get());
                         output.accept(ModItems.HUANCAINA.get());
