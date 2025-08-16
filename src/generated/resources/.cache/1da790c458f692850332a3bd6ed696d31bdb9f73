@@ -1,3 +1,5 @@
-// 1.20.1	2025-08-11T00:16:20.4230932	Tags for minecraft:item mod id peruviansdelight
+// 1.20.1	2025-08-16T13:51:16.0738919	Tags for minecraft:item mod id peruviansdelight
+94cac0be1ac71cd06a7697fce19b3efa04bfccf8 data/forge/tags/items/crops.json
+1f321999661a19be0abee8ca8fc166ab1808077f data/forge/tags/items/raw_fishes.json
 bce536017f8879af07305b8afc28cca408d0056a data/minecraft/tags/items/logs_that_burn.json
 47cf4ff5d948fa1c9d8617a3928a2be45ce04f19 data/minecraft/tags/items/planks.json

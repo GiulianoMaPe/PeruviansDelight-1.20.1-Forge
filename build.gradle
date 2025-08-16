@@ -137,10 +137,16 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf("curse.maven:farmers-delight-398521:5051242")
+
     implementation fg.deobf("curse.maven:jei-238222:4712868")
     implementation fg.deobf("curse.maven:appleskin-248787:4770828")
-    implementation fg.deobf("curse.maven:sledgehammers-579384:4614562")
-    implementation fg.deobf("curse.maven:ccore-573646:4771884")
+    //implementation fg.deobf("curse.maven:sledgehammers-579384:4614562")
+    //implementation fg.deobf("curse.maven:ccore-573646:4771884")
+
+    //CHOQUES CON OTROS MODS
+    //implementation fg.deobf("curse.maven:cultural-delights-574622:6660005")
+    //implementation fg.deobf("curse.maven:more-delight-forge-977515:6822035")
+    //implementation fg.deobf("curse.maven:casualness-delight-909519:5181805")
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html

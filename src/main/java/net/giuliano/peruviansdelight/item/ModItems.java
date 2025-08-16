@@ -5,6 +5,7 @@ import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.entity.ModEntities;
 import net.giuliano.peruviansdelight.item.custom.AtunBucket;
 import net.giuliano.peruviansdelight.item.custom.DrinkFoil;
+import net.giuliano.peruviansdelight.item.custom.PaltaFoodItem;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.*;
@@ -87,8 +88,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.FILETE_ATUN)));
     public static final RegistryObject<Item> FILETE_ATUN_COCIDO = ITEMS.register("filete_atun_cocido",
             () -> new Item(new Item.Properties().food(ModFoods.FILETE_ATUN_COCIDO)));
+
     public static final RegistryObject<Item> PALTA = ITEMS.register("palta",
-            () -> new Item(new Item.Properties().food(ModFoods.PALTA)));
+            () -> new PaltaFoodItem(new Item.Properties().food(ModFoods.PALTA)));
+
     public static final RegistryObject<Item> PALTA_CORTADA = ITEMS.register("palta_cortada",
             () -> new Item(new Item.Properties().food(ModFoods.PALTA_CORTADA)));
     public static final RegistryObject<Item> PAPAS_CORTADAS = ITEMS.register("papas_cortadas",

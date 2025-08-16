@@ -1,7 +1,7 @@
 {
   "item.peruviansdelight.inca_kola": "Inca Kola",
 
-  "item.peruviansdelight.causa": "Causa de Pollo",
+  "item.peruviansdelight.causa": "Causa",
   "item.peruviansdelight.causa_atun": "Causa de Atún",
   "item.peruviansdelight.chaufa": "Chaufa",
   "item.peruviansdelight.tallarin_saltado": "Tallarín Saltado",
@@ -35,7 +35,7 @@
   "item.peruviansdelight.papas_fritas": "French Fries",
   "item.peruviansdelight.tentaculo_pota": "Pota Tentacle",
   "item.peruviansdelight.pota_cortado": "Cut Pota tentacle",
-  "item.peruviansdelight.chicharron_pota": "Chicharrón de Pota",
+  "item.peruviansdelight.chicharron_pota": "Chicharrón of Pota",
 
   "item.peruviansdelight.pote_aji_amarillo": "Ají Amarillo Jar",
   "item.peruviansdelight.sillao": "Soy Sauce",
@@ -65,9 +65,9 @@
   "block.peruviansdelight.stripped_limonero_wood": "Stripped Limonero Wood",
   "block.peruviansdelight.limonero_planks": "Limonero Planks",
 
-  "block.peruviansdelight.limonero_leaves": "Lemon Tree Leaves with Lemon",
-  "block.peruviansdelight.limonero_leaves_empty": "Lemon Tree Leaves",
-  "block.peruviansdelight.semillas_limon": "Lemon Seed",
+  "block.peruviansdelight.limonero_leaves": "Limonero Leaves with Lemon",
+  "block.peruviansdelight.limonero_leaves_empty": "Limonero Tree Leaves",
+  "block.peruviansdelight.semillas_limon": "Lemon Seeds",
 
   "block.peruviansdelight.palto_stairs": "Palto Stairs",
   "block.peruviansdelight.palto_slab": "Palto Slab",

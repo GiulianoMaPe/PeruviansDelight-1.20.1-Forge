@@ -1,0 +1,8 @@
+{
+  "type": "casualness_delight:deep_frying",
+  "ingredient": {
+    "item": "peruviansdelight:papas_cortadas"
+  },
+  "cookingtime": 100,
+  "result": "peruviansdelight:papas_fritas"
+}
