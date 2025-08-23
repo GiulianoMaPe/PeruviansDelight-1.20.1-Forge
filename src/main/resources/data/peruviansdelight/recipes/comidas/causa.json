@@ -20,7 +20,7 @@
       "item": "minecraft:egg"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "culturaldelights:avocados"
     },
     {
       "tag": "forge:cooked_chicken"

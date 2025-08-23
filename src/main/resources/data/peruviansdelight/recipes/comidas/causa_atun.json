@@ -20,7 +20,7 @@
       "item": "minecraft:egg"
     },
     {
-      "item": "minecraft:carrot"
+      "tag": "culturaldelights:avocados"
     },
     {
       "item": "peruviansdelight:filete_atun_cocido"

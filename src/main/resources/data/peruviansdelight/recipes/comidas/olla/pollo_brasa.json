@@ -15,15 +15,9 @@
     {
       "item": "peruviansdelight:papas_fritas"
     },
-    [
-      {
-        "item": "farmersdelight:cabbage"
-      },
-      {
-        "item": "farmersdelight:cabbage_leaf"
-      }
-    ],
-
+    {
+      "tag": "forge:salad_ingredients"
+    },
     {
       "tag": "forge:crops/tomato"
     }
