@@ -15,7 +15,7 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
-public class ModPLacedFeatures {
+public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PALTO_PLACED_KEY = registerKey("palto_placed");
     public static final ResourceKey<PlacedFeature> LIMONERO_PLACED_KEY = registerKey("limonero_placed");
     public static final ResourceKey<PlacedFeature> AJI_AMARILLO_SILVESTRE_PLACED_KEY = registerKey("aji_amarillo_silvestre_placed");

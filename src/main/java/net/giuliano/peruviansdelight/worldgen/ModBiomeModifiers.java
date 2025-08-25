@@ -35,11 +35,11 @@ public class ModBiomeModifiers {
 
         context.register(ADD_TREE_PALTO, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.PALTO_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PALTO_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
         context.register(ADD_TREE_LIMONERO, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.LIMONERO_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.LIMONERO_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         HolderSet<Biome> cropSpawnBiomes = HolderSet.direct(Stream.concat(
@@ -56,19 +56,19 @@ public class ModBiomeModifiers {
         ).toList());
 
         context.register(ADD_AJI_AMARILLO_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
-                HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.AJI_AMARILLO_SILVESTRE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.AJI_AMARILLO_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
         context.register(ADD_KION_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
-                HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.KION_SILVESTRE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.KION_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
         context.register(ADD_SOYA_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
-                HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.SOYA_SILVESTRE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SOYA_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
         context.register(ADD_CAMOTE_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
-                HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.CAMOTE_SILVESTRE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CAMOTE_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
         context.register(ADD_YUCA_SILVESTRE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(cropSpawnBiomes,
-                HolderSet.direct(placedFeatures.getOrThrow(ModPLacedFeatures.YUCA_SILVESTRE_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.YUCA_SILVESTRE_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_ATUN, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
