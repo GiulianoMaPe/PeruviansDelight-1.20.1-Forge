@@ -1,6 +1,14 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "#minecraft:is_ocean",
+  "biomes": [
+    "minecraft:ocean",
+    "minecraft:deep_ocean",
+    "minecraft:warm_ocean",
+    "minecraft:lukewarm_ocean",
+    "minecraft:deep_lukewarm_ocean",
+    "minecraft:cold_ocean",
+    "minecraft:deep_cold_ocean"
+  ],
   "spawners": {
     "type": "peruviansdelight:atun",
     "maxCount": 8,

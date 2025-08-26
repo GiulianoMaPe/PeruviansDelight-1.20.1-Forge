@@ -72,7 +72,15 @@ public class ModBiomeModifiers {
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(ADD_ATUN, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OCEAN),
+                HolderSet.direct(
+                        biomes.getOrThrow(Biomes.OCEAN),
+                        biomes.getOrThrow(Biomes.DEEP_OCEAN),
+                        biomes.getOrThrow(Biomes.WARM_OCEAN),
+                        biomes.getOrThrow(Biomes.LUKEWARM_OCEAN),
+                        biomes.getOrThrow(Biomes.DEEP_LUKEWARM_OCEAN),
+                        biomes.getOrThrow(Biomes.COLD_OCEAN),
+                        biomes.getOrThrow(Biomes.DEEP_COLD_OCEAN)
+                ),
                 List.of(new MobSpawnSettings.SpawnerData(ModEntities.ATUN.get(), 20, 4, 8))));
     }
 
