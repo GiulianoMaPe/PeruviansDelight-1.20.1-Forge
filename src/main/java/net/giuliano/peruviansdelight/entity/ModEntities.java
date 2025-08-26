@@ -14,8 +14,8 @@ public class ModEntities {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, PeruviansDelight.MOD_ID);
 
     public static final RegistryObject<EntityType<AtunEntity>> ATUN =
-            ENTITY_TYPES.register("atun", () -> EntityType.Builder.of(AtunEntity::new, MobCategory.WATER_AMBIENT)
-                    .sized(1.3f, 0.8f).clientTrackingRange(4).build("atun"));
+            ENTITY_TYPES.register("atun", () -> EntityType.Builder.of(AtunEntity::new, MobCategory.WATER_CREATURE)
+                    .sized(1.2f, 0.8f).clientTrackingRange(4).build("atun"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
