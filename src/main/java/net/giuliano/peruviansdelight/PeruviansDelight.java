@@ -9,6 +9,7 @@ import net.giuliano.peruviansdelight.entity.client.AtunRenderer;
 import net.giuliano.peruviansdelight.item.ModCreativeModTabs;
 import net.giuliano.peruviansdelight.item.ModDrinkItems;
 import net.giuliano.peruviansdelight.item.ModItems;
+import net.giuliano.peruviansdelight.item.custom.ModCompostables;
 import net.giuliano.peruviansdelight.loot.ModLootModifier;
 import net.giuliano.peruviansdelight.sound.ModSounds;
 import net.giuliano.peruviansdelight.worldgen.tree.ModFoliagePlacers;
@@ -63,7 +64,7 @@ public class PeruviansDelight {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(ModCompostables::register);
     }
 
     // Add the example block item to the building blocks tab

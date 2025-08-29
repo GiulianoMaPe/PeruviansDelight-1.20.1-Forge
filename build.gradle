@@ -144,9 +144,9 @@ dependencies {
     //implementation fg.deobf("curse.maven:ccore-573646:4771884")
 
     //CHOQUES CON OTROS MODS
+    //implementation fg.deobf("curse.maven:casualness-delight-909519:5181805")
     //implementation fg.deobf("curse.maven:cultural-delights-574622:6660005")
     //implementation fg.deobf("curse.maven:more-delight-forge-977515:6822035")
-    //implementation fg.deobf("curse.maven:casualness-delight-909519:5181805")
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
