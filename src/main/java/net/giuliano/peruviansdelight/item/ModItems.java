@@ -113,10 +113,6 @@ public class ModItems {
     public static final RegistryObject<Item> HUANCAINA = ITEMS.register("huancaina",
             () -> new Item(new Item.Properties().stacksTo(16)));
 
-    public static final RegistryObject<Item> ATUN_BUCKET = ITEMS.register("atun_bucket",
-            () -> new AtunBucket(EntityType.SALMON, Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH,
-                    new Item.Properties().stacksTo(1)));
-
     public static final RegistryObject<Item> VAINA_SOYA = ITEMS.register("vaina_soya",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GRANOS_SOYA = ITEMS.register("granos_soya",
@@ -138,6 +134,10 @@ public class ModItems {
     public static final RegistryObject<Item> PICARONES = ITEMS.register("picarones",
             () -> new Item(new Item.Properties().food(ModFoods.PICARONES)));
 
+    //MOBS
+    public static final RegistryObject<Item> ATUN_BUCKET = ITEMS.register("atun_bucket",
+            () -> new AtunBucket(EntityType.SALMON, Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH,
+                    new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ATUN_SPAWN_EGG = ITEMS.register("atun_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ATUN, 0xb4d4e1, 0x195a75,
                     new Item.Properties()));

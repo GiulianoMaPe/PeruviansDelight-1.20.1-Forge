@@ -11,7 +11,6 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import java.util.List;
 
 public class RandomLeafBlockStateProvider extends BlockStateProvider {
-    // Código para serializar/deserializar esta clase
     public static final Codec<RandomLeafBlockStateProvider> CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
                     Codec.list(BlockStateProvider.CODEC).fieldOf("providers").forGetter(p -> p.providers)
@@ -26,13 +25,11 @@ public class RandomLeafBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected BlockStateProviderType<?> type() {
-        // Registra este tipo en tu mod (ver más abajo)
         return ModBlockStateProviderTypes.RANDOM_LEAF_PROVIDER.get();
     }
 
     @Override
     public BlockState getState(RandomSource random, net.minecraft.core.BlockPos pos) {
-        // Selecciona aleatoriamente uno de los proveedores
         int index = random.nextInt(providers.size());
         return providers.get(index).getState(random, pos);
     }

@@ -22,6 +22,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+
         this.tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.PALTO_LOG.get().asItem())
                 .add(ModBlocks.PALTO_WOOD.get().asItem())

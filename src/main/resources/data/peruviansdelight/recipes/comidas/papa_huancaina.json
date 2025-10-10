@@ -11,14 +11,9 @@
     {
       "tag": "forge:eggs"
     },
-    [
-      {
-        "item": "farmersdelight:cabbage"
-      },
-      {
-        "item": "farmersdelight:cabbage_leaf"
-      }
-    ]
+    {
+      "tag": "forge:salad_ingredients"
+    }
   ],
   "result": {
     "item": "peruviansdelight:papa_huancaina"

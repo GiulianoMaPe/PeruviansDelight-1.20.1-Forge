@@ -1,0 +1,8 @@
+{
+  "type": "casualness_delight:deep_frying",
+  "ingredient": {
+    "item": "peruviansdelight:pota_cortado"
+  },
+  "cookingtime": 100,
+  "result": "peruviansdelight:chicharron_pota"
+}

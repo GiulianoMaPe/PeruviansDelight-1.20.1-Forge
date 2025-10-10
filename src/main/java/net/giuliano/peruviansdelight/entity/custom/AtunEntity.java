@@ -30,7 +30,7 @@ public class AtunEntity extends AbstractSchoolingFish {
 
     private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0) {
-            this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+            this.idleAnimationTimeout = 10;
             this.idleAnimationState.start(this.tickCount);
         } else {
             --this.idleAnimationTimeout;
