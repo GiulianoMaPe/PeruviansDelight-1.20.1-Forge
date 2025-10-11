@@ -63,6 +63,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.MASA_PICARONES.get());
                         output.accept(ModItems.PICARONES.get());
 
+                        output.accept(ModItems.CHULETA_CORTADA.get());
+                        output.accept(ModItems.CHICHARRON.get());
+                        output.accept(ModItems.PAN_CHICHARRON.get());
+
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.SILLAO.get());
                         output.accept(ModItems.HUANCAINA.get());

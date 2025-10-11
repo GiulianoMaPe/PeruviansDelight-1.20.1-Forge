@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:bread"
+    },
+    {
+      "item": "peruviansdelight:chicharron"
+    },
+    {
+      "item": "peruviansdelight:camote_frito"
+    },
+    {
+      "tag": "forge:crops/onion"
+    }
+  ],
+  "result": {
+    "item": "peruviansdelight:pan_chicharron"
+  }
+}

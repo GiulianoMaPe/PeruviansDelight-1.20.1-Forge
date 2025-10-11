@@ -66,6 +66,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MASA_PICARONES);
         simpleItem(ModItems.PICARONES);
 
+        simpleItem(ModItems.CHULETA_CORTADA);
+        simpleItem(ModItems.CHICHARRON);
+        simpleItem(ModItems.PAN_CHICHARRON);
+
         simpleItem(ModItems.POTE_AJI_AMARILLO);
         simpleItem(ModItems.SILLAO);
         simpleItem(ModItems.HUANCAINA);
