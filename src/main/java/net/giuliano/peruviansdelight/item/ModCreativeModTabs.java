@@ -33,6 +33,16 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.TOCOSH.get());
 
+                        output.accept(ModBlocks.AJI_AMARILLO_CRATE.get());
+                        output.accept(ModBlocks.CAMOTE_CRATE.get());
+                        output.accept(ModBlocks.KION_CRATE.get());
+                        output.accept(ModBlocks.LIMON_CRATE.get());
+                        output.accept(ModBlocks.PALTA_CRATE.get());
+                        output.accept(ModBlocks.SOYA_CRATE.get());
+                        output.accept(ModBlocks.YUCA_CRATE.get());
+
+                        output.accept(ModBlocks.SOYA_BAG.get());
+
                         output.accept(ModItems.AJI_AMARILLO.get());
                         output.accept(ModItems.LIMON.get());
                         output.accept(ModItems.GAJO_LIMON.get());

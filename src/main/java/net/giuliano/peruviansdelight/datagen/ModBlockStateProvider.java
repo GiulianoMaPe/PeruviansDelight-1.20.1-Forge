@@ -116,6 +116,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.CAMOTE_SILVESTRE.get())).renderType("cutout"));
         simpleBlockWithItem(ModBlocks.YUCA_SILVESTRE.get(), models().cross(blockTexture(ModBlocks.YUCA_SILVESTRE.get()).getPath(),
                 blockTexture(ModBlocks.YUCA_SILVESTRE.get())).renderType("cutout"));
+
+        crateBlock(ModBlocks.AJI_AMARILLO_CRATE);
+        crateBlock(ModBlocks.CAMOTE_CRATE);
+        crateBlock(ModBlocks.KION_CRATE);
+        crateBlock(ModBlocks.LIMON_CRATE);
+        crateBlock(ModBlocks.PALTA_CRATE);
+        crateBlock(ModBlocks.SOYA_CRATE);
+        crateBlock(ModBlocks.YUCA_CRATE);
+
+        bagBlock(ModBlocks.SOYA_BAG);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
@@ -148,10 +158,32 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void crateWithItem(RegistryObject<Block> blockRegistryObject){
-        ResourceLocation side = new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_side");
-        ResourceLocation top = new ResourceLocation(PeruviansDelight.MOD_ID, "block/" + blockRegistryObject.getId().getPath() + "_top");
-        ResourceLocation bottom = new ResourceLocation(PeruviansDelight.MOD_ID, "block/crate_bottom");
-        simpleBlockWithItem(blockRegistryObject.get(), models().cubeBottomTop(blockRegistryObject.getId().getPath(), side, bottom, top));
+    public void crateBlock(RegistryObject<Block> deferredBlock) {
+        String name = deferredBlock.getId().getPath();
+
+        simpleBlock(deferredBlock.get(), models().cubeBottomTop(
+                name,
+                modLoc("block/" + name + "_side"),
+                modLoc("block/crate_bottom"),
+                modLoc("block/" + name + "_top")
+        ));
+
+        blockItem(deferredBlock);
+    }
+
+    public void bagBlock(RegistryObject<Block> deferredBlock) {
+        String name = deferredBlock.getId().getPath();
+
+        simpleBlock(deferredBlock.get(), models().cube(
+                name,
+                modLoc("block/bag_bottom"),
+                modLoc("block/" + name + "_top"),
+                modLoc("block/bag_side_tied"),
+                modLoc("block/bag_side_tied"),
+                modLoc("block/bag_side"),
+                modLoc("block/bag_side")
+        ).texture("particle", modLoc("block/" + name + "_top")));
+
+        blockItem(deferredBlock);
     }
 }

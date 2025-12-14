@@ -105,12 +105,13 @@
   "block.peruviansdelight.yuca_silvestre": "Wild Yuca",
 
   "block.peruviansdelight.aji_amarillo_crate": "Ají Amarillo Crate",
-  "block.peruviansdelight.sweet_potato_crate": "Sweet Potato Crate",
+  "block.peruviansdelight.camote_crate": "Sweet Potato Crate",
   "block.peruviansdelight.yuca_crate": "Yuca Crate",
-  "block.peruviansdelight.lemon_crate": "Lemon Crate",
-  "block.peruviansdelight.avocado_crate": "Avocado Crate",
-  "block.peruviansdelight.ginger_crate": "Ginger Crate",
-  "block.peruviansdelight.soybean_pod_crate": "Soybean Pod Crate",
+  "block.peruviansdelight.limon_crate": "Lemon Crate",
+  "block.peruviansdelight.palta_crate": "Avocado Crate",
+  "block.peruviansdelight.kion_crate": "Ginger Crate",
+  "block.peruviansdelight.soya_crate": "Soybean Pod Crate",
+  "block.peruviansdelight.soya_bag": "Soybean Bag",
 
   "entity.mccourse.atun": "Tuna",
   "entity.peruviansdelight.atun": "Tuna",

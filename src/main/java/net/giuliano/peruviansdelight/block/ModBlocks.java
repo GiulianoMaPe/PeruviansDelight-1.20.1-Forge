@@ -212,6 +212,32 @@ public class ModBlocks {
             () -> new PlantaSilvestreBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
 
+    // CRATES y BAGS
+    public static final RegistryObject<Block> AJI_AMARILLO_CRATE = registerBlock("aji_amarillo_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> CAMOTE_CRATE = registerBlock("camote_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> KION_CRATE = registerBlock("kion_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> LIMON_CRATE = registerBlock("limon_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> PALTA_CRATE = registerBlock("palta_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> SOYA_CRATE = registerBlock("soya_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> YUCA_CRATE = registerBlock("yuca_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)
+                    .strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> SOYA_BAG = registerBlock("soya_bag",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

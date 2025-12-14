@@ -104,6 +104,15 @@
   "block.peruviansdelight.camote_silvestre": "Camote silvestre",
   "block.peruviansdelight.yuca_silvestre": "Yuca silvestre",
 
+  "block.peruviansdelight.aji_amarillo_crate": "Cajón de ají amarillo",
+  "block.peruviansdelight.camote_crate": "Cajón de camote",
+  "block.peruviansdelight.yuca_crate": "Cajón de yuca",
+  "block.peruviansdelight.limon_crate": "Cajón de limón",
+  "block.peruviansdelight.palta_crate": "Cajón de palta",
+  "block.peruviansdelight.kion_crate": "Cajón de kion",
+  "block.peruviansdelight.soya_crate": "Cajón de vaina de soya",
+  "block.peruviansdelight.soya_bag": "Saco de granos de soya",
+
   "entity.mccourse.atun": "Atún",
   "entity.peruviansdelight.atun": "Atún",
 
