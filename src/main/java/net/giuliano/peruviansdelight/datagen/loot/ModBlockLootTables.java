@@ -74,9 +74,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 ModItems.YUCA.get(), lootitemcondition$builder5));
 
         this.add(ModBlocks.PALTO_LEAVES.get(), block ->
-                createModLeavesDrops(block, ModItems.PALTA.get(), 1.0F, 1.25F, 1.6667F, 2.0F));
+                createModLeavesDrops(block, ModItems.PALTA.get(), 0.5F, 0.5556F, 0.625F, 0.8333F));
         this.add(ModBlocks.LIMONERO_LEAVES.get(), block ->
-                createModLeavesDrops(block, ModItems.LIMON.get(), 1.0F, 1.25F, 1.6667F, 2.0F));
+                createModLeavesDrops(block, ModItems.LIMON.get(), 0.5F, 0.5556F, 0.625F, 0.8333F));
 
         this.add(ModBlocks.PALTO_LEAVES_EMPTY.get(), this::createEmptyLeavesDrops);
         this.add(ModBlocks.LIMONERO_LEAVES_EMPTY.get(), this::createEmptyLeavesDrops);
@@ -154,6 +154,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     }
     protected LootTable.Builder createEmptyLeavesDrops(Block pLeavesBlock) {
         return LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1.0F))
+                        .when(HAS_SHEARS_OR_SILK_TOUCH)
+                        .add(LootItem.lootTableItem(pLeavesBlock)))
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1.0F))
                         .when(HAS_NO_SHEARS_OR_SILK_TOUCH)

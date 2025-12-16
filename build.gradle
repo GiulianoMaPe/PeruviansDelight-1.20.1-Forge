@@ -138,10 +138,13 @@ dependencies {
 
     implementation fg.deobf("curse.maven:farmers-delight-398521:5051242")
 
+    // UTILIDADES
     implementation fg.deobf("curse.maven:jei-238222:4712868")
     implementation fg.deobf("curse.maven:appleskin-248787:4770828")
     //implementation fg.deobf("curse.maven:sledgehammers-579384:4614562")
     //implementation fg.deobf("curse.maven:ccore-573646:4771884")
+    //implementation fg.deobf("curse.maven:harvest-with-ease-602171:5968744")
+    //implementation fg.deobf("curse.maven:cobweb-968456:6089406")
 
     //CHOQUES CON OTROS MODS
     //implementation fg.deobf("curse.maven:casualness-delight-909519:5181805")

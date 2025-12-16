@@ -1,4 +1,15 @@
-// 1.20.1	2025-08-16T17:27:38.6066328	Tags for minecraft:item mod id peruviansdelight
+// 1.20.1	2025-12-16T01:16:29.1264077	Tags for minecraft:item mod id peruviansdelight
 1f321999661a19be0abee8ca8fc166ab1808077f data/forge/tags/items/raw_fishes.json
+89992abc65d5c39bd6d5477cdbc8493263331718 data/minecraft/tags/items/fences.json
+940e12e54862156e797683a0a5902652effaa363 data/minecraft/tags/items/fence_gates.json
+345ec0ef8195b93ec08f72301a114a071c05d211 data/minecraft/tags/items/leaves.json
 bce536017f8879af07305b8afc28cca408d0056a data/minecraft/tags/items/logs_that_burn.json
 47cf4ff5d948fa1c9d8617a3928a2be45ce04f19 data/minecraft/tags/items/planks.json
+9143c80cae12d39421fe6ef977cc095696101709 data/minecraft/tags/items/saplings.json
+0533717ee3c522a43e12bf46fb801096aca675c8 data/minecraft/tags/items/wooden_buttons.json
+896c70c19099e416b6bc74331045e65468daecc9 data/minecraft/tags/items/wooden_doors.json
+89992abc65d5c39bd6d5477cdbc8493263331718 data/minecraft/tags/items/wooden_fences.json
+31f4c972f52f4eb73db7d4a71a427b5609a42a56 data/minecraft/tags/items/wooden_pressure_plates.json
+66d5e288b883df82670f1be158c809336b9a4269 data/minecraft/tags/items/wooden_slabs.json
+de8ae7ce9ee31e745f7f064b919090d0b7c848b3 data/minecraft/tags/items/wooden_stairs.json
+a288a6daa55e80c586b0f09e5e568037d10624b7 data/minecraft/tags/items/wooden_trapdoors.json

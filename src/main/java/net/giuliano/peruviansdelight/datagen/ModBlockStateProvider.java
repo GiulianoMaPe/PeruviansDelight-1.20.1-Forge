@@ -38,15 +38,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        this.customStageBlock((CropBlock) ModBlocks.AJI_AMARILLO_CROP.get(),
+        this.customStageBlock(ModBlocks.AJI_AMARILLO_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", AjiAmarilloCropBlock.AGE, new ArrayList());
-        this.customStageBlock((CropBlock) ModBlocks.KION_CROP.get(),
+        this.customStageBlock(ModBlocks.KION_CROP.get(),
                 this.mcLoc("crop"), "crop", KionCropBlock.AGE, new ArrayList());
-        this.customStageBlock((CropBlock) ModBlocks.SOYA_CROP.get(),
+        this.customStageBlock(ModBlocks.SOYA_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", SoyaCropBlock.AGE, new ArrayList());
-        this.customStageBlock((CropBlock) ModBlocks.CAMOTE_CROP.get(),
+        this.customStageBlock(ModBlocks.CAMOTE_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", CamoteCropBlock.AGE, new ArrayList());
-        this.customStageBlock((CropBlock) ModBlocks.YUCA_CROP.get(),
+        this.customStageBlock(ModBlocks.YUCA_CROP.get(),
                 this.resourceBlock("crop_cross"), "cross", YucaCropBlock.AGE, new ArrayList());
 
         logBlock(((RotatedPillarBlock) ModBlocks.PALTO_LOG.get()));
@@ -139,7 +139,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
-    public void customStageBlock(CropBlock block, @Nullable ResourceLocation parent, String textureKey, IntegerProperty ageProperty, List<Integer> suffixes, Property<?>... ignored) {
+    public void customStageBlock(Block block, @Nullable ResourceLocation parent, String textureKey, IntegerProperty ageProperty, List<Integer> suffixes, Property<?>... ignored) {
         this.getVariantBuilder(block).forAllStatesExcept((state) -> {
             int ageSuffix = (Integer)state.getValue(ageProperty);
             String var10000 = this.blockName(block);
