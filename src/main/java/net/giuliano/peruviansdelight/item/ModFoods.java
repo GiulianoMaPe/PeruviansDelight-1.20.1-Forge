@@ -116,4 +116,11 @@ public class ModFoods {
             .saturationMod(1f).build();
     public static final FoodProperties PAN_CHICHARRON = new FoodProperties.Builder().nutrition(10)
             .saturationMod(0.8f).build();
+
+    public static final FoodProperties LLAMA = new FoodProperties.Builder().nutrition(3)
+            .saturationMod(0.3f).build();
+    public static final FoodProperties LLAMA_ASADA = new FoodProperties.Builder().nutrition(8)
+            .saturationMod(0.8f).build();
+    public static final FoodProperties CHARQUI = new FoodProperties.Builder().nutrition(6)
+            .saturationMod(0.8f).fast().build();
 }

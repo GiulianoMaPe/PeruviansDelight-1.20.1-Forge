@@ -141,6 +141,13 @@ public class ModItems {
     public static final RegistryObject<Item> PAN_CHICHARRON = ITEMS.register("pan_chicharron",
             () -> new Item(new Item.Properties().food(ModFoods.PAN_CHICHARRON)));
 
+    public static final RegistryObject<Item> LLAMA = ITEMS.register("llama",
+            () -> new Item(new Item.Properties().food(ModFoods.LLAMA)));
+    public static final RegistryObject<Item> LLAMA_ASADA = ITEMS.register("llama_asada",
+            () -> new Item(new Item.Properties().food(ModFoods.LLAMA_ASADA)));
+    public static final RegistryObject<Item> CHARQUI = ITEMS.register("charqui",
+            () -> new Item(new Item.Properties().food(ModFoods.CHARQUI)));
+
     //MOBS
     public static final RegistryObject<Item> ATUN_BUCKET = ITEMS.register("atun_bucket",
             () -> new AtunBucket(EntityType.SALMON, Fluids.WATER, SoundEvents.BUCKET_EMPTY_FISH,

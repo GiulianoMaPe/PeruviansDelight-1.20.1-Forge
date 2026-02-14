@@ -77,6 +77,10 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.CHICHARRON.get());
                         output.accept(ModItems.PAN_CHICHARRON.get());
 
+                        output.accept(ModItems.LLAMA.get());
+                        output.accept(ModItems.LLAMA_ASADA.get());
+                        output.accept(ModItems.CHARQUI.get());
+
                         output.accept(ModItems.POTE_AJI_AMARILLO.get());
                         output.accept(ModItems.SILLAO.get());
                         output.accept(ModItems.HUANCAINA.get());

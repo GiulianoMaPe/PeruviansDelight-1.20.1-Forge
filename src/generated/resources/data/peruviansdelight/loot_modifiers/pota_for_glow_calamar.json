@@ -8,5 +8,6 @@
   ],
   "item": "peruviansdelight:tentaculo_pota",
   "max_count": 8,
-  "min_count": 6
+  "min_count": 6,
+  "use_looting": false
 }

@@ -28,17 +28,29 @@ public class ModGlobalLootModifierProvider  extends GlobalLootModifierProvider {
         }, ModItems.INCA_KOLA.get()));
         */
 
+        // MOBS
         add("lana_from_llama_x_color", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/llama")).build()
+        }));
+        add("lana_from_trader_llama_x_color", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/trader_llama")).build()
         }));
 
         add("pota_for_calamar", new AddRandomCountItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/squid")).build()
-        }, ModItems.TENTACULO_POTA.get(), 6, 8));
+        }, ModItems.TENTACULO_POTA.get(), 6, 8, false));
         add("pota_for_glow_calamar", new AddRandomCountItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/glow_squid")).build()
-        }, ModItems.TENTACULO_POTA.get(), 6, 8));
+        }, ModItems.TENTACULO_POTA.get(), 6, 8, false));
 
+        add("llama_meat_from_llama", new AddRandomCountItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/llama")).build()
+        }, ModItems.LLAMA.get(), 1, 3, true));
+        add("llama_meat_from_trader_llama", new AddRandomCountItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/trader_llama")).build()
+        }, ModItems.LLAMA.get(), 1, 3, true));
+
+        // COFRES
         add("inka_for_chest1", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/pillager_outpost")).build(),
                 LootItemRandomChanceCondition.randomChance(0.25f).build(),
