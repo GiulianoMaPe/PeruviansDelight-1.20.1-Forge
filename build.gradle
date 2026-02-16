@@ -146,7 +146,7 @@ dependencies {
     //implementation fg.deobf("curse.maven:harvest-with-ease-602171:5968744")
     //implementation fg.deobf("curse.maven:cobweb-968456:6089406")
 
-    //CHOQUES CON OTROS MODS
+    //COMPATIBILIDADES
     //implementation fg.deobf("curse.maven:casualness-delight-909519:5181805")
     //implementation fg.deobf("curse.maven:cultural-delights-574622:6660005")
     //implementation fg.deobf("curse.maven:more-delight-forge-977515:6822035")

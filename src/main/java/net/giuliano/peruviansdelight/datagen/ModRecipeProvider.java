@@ -225,6 +225,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createFoodCookingRecipes(pWriter, ModItems.PAPAS_CORTADAS.get(), ModItems.PAPAS_FRITAS.get(), 0.35f);
         createFoodCookingRecipes(pWriter, ModItems.YUCA_CORTADA.get(), ModItems.YUCA_FRITA.get(), 0.35f);
         createFoodCookingRecipes(pWriter, ModItems.CHULETA_CORTADA.get(), ModItems.CHICHARRON.get(), 0.35f);
+        createFoodCookingRecipes(pWriter, ModItems.LLAMA.get(), ModItems.LLAMA_ASADA.get(), 0.35f);
 
         // TENDAL
         buildTendalRecipe(pWriter, ModItems.LLAMA.get(), ModItems.CHARQUI.get(), 9600, "charqui_from_tendal"); // 8 min //20 ticks = 1 segundo
