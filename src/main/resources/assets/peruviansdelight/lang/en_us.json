@@ -117,6 +117,12 @@
   "block.peruviansdelight.soya_crate": "Soybean Pod Crate",
   "block.peruviansdelight.soya_bag": "Soybean Bag",
 
+  "block.peruviansdelight.mud_tiles": "Mud Tiles",
+  "block.peruviansdelight.chiseled_mud_tiles": "Chiseled Mud Tiles",
+
+  "block.peruviansdelight.tendal": "Tendal",
+  "message.peruviansdelight.cannot_dry": "This doesn't seem to be drying...",
+
   "entity.mccourse.atun": "Tuna",
   "entity.peruviansdelight.atun": "Tuna",
 

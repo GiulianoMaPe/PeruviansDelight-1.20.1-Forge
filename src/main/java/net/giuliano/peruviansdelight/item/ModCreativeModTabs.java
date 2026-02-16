@@ -132,6 +132,10 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.LIMONERO_LEAVES.get());
                         output.accept(ModBlocks.LIMONERO_LEAVES_EMPTY.get());
 
+                        output.accept(ModBlocks.MUD_TILES.get());
+                        output.accept(ModBlocks.CHISELED_MUD_TILES.get());
+                        output.accept(ModBlocks.TENDAL.get());
+
                         output.accept(ModBlocks.AJI_AMARILLO_SILVESTRE.get());
                         output.accept(ModBlocks.KION_SILVESTRE.get());
                         output.accept(ModBlocks.SOYA_SILVESTRE.get());

@@ -1,0 +1,66 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"0": "peruviansdelight:block/canvas_rug_extrudes",
+		"1": "peruviansdelight:block/tendal_nr",
+		"2": "peruviansdelight:block/tendal_sl",
+		"3": "peruviansdelight:block/tendal_top",
+		"4": "peruviansdelight:block/mud_tiles",
+		"particle": "peruviansdelight:block/canvas_rug_extrudes"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 9, 16],
+			"faces": {
+				"north": {"uv": [0, 7, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 7, 16, 16], "texture": "#2"},
+				"south": {"uv": [0, 7, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 7, 16, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#3"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#4"}
+			}
+		},
+		{
+			"name": "extrude south",
+			"from": [0, 8.999, 16],
+			"to": [16, 8.999, 24],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 8], "texture": "#0", "cullface": "south"},
+				"down": {"uv": [0, 8, 16, 0], "texture": "#0", "cullface": "south"}
+			}
+		},
+		{
+			"name": "extrude east",
+			"from": [16, 8.999, 0],
+			"to": [24, 8.999, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 8], "rotation": 270, "texture": "#0", "cullface": "east"},
+				"down": {"uv": [0, 8, 16, 16], "rotation": 270, "texture": "#0", "cullface": "east"}
+			}
+		},
+		{
+			"name": "extrude north",
+			"from": [0, 8.999, -8],
+			"to": [16, 8.999, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"up": {"uv": [0, 8, 16, 16], "rotation": 180, "texture": "#0", "cullface": "north"},
+				"down": {"uv": [0, 16, 16, 8], "rotation": 180, "texture": "#0", "cullface": "north"}
+			}
+		},
+		{
+			"name": "extrude west",
+			"from": [-8, 8.999, 0],
+			"to": [0, 8.999, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 8, 0]},
+			"faces": {
+				"up": {"uv": [0, 8, 16, 16], "rotation": 90, "texture": "#0", "cullface": "west"},
+				"down": {"uv": [0, 0, 16, 8], "rotation": 90, "texture": "#0", "cullface": "west"}
+			}
+		}
+	]
+}

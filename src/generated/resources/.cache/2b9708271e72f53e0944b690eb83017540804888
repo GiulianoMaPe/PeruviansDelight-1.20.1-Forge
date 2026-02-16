@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-10T19:19:29.4272178	Item Models: peruviansdelight
+// 1.20.1	2026-02-16T15:15:58.3287398	Item Models: peruviansdelight
 605bacf25f31eb1b7b6aeb26d0fceec3ff1b93e3 assets/peruviansdelight/models/item/aeropuerto.json
 dcf18155835be8e9cd9769605bc6733dbbb45cbb assets/peruviansdelight/models/item/aji_amarillo.json
 2b4ddafe93c5a420a74b6127adab6d1bc43bbffd assets/peruviansdelight/models/item/aji_amarillo_silvestre.json
@@ -15,6 +15,7 @@ b539409ddf8d038c421c587e41d45f7d7a25f34a assets/peruviansdelight/models/item/cam
 aa9c8b3deb4b8e77d1371b0786276f91cedf95b4 assets/peruviansdelight/models/item/causa.json
 48f48822201a2fe35fc77166f9c6f0c77aee598c assets/peruviansdelight/models/item/causa_atun.json
 885fbe925d668f543bbe965351ea84afe9ecf6f1 assets/peruviansdelight/models/item/ceviche.json
+a5d6a2728e8ee2498e6c570ce26b90e899219123 assets/peruviansdelight/models/item/charqui.json
 3db0e48b2cd013b9b004297ce3597885588b92e6 assets/peruviansdelight/models/item/chaufa.json
 3c7f755766c2cf31df2fe30ac8e209451477a520 assets/peruviansdelight/models/item/chicharron.json
 2e343ceb2a333cda2b17db46762d698b7c43787f assets/peruviansdelight/models/item/chicharron_pota.json
@@ -36,6 +37,8 @@ fbc748b7df5fb8564843e295e722780a70ecaa17 assets/peruviansdelight/models/item/lim
 7d7bd627e4e60dbd03b7ed72c5365fa3661e07bb assets/peruviansdelight/models/item/limonero_slab.json
 c445392c7c736a4f12a96df67aa7a65411298013 assets/peruviansdelight/models/item/limonero_stairs.json
 e340019434a66a26f34f4ab3ad8efe7ebab07896 assets/peruviansdelight/models/item/limonero_trapdoor.json
+840c4097aae1089c3fba1491e5314eccbaad1ea0 assets/peruviansdelight/models/item/llama.json
+77925d0d0e6f9a22326a8d213cf67b8df7b7bc30 assets/peruviansdelight/models/item/llama_asada.json
 57349fa8a72646994e8c7b4f17e31efdd8df71ca assets/peruviansdelight/models/item/lomo_saltado.json
 46bad398159b0d2e7c69c586ae3de028c3fdeb52 assets/peruviansdelight/models/item/masa_picarones.json
 d41a936a25fc580942d1d6840bc57f7b241a3bdf assets/peruviansdelight/models/item/mostrito.json
@@ -65,6 +68,7 @@ bad94fb433ff7d147e526e202c9a360c6170e0bc assets/peruviansdelight/models/item/sem
 2d7d8f47be8d4ff7df7fcedddc5a018588f6ab0d assets/peruviansdelight/models/item/sillao.json
 e011aba6415d890f3c195d1819444b83143a959e assets/peruviansdelight/models/item/soya_silvestre.json
 9e35fe369645d2309e8706618b3086f17acbc963 assets/peruviansdelight/models/item/tallarin_saltado.json
+47dc723a094e5a43c88a71aefe121771d4987ce7 assets/peruviansdelight/models/item/tendal.json
 d6b6f1eb3b86f1088507ea5ed4e4f0ed4c65d478 assets/peruviansdelight/models/item/tentaculo_pota.json
 669d9caf950d46089ca1011cdaacbe7dbc3cae13 assets/peruviansdelight/models/item/tocosh.json
 ad803e4a070baaaffbf4bc4455e0f2c564b7db04 assets/peruviansdelight/models/item/vaina_soya.json

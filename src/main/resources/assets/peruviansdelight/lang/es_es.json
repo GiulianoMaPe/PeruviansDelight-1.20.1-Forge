@@ -117,6 +117,12 @@
   "block.peruviansdelight.soya_crate": "Cajón de vaina de soya",
   "block.peruviansdelight.soya_bag": "Saco de granos de soya",
 
+  "block.peruviansdelight.mud_tiles": "Azulejos de adobe",
+  "block.peruviansdelight.chiseled_mud_tiles": "Azulejos de adobe cincelados",
+
+  "block.peruviansdelight.tendal": "Tendal",
+  "message.peruviansdelight.cannot_dry": "Esto no parece que se pueda secar...",
+
   "entity.mccourse.atun": "Atún",
   "entity.peruviansdelight.atun": "Atún",
 

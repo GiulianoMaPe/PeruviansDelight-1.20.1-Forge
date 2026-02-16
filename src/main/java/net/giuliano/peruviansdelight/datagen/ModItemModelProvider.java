@@ -70,6 +70,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CHICHARRON);
         simpleItem(ModItems.PAN_CHICHARRON);
 
+        simpleItem(ModItems.LLAMA);
+        simpleItem(ModItems.LLAMA_ASADA);
+        simpleItem(ModItems.CHARQUI);
+
+
         simpleItem(ModItems.POTE_AJI_AMARILLO);
         simpleItem(ModItems.SILLAO);
         simpleItem(ModItems.HUANCAINA);
@@ -109,6 +114,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItemBlockTexture(ModBlocks.SOYA_SILVESTRE);
         simpleBlockItemBlockTexture(ModBlocks.CAMOTE_SILVESTRE);
         simpleBlockItemBlockTexture(ModBlocks.YUCA_SILVESTRE);
+
+        withExistingParent(ModBlocks.TENDAL.getId().getPath(), modLoc("block/tendal"));
 
         withExistingParent(ModItems.ATUN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }

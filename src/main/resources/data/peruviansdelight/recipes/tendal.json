@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XX",
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "X": {
+      "item": "farmersdelight:canvas"
+    },
+    "S": {
+      "item": "peruviansdelight:mud_tiles"
+    }
+  },
+  "result": {
+    "id": "peruviansdelight:tendal"
+  }
+}

@@ -238,6 +238,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOYA_BAG = registerBlock("soya_bag",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
+    // BLOQUES
+    public static final RegistryObject<Block> MUD_TILES = registerBlock("mud_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)));
+    public static final RegistryObject<Block> CHISELED_MUD_TILES = registerBlock("chiseled_mud_tiles",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS)));
+    public static final RegistryObject<Block> TENDAL = registerBlock("tendal",
+            () -> new TendalBlock(BlockBehaviour.Properties.copy(Blocks.MUD_BRICKS).noOcclusion()));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

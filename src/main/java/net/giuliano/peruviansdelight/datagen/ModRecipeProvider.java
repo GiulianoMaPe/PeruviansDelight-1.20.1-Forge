@@ -1,7 +1,14 @@
 package net.giuliano.peruviansdelight.datagen;
 
+import com.google.gson.JsonObject;
+import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.block.ModBlocks;
 import net.giuliano.peruviansdelight.item.ModItems;
+import net.giuliano.peruviansdelight.recipe.ModRecipes;
+import net.minecraft.advancements.Advancement;
+import net.minecraft.advancements.AdvancementRewards;
+import net.minecraft.advancements.RequirementsStrategy;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -10,9 +17,12 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Consumer;
 
@@ -188,6 +198,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_palta", has(ModItems.PALTA.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MUD_TILES.get(), 4)
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', Blocks.MUD_BRICKS)
+                .unlockedBy("has_mud_bricks", has(Blocks.MUD_BRICKS))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHISELED_MUD_TILES.get(), 2)
+                .pattern("S")
+                .pattern("S")
+                .define('S', ModBlocks.MUD_TILES.get())
+                .unlockedBy("has_mud_tiles", has(ModBlocks.MUD_TILES.get()))
+                .save(pWriter);
+
+        // CORTADORA DE PIEDRA
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.MUD_TILES.get(), Blocks.MUD_BRICKS);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.CHISELED_MUD_TILES.get(), Blocks.MUD_BRICKS);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.CHISELED_MUD_TILES.get(), ModBlocks.MUD_TILES.get());
+
         // COCCION DE INGREDIENTES
         createFoodCookingRecipes(pWriter, ModItems.RAW_ANTICUCHO.get(), ModItems.ANTICUCHO.get(), 0.35f);
         createFoodCookingRecipes(pWriter, ModItems.CAMOTE.get(), ModItems.CAMOTE_COCIDO.get(), 0.35f);
@@ -197,6 +225,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         createFoodCookingRecipes(pWriter, ModItems.PAPAS_CORTADAS.get(), ModItems.PAPAS_FRITAS.get(), 0.35f);
         createFoodCookingRecipes(pWriter, ModItems.YUCA_CORTADA.get(), ModItems.YUCA_FRITA.get(), 0.35f);
         createFoodCookingRecipes(pWriter, ModItems.CHULETA_CORTADA.get(), ModItems.CHICHARRON.get(), 0.35f);
+
+        // TENDAL
+        buildTendalRecipe(pWriter, ModItems.LLAMA.get(), ModItems.CHARQUI.get(), 9600, "charqui_from_tendal"); // 8 min //20 ticks = 1 segundo
 
         // MADERA
         stairBuilder(ModBlocks.LIMONERO_STAIRS.get(), Ingredient.of(ModBlocks.LIMONERO_PLANKS.get())).group("limonero")
@@ -266,5 +297,79 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(input), RecipeCategory.MISC, output, experience, campfireTime)
                 .unlockedBy(getHasName(input), has(input))
                 .save(pWriter, getItemName(output) + "_from_campfire_cooking");
+    }
+
+    protected void buildTendalRecipe(Consumer<FinishedRecipe> consumer, ItemLike input, ItemLike output, int time, String name) {
+        // 1. Convertimos el ItemLike (Item o Bloque) a Ingredient aquí mismo
+        Ingredient ingrediente = Ingredient.of(input);
+
+        // 2. Generamos el ID de la receta
+        ResourceLocation id = new ResourceLocation(PeruviansDelight.MOD_ID, name);
+
+        // 3. Creamos el Advancement (Logro invisible) para que la receta se desbloquee al tener el ítem
+        Advancement.Builder advancement = Advancement.Builder.advancement()
+                .addCriterion("has_item", InventoryChangeTrigger.TriggerInstance.hasItems(input))
+                .parent(new ResourceLocation("recipes/root"))
+                .rewards(AdvancementRewards.Builder.recipe(id))
+                .requirements(RequirementsStrategy.OR);
+
+        // 4. Guardamos la receta usando el Builder
+        consumer.accept(new TendalRecipeBuilder(
+                id,
+                ingrediente, // Pasamos el ingrediente convertido
+                output,
+                time,
+                advancement,
+                new ResourceLocation(PeruviansDelight.MOD_ID, "recipes/misc/" + name)
+        ));
+    }
+
+    protected static class TendalRecipeBuilder implements FinishedRecipe {
+        private final ResourceLocation id;
+        private final Ingredient input;
+        private final Item result;
+        private final int time;
+        private final Advancement.Builder advancement;
+        private final ResourceLocation advancementId;
+
+        public TendalRecipeBuilder(ResourceLocation id, Ingredient input, ItemLike result, int time, Advancement.Builder advancement, ResourceLocation advancementId) {
+            this.id = id;
+            this.input = input;
+            this.result = result.asItem();
+            this.time = time;
+            this.advancement = advancement;
+            this.advancementId = advancementId;
+        }
+
+        @Override
+        public void serializeRecipeData(JsonObject json) {
+            json.add("ingredient", input.toJson());
+
+            JsonObject resultObj = new JsonObject();
+            resultObj.addProperty("item", ForgeRegistries.ITEMS.getKey(result).toString());
+            json.add("result", resultObj);
+
+            json.addProperty("time", time);
+        }
+
+        @Override
+        public ResourceLocation getId() {
+            return id;
+        }
+
+        @Override
+        public RecipeSerializer<?> getType() {
+            return ModRecipes.TENDAL_SERIALIZER.get();
+        }
+
+        @Override
+        public JsonObject serializeAdvancement() {
+            return advancement.serializeToJson();
+        }
+
+        @Override
+        public ResourceLocation getAdvancementId() {
+            return advancementId;
+        }
     }
 }

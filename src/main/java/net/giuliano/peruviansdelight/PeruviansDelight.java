@@ -3,6 +3,7 @@ package net.giuliano.peruviansdelight;
 import com.mojang.logging.LogUtils;
 import net.giuliano.peruviansdelight.block.ModBlockStateProviderTypes;
 import net.giuliano.peruviansdelight.block.ModBlocks;
+import net.giuliano.peruviansdelight.block.entity.ModBlockEntities;
 import net.giuliano.peruviansdelight.effect.ModEffects;
 import net.giuliano.peruviansdelight.entity.ModEntities;
 import net.giuliano.peruviansdelight.entity.client.AtunRenderer;
@@ -11,6 +12,7 @@ import net.giuliano.peruviansdelight.item.ModDrinkItems;
 import net.giuliano.peruviansdelight.item.ModItems;
 import net.giuliano.peruviansdelight.item.custom.ModCompostables;
 import net.giuliano.peruviansdelight.loot.ModLootModifier;
+import net.giuliano.peruviansdelight.recipe.ModRecipes;
 import net.giuliano.peruviansdelight.sound.ModSounds;
 import net.giuliano.peruviansdelight.worldgen.tree.ModFoliagePlacers;
 import net.giuliano.peruviansdelight.worldgen.tree.ModTrunkPlacerTypes;
@@ -47,6 +49,9 @@ public class PeruviansDelight {
         ModDrinkItems.register(modEventBus);
 
         ModEntities.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         ModSounds.register(modEventBus);
 

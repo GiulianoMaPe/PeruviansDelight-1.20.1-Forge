@@ -126,6 +126,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         crateBlock(ModBlocks.YUCA_CRATE);
 
         bagBlock(ModBlocks.SOYA_BAG);
+
+        blockWithItem(ModBlocks.MUD_TILES);
+
+        var chiseledMudModel = models().cubeBottomTop("chiseled_mud_tiles",
+                modLoc("block/chiseled_mud_tiles"),
+                modLoc("block/chiseled_mud_tiles_bottom"),
+                modLoc("block/chiseled_mud_tiles_top"));
+        simpleBlockWithItem(ModBlocks.CHISELED_MUD_TILES.get(), chiseledMudModel);
+
+        horizontalBlock(ModBlocks.TENDAL.get(), models().getExistingFile(modLoc("block/tendal")));
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

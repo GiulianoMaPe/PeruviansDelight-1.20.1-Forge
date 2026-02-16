@@ -140,6 +140,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.YUCA_CRATE.get());
 
         this.dropSelf(ModBlocks.SOYA_BAG.get());
+
+        this.dropSelf(ModBlocks.MUD_TILES.get());
+        this.dropSelf(ModBlocks.CHISELED_MUD_TILES.get());
+
+        this.dropSelf(ModBlocks.TENDAL.get());
     }
 
     protected LootTable.Builder createModLeavesDrops(Block pLeavesBlock, Item pSaplingBlock, float... pChances) {
