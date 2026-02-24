@@ -1,7 +1,5 @@
 package net.giuliano.peruviansdelight.compat.jei;
 
-import mezz.jei.api.gui.drawable.IDrawableAnimated;
-import mezz.jei.api.gui.drawable.IDrawableStatic;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import net.giuliano.peruviansdelight.PeruviansDelight;
 import net.giuliano.peruviansdelight.block.ModBlocks;
@@ -26,14 +24,13 @@ public class TendalRecipeCategory implements IRecipeCategory<TendalRecipe> {
 
     private final IDrawable background;
     private final IDrawable icon;
-    private final IDrawableAnimated arrow;
+
+    private final int altura = 146;
+    private final int ancho = 60;
 
     public TendalRecipeCategory(IGuiHelper helper) {
-        this.background = helper.createDrawable(TEXTURE, 0, 0, 108, 48);
+        this.background = helper.createDrawable(TEXTURE, 0, 0, altura, ancho);
         this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.TENDAL.get()));
-
-        IDrawableStatic staticArrow = helper.createDrawable(TEXTURE, 0, 48, 18, 12);
-        this.arrow = helper.createAnimatedDrawable(staticArrow, 200, IDrawableAnimated.StartDirection.LEFT, false);
     }
 
     @Override
@@ -58,17 +55,15 @@ public class TendalRecipeCategory implements IRecipeCategory<TendalRecipe> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, TendalRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 18, 16)
+        builder.addSlot(RecipeIngredientRole.INPUT, 21, 24)
                 .addIngredients(recipe.input);
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 74, 16)
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 119, 24)
                 .addItemStack(recipe.output);
     }
 
     @Override
     public void draw(TendalRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
-
-        arrow.draw(guiGraphics, 45, 20);
 
         int processingTime = recipe.time;
         int seconds = processingTime / 20;
@@ -77,8 +72,10 @@ public class TendalRecipeCategory implements IRecipeCategory<TendalRecipe> {
         Minecraft minecraft = Minecraft.getInstance();
         Font font = minecraft.font;
         int stringWidth = font.width(timeString);
-        int xPos = (108 - stringWidth - 1);
 
-        guiGraphics.drawString(font, timeString, xPos, 40, 0x8B8B8B, false);
+        int xPos = (altura - stringWidth - 2);
+        int yPos = ancho - 10;
+
+        guiGraphics.drawString(font, timeString, xPos, yPos, 0x8B8B8B, false);
     }
 }

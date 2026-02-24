@@ -229,6 +229,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         // TENDAL
         buildTendalRecipe(pWriter, ModItems.LLAMA.get(), ModItems.CHARQUI.get(), 9600, "charqui_from_tendal"); // 8 min //20 ticks = 1 segundo
+        buildTendalRecipe(pWriter, Items.MUTTON, ModItems.CHARQUI.get(), 9600, "mutton_charqui_from_tendal");
 
         // MADERA
         stairBuilder(ModBlocks.LIMONERO_STAIRS.get(), Ingredient.of(ModBlocks.LIMONERO_PLANKS.get())).group("limonero")
