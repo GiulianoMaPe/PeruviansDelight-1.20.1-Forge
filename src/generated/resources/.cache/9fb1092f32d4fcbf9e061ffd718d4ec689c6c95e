@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-16T15:45:21.8700497	Recipes
+// 1.20.1	2026-03-31T13:23:01.5850404	Recipes
 dd9a932e588282f45f7964553504ea83ec555d6f data/minecraft/advancements/recipes/misc/anticucho_from_campfire_cooking.json
 eead2af588aca2876299019e9f505255d1269458 data/minecraft/advancements/recipes/misc/anticucho_from_smelting.json
 6ac43f24139f06ab6f677fbd7fe1ed78ab6d0ef7 data/minecraft/advancements/recipes/misc/anticucho_from_smoking.json
@@ -85,6 +85,7 @@ d58fe0086560ee88415c82b3e9cb8f8734a9142a data/peruviansdelight/advancements/reci
 aeb986b8f577b5c2901e37d60aa3521f6ad41816 data/peruviansdelight/advancements/recipes/misc/limon_crate.json
 785faa04a4adce56644189b474dcfa3e3118bea2 data/peruviansdelight/advancements/recipes/misc/mostrito.json
 02011d0215ea03f4324129898eaf1621681992c2 data/peruviansdelight/advancements/recipes/misc/mud_tiles.json
+1a40d2c59379cd29932a0233d6d93e8e8adf1e4c data/peruviansdelight/advancements/recipes/misc/mutton_charqui_from_tendal.json
 10e8433d9618261739be24edba0e561272b52b68 data/peruviansdelight/advancements/recipes/misc/palta.json
 83c79d89e97a1fe706b8c520ae371a7372d9bd25 data/peruviansdelight/advancements/recipes/misc/palta_crate.json
 11ad1f8f49c88dbe3c5cc73081049bcb7959faf8 data/peruviansdelight/advancements/recipes/misc/palto_planks.json
@@ -136,6 +137,7 @@ c752893d407d728201e467c017d6e17fd7634c08 data/peruviansdelight/recipes/limonero_
 e843bc78871a95331859de3cd9fad5c1f7662651 data/peruviansdelight/recipes/limon_crate.json
 55f8be8aa8fbbffaf9db88f20fde78d9c1268e6b data/peruviansdelight/recipes/mostrito.json
 0a307b0b14cc895ab3ec824755444ed4b8b54b8c data/peruviansdelight/recipes/mud_tiles.json
+9f1e081b771f3e7237be33092ddc3f0d60082c3e data/peruviansdelight/recipes/mutton_charqui_from_tendal.json
 fa478018d38a8ab3aa817fbbbf9c12ac578749ee data/peruviansdelight/recipes/palta.json
 d6890c8a0ef4c1f2c7e47835a88fa16c8516cf56 data/peruviansdelight/recipes/palta_crate.json
 31fcf541b03f2b409b93228218c8d7dd84600c89 data/peruviansdelight/recipes/palto_button.json
